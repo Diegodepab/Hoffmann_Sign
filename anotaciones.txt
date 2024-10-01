@@ -1,0 +1,5 @@
+este archivo se usará para anotar información que pueda ser de ayuda para el resto del equipo a la hora de la busqueda de datos o organización del mismo.
+
+Sindrome de hooffman no tiene nada que ver con el signo de hoffman
+
+Cuidado con el signo de hoffman-tier que es diferente y puede confundir.
