@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{2}
+\begin{thebibliography}{5}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -67,6 +67,108 @@ StatPearls [Internet]
 \end{botherref}
 \endbibitem
 
+%%% 3
+\bibitem{Esteves2014}
+\begin{barticle}
+\bauthor{\bsnm{Esteves}, \binits{T.}},
+\bauthor{\bsnm{Durr}, \binits{A.}},
+\bauthor{\bsnm{Mundwiller}, \binits{E.}},
+\bauthor{\bsnm{Loureiro}, \binits{J.L.}},
+\bauthor{\bsnm{Boutry}, \binits{M.}},
+\bauthor{\bsnm{Gonzalez}, \binits{M.A.}},
+\bauthor{\bsnm{Gauthier}, \binits{J.}},
+\bauthor{\bsnm{El-Hachimi}, \binits{K.H.}},
+\bauthor{\bsnm{Depienne}, \binits{C.}},
+\bauthor{\bsnm{Muriel}, \binits{M.-P.}},
+\bauthor{\bsnm{Lebrigio}, \binits{R.F.A.}},
+\bauthor{\bsnm{Gaussen}, \binits{M.}},
+\bauthor{\bsnm{Noreau}, \binits{A.}},
+\bauthor{\bsnm{Speziani}, \binits{F.}},
+\bauthor{\bsnm{Dionne-Laporte}, \binits{A.}},
+\bauthor{\bsnm{Deleuze}, \binits{J.-F.}},
+\bauthor{\bsnm{Dion}, \binits{P.}},
+\bauthor{\bsnm{Coutinho}, \binits{P.}},
+\bauthor{\bsnm{Rouleau}, \binits{G.A.}},
+\bauthor{\bsnm{Zuchner}, \binits{S.}},
+\bauthor{\bsnm{Brice}, \binits{A.}},
+\bauthor{\bsnm{Stevanin}, \binits{G.}},
+\bauthor{\bsnm{Darios}, \binits{F.}}:
+\batitle{Loss of association of reep2 with membranes leads to hereditary
+  spastic paraplegia}.
+\bjtitle{The American Journal of Human Genetics}
+\bvolume{94}(\bissue{2}),
+\bfpage{268}--\blpage{277}
+(\byear{2014}).
+doi:\doiurl{10.1016/j.ajhg.2013.12.005}.
+\bcomment{doi: 10.1016/j.ajhg.2013.12.005}
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem{10.1093/brain/awv143}
+\begin{barticle}
+\bauthor{\bsnm{Coutelier}, \binits{M.}},
+\bauthor{\bsnm{Goizet}, \binits{C.}},
+\bauthor{\bsnm{Durr}, \binits{A.}},
+\bauthor{\bsnm{Habarou}, \binits{F.}},
+\bauthor{\bsnm{Morais}, \binits{S.}},
+\bauthor{\bsnm{Dionne-Laporte}, \binits{A.}},
+\bauthor{\bsnm{Tao}, \binits{F.}},
+\bauthor{\bsnm{Konop}, \binits{J.}},
+\bauthor{\bsnm{Stoll}, \binits{M.}},
+\bauthor{\bsnm{Charles}, \binits{P.}},
+\bauthor{\bsnm{Jacoupy}, \binits{M.}},
+\bauthor{\bsnm{Matusiak}, \binits{R.}},
+\bauthor{\bsnm{Alonso}, \binits{I.}},
+\bauthor{\bsnm{Tallaksen}, \binits{C.}},
+\bauthor{\bsnm{Mairey}, \binits{M.}},
+\bauthor{\bsnm{Kennerson}, \binits{M.}},
+\bauthor{\bsnm{Gaussen}, \binits{M.}},
+\bauthor{\bsnm{Schule}, \binits{R.}},
+\bauthor{\bsnm{Janin}, \binits{M.}},
+\bauthor{\bsnm{Morice-Picard}, \binits{F.}},
+\bauthor{\bsnm{Durand}, \binits{C.M.}},
+\bauthor{\bsnm{Depienne}, \binits{C.}},
+\bauthor{\bsnm{Calvas}, \binits{P.}},
+\bauthor{\bsnm{Coutinho}, \binits{P.}},
+\bauthor{\bsnm{Saudubray}, \binits{J.-M.}},
+\bauthor{\bsnm{Rouleau}, \binits{G.}},
+\bauthor{\bsnm{Brice}, \binits{A.}},
+\bauthor{\bsnm{Nicholson}, \binits{G.}},
+\bauthor{\bsnm{Darios}, \binits{F.}},
+\bauthor{\bsnm{Loureiro}, \binits{J.L.}},
+\bauthor{\bsnm{Zuchner}, \binits{S.}},
+\bauthor{\bsnm{Ottolenghi}, \binits{C.}},
+\bauthor{\bsnm{Mochel}, \binits{F.}},
+\bauthor{\bsnm{Stevanin}, \binits{G.}}:
+\batitle{{Alteration of ornithine metabolism leads to dominant and recessive
+  hereditary spastic paraplegia}}.
+\bjtitle{Brain}
+\bvolume{138}(\bissue{8}),
+\bfpage{2191}--\blpage{2205}
+(\byear{2015}).
+doi:\doiurl{10.1093/brain/awv143}.
+\arxivurl{https://academic.oup.com/brain/article-pdf/138/8/2191/13800016/awv143.pdf}
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem{RIANCHO201927}
+\begin{barticle}
+\bauthor{\bsnm{Riancho}, \binits{J.}},
+\bauthor{\bsnm{Gonzalo}, \binits{I.}},
+\bauthor{\bsnm{Ruiz-Soto}, \binits{M.}},
+\bauthor{\bsnm{Berciano}, \binits{J.}}:
+\batitle{¿por qué degeneran las motoneuronas? actualización en la patogenia
+  de la esclerosis lateral amiotrófica}.
+\bjtitle{Neurología}
+\bvolume{34}(\bissue{1}),
+\bfpage{27}--\blpage{37}
+(\byear{2019}).
+doi:\doiurl{10.1016/j.nrl.2015.12.001}
+\end{barticle}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -101,6 +203,111 @@ StatPearls [Internet]
   <pubdate>2022</pubdate>
   <url>https://www.ncbi.nlm.nih.gov/books/NBK539843/</url>
   <note>2024 Jan--</note>
+</bibl>
+
+<bibl id="B3">
+  <title><p>Loss of Association of REEP2 with Membranes Leads to Hereditary
+  Spastic Paraplegia</p></title>
+  <aug>
+    <au><snm>Esteves</snm><fnm>T</fnm></au>
+    <au><snm>Durr</snm><fnm>A</fnm></au>
+    <au><snm>Mundwiller</snm><fnm>E</fnm></au>
+    <au><snm>Loureiro</snm><fnm>JL</fnm></au>
+    <au><snm>Boutry</snm><fnm>M</fnm></au>
+    <au><snm>Gonzalez</snm><fnm>MA</fnm></au>
+    <au><snm>Gauthier</snm><fnm>J</fnm></au>
+    <au><snm>El Hachimi</snm><fnm>KH</fnm></au>
+    <au><snm>Depienne</snm><fnm>C</fnm></au>
+    <au><snm>Muriel</snm><fnm>MP</fnm></au>
+    <au><snm>Lebrigio</snm><fnm>RFA</fnm></au>
+    <au><snm>Gaussen</snm><fnm>M</fnm></au>
+    <au><snm>Noreau</snm><fnm>A</fnm></au>
+    <au><snm>Speziani</snm><fnm>F</fnm></au>
+    <au><snm>Dionne Laporte</snm><fnm>A</fnm></au>
+    <au><snm>Deleuze</snm><fnm>JF</fnm></au>
+    <au><snm>Dion</snm><fnm>P</fnm></au>
+    <au><snm>Coutinho</snm><fnm>P</fnm></au>
+    <au><snm>Rouleau</snm><fnm>GA</fnm></au>
+    <au><snm>Zuchner</snm><fnm>S</fnm></au>
+    <au><snm>Brice</snm><fnm>A</fnm></au>
+    <au><snm>Stevanin</snm><fnm>G</fnm></au>
+    <au><snm>Darios</snm><fnm>F</fnm></au>
+  </aug>
+  <source>The American Journal of Human Genetics</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2014</pubdate>
+  <volume>94</volume>
+  <issue>2</issue>
+  <fpage>268</fpage>
+  <lpage>-277</lpage>
+  <url>https://doi.org/10.1016/j.ajhg.2013.12.005</url>
+  <note>doi: 10.1016/j.ajhg.2013.12.005</note>
+</bibl>
+
+<bibl id="B4">
+  <title><p>{Alteration of ornithine metabolism leads to dominant and recessive
+  hereditary spastic paraplegia}</p></title>
+  <aug>
+    <au><snm>Coutelier</snm><fnm>M</fnm></au>
+    <au><snm>Goizet</snm><fnm>C</fnm></au>
+    <au><snm>Durr</snm><fnm>A</fnm></au>
+    <au><snm>Habarou</snm><fnm>F</fnm></au>
+    <au><snm>Morais</snm><fnm>S</fnm></au>
+    <au><snm>Dionne Laporte</snm><fnm>A</fnm></au>
+    <au><snm>Tao</snm><fnm>F</fnm></au>
+    <au><snm>Konop</snm><fnm>J</fnm></au>
+    <au><snm>Stoll</snm><fnm>M</fnm></au>
+    <au><snm>Charles</snm><fnm>P</fnm></au>
+    <au><snm>Jacoupy</snm><fnm>M</fnm></au>
+    <au><snm>Matusiak</snm><fnm>R</fnm></au>
+    <au><snm>Alonso</snm><fnm>I</fnm></au>
+    <au><snm>Tallaksen</snm><fnm>C</fnm></au>
+    <au><snm>Mairey</snm><fnm>M</fnm></au>
+    <au><snm>Kennerson</snm><fnm>M</fnm></au>
+    <au><snm>Gaussen</snm><fnm>M</fnm></au>
+    <au><snm>Schule</snm><fnm>R</fnm></au>
+    <au><snm>Janin</snm><fnm>M</fnm></au>
+    <au><snm>Morice Picard</snm><fnm>F</fnm></au>
+    <au><snm>Durand</snm><fnm>CM</fnm></au>
+    <au><snm>Depienne</snm><fnm>C</fnm></au>
+    <au><snm>Calvas</snm><fnm>P</fnm></au>
+    <au><snm>Coutinho</snm><fnm>P</fnm></au>
+    <au><snm>Saudubray</snm><fnm>JM</fnm></au>
+    <au><snm>Rouleau</snm><fnm>G</fnm></au>
+    <au><snm>Brice</snm><fnm>A</fnm></au>
+    <au><snm>Nicholson</snm><fnm>G</fnm></au>
+    <au><snm>Darios</snm><fnm>F</fnm></au>
+    <au><snm>Loureiro</snm><fnm>JL</fnm></au>
+    <au><snm>Zuchner</snm><fnm>S</fnm></au>
+    <au><snm>Ottolenghi</snm><fnm>C</fnm></au>
+    <au><snm>Mochel</snm><fnm>F</fnm></au>
+    <au><snm>Stevanin</snm><fnm>G</fnm></au>
+  </aug>
+  <source>Brain</source>
+  <pubdate>2015</pubdate>
+  <volume>138</volume>
+  <issue>8</issue>
+  <fpage>2191</fpage>
+  <lpage>2205</lpage>
+  <url>https://doi.org/10.1093/brain/awv143</url>
+</bibl>
+
+<bibl id="B5">
+  <title><p>¿Por qué degeneran las motoneuronas? Actualización en la
+  patogenia de la esclerosis lateral amiotrófica</p></title>
+  <aug>
+    <au><snm>Riancho</snm><fnm>J.</fnm></au>
+    <au><snm>Gonzalo</snm><fnm>I.</fnm></au>
+    <au><snm>Ruiz Soto</snm><fnm>M.</fnm></au>
+    <au><snm>Berciano</snm><fnm>J.</fnm></au>
+  </aug>
+  <source>Neurología</source>
+  <pubdate>2019</pubdate>
+  <volume>34</volume>
+  <issue>1</issue>
+  <fpage>27</fpage>
+  <lpage>37</lpage>
+  <url>https://www.sciencedirect.com/science/article/pii/S0213485316000025</url>
 </bibl>
 
 </refgrp>
