@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: report.aux
 The style file: bmc-mathphys.bst
@@ -20,49 +20,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bibliography.bib
+Warning--I didn't find a database entry for "jordi"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 5 entries,
+You've used 7 entries,
             7128 wiz_defined-function locations,
-            1171 strings with 11466 characters,
-and the built_in function-call counts, 55858 in all, are:
-= -- 6238
-> -- 367
-< -- 156
-+ -- 791
-- -- 140
-* -- 5472
-:= -- 11231
-add.period$ -- 12
-call.type$ -- 5
-change.case$ -- 92
-chr.to.int$ -- 242
-cite$ -- 5
-duplicate$ -- 887
-empty$ -- 3977
-format.name$ -- 594
-if$ -- 11578
+            1188 strings with 11993 characters,
+and the built_in function-call counts, 69876 in all, are:
+= -- 7857
+> -- 464
+< -- 212
++ -- 1036
+- -- 165
+* -- 6689
+:= -- 14023
+add.period$ -- 16
+call.type$ -- 7
+change.case$ -- 114
+chr.to.int$ -- 367
+cite$ -- 7
+duplicate$ -- 1135
+empty$ -- 4881
+format.name$ -- 699
+if$ -- 14623
 int.to.chr$ -- 1
-int.to.str$ -- 12
-missing$ -- 270
-newline$ -- 308
-num.names$ -- 25
-pop$ -- 375
+int.to.str$ -- 16
+missing$ -- 349
+newline$ -- 379
+num.names$ -- 35
+pop$ -- 470
 preamble$ -- 1
-purify$ -- 21
-quote$ -- 10
-skip$ -- 2526
+purify$ -- 29
+quote$ -- 14
+skip$ -- 3297
 stack$ -- 0
-substring$ -- 9134
-swap$ -- 282
-text.length$ -- 76
+substring$ -- 11194
+swap$ -- 376
+text.length$ -- 106
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 211
+type$ -- 302
 warning$ -- 0
-while$ -- 320
+while$ -- 407
 width$ -- 0
-write$ -- 499
+write$ -- 605
+(There was 1 warning)
