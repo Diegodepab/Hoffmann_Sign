@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  4 OCT 2024 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  4 OCT 2024 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -371,11 +371,34 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks31
 \inpenc@posthook=\toks32
 )
+(C:\Users\Diego De Pablo\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx
+.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(C:\Users\Diego De Pablo\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.st
+y
+Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
+\col@sep=\dimen159
+\ar@mcellbox=\box58
+\extrarowheight=\dimen160
+\NC@list=\toks33
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box59
+)
+\TX@col@width=\dimen161
+\TX@old@table=\dimen162
+\TX@old@col=\dimen163
+\TX@target=\dimen164
+\TX@delta=\dimen165
+\TX@cols=\count297
+\TX@ftn=\toks34
+)
 (C:\Users\Diego De Pablo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3ba
 ckend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count297
-\l__pdf_internal_box=\box58
+\l__color_backend_stack_int=\count298
+\l__pdf_internal_box=\box60
 ) (report.aux)
 \openout1 = `report.aux'.
 
@@ -401,32 +424,23 @@ LaTeX Font Info:    ... okay on input line 26.
 (C:\Users\Diego De Pablo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\su
 pp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen159
-\scratchbox=\box59
-\nofMPsegments=\count299
-\nofMParguments=\count300
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen160
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count299
+\scratchdimen=\dimen166
+\scratchbox=\box61
+\nofMPsegments=\count300
+\nofMParguments=\count301
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count302
+\MPscratchDim=\dimen167
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
+\everyMPtoPDFconversion=\toks36
 )
 (C:\Users\Diego De Pablo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\e
 pstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(C:\Users\Diego De Pablo\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.
-sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (C:\Users\Diego De Pablo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epsto
 pdf-sys.cfg
@@ -459,7 +473,7 @@ LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 48.
 
-\address@aff1=\toks35
+\address@aff1=\toks37
 (tex_files/introduction.tex
 
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <8> not available
@@ -467,26 +481,31 @@ LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <8> not available
 [1{C:/Users/Diego De Pablo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-<figures/Kabir_Hoffmann__Sign.jpg, id=59, 370.38374pt x 462.97969pt>
+<figures/Kabir_Hoffmann__Sign.jpg, id=62, 370.38374pt x 462.97969pt>
 File: figures/Kabir_Hoffmann__Sign.jpg Graphic file (type jpg)
 <use figures/Kabir_Hoffmann__Sign.jpg>
-Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 5
+Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 7
 .
 (pdftex.def)             Requested size: 126.3522pt x 157.93378pt.
 
 
 [2 <./figures/Kabir_Hoffmann__Sign.jpg>]
-Underfull \hbox (badness 995) in paragraph at lines 16--17
+Underfull \hbox (badness 995) in paragraph at lines 18--19
 []\OT1/cmr/m/n/10 Enfermedades neu-rode-gen-er-a-ti-vas m^^Sas cono-ci-das, com
 o la es-cle-ro-sis lat-eral
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ) (tex_files/material_methods.tex) (tex_files/resultados.tex)
-(tex_files/discusion.tex) (tex_files/conclusiones.tex) (report.bbl
+(tex_files/discusion.tex) (tex_files/conclusiones.tex)
 
-[3])
+[3] (report.bbl
 
-[4] 
+[4])
+
+[5] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (report.aux)
  ***********
@@ -502,34 +521,35 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: A3EA61EFFBF3D2DE331C9EED6C20E6BE;629.
  ) 
 Here is how much of TeX's memory you used:
- 10546 strings out of 473899
- 166969 string characters out of 5722216
- 578416 words of memory out of 5000000
- 33238 multiletter control sequences out of 15000+600000
- 566725 words of font info for 66 fonts, out of 8000000 for 9000
+ 10640 strings out of 473899
+ 167934 string characters out of 5722216
+ 584205 words of memory out of 5000000
+ 33326 multiletter control sequences out of 15000+600000
+ 567033 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,13n,79p,960b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,13n,79p,960b,731s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
 i600\tcrm0700.pk><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmex10.pfb><C:/Users/Diego De Pablo/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Diego De Pablo/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users
-/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr5.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Diego De Pablo/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Diego De Pa
-blo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:
+ype1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Diego De Pablo/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Diego De Pablo/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/User
+s/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Diego De Pablo/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Diego De Pa
+blo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:
 /Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmss8.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Diego De Pablo/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Diego De Pablo/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/
-Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb>
-Output written on report.pdf (4 pages, 222203 bytes).
+/cm/cmss17.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmss8.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Diego De Pablo/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
+/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (5 pages, 240407 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
+ 206 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  54 words of extra memory for PDF output out of 10000 (max. 10000000)
 

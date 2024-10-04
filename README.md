@@ -1,11 +1,14 @@
 # Proyecto: signo de Hoffman
 
+## To-Do List
+
+- [ ] Correcciones en los primeros parrafos de historia simplificando y siendo más conciso (Juan y Diego)
+- [ ] Poner referencia de la imagen en la bibliografía (Diego)
+- [ ] Ultimo parrafo dando pie a objetivos (Marta/todos)
+- [ ] Evaluar añadir el cuadro (Ale y Diego, ya subi unos ejemplos de como lo tenía pensado) (REFERENCIAS OMIN)
+
 ## Preguntas para la tutoría
 
-- ¿Recomienda usar **negrita** u otras herramientas de formato para facilitar la legibilidad del documento?
-- Con una introducción de 570 palabras, ¿deberíamos resumir algunos puntos o está adecuada?
-- La referencia de la imagen ¿estan bien?
-- ¿Deberíamos añadir objetivos como un subapartado?
 - ¿Como rellenar la primera parte del trabajo de tutores, que cosas quitar y que cosas dejar
 
 ## Anotaciones generales
@@ -18,7 +21,5 @@ Este archivo servirá como referencia para el equipo. Aquí se anotará informac
   - En **Orphanet**, no hay resultados relacionados.
   - En **OMIM**, aparecen 8000 entradas, pero no todas están vinculadas con el HPO.
 
-## To-Do List
 
-- [ ] Esperando a la siguiente fase del proyecto...
 
