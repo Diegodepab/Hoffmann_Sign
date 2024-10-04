@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{7}
+\begin{thebibliography}{11}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -204,6 +204,117 @@ doi:\doiurl{10.1007/s12311-021-01345-5}.
 \end{barticle}
 \endbibitem
 
+%%% 8
+\bibitem{zhao2022g41d}
+\begin{barticle}
+\bauthor{\bsnm{Zhao}, \binits{X.}},
+\bauthor{\bsnm{Feng}, \binits{X.}},
+\bauthor{\bsnm{Li}, \binits{X.}},
+\bauthor{\bsnm{Mou}, \binits{J.}},
+\bauthor{\bsnm{Liu}, \binits{H.}},
+\bauthor{\bsnm{Chen}, \binits{J.}},
+\bauthor{\bsnm{Wu}, \binits{J.}}:
+\batitle{The g41d mutation in sod1-related amyotrophic lateral sclerosis
+  exhibits phenotypic heterogeneity among individuals: A case report and
+  literature review}.
+\bjtitle{Medicine (Baltimore)}
+\bvolume{101}(\bissue{6}),
+\bfpage{28771}
+(\byear{2022}).
+doi:\doiurl{10.1097/MD.0000000000028771}
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem{sanchez2022atypical}
+\begin{barticle}
+\bauthor{\bsnm{Sánchez-Tejerina}, \binits{D.}},
+\bauthor{\bsnm{Restrepo-Vera}, \binits{J.L.}},
+\bauthor{\bsnm{Rovira-Moreno}, \binits{E.}},
+\bauthor{\bsnm{Codina-Sola}, \binits{M.}},
+\bauthor{\bsnm{Llauradó}, \binits{A.}},
+\bauthor{\bsnm{Sotoca}, \binits{J.}},
+\bauthor{\bsnm{Salvado}, \binits{M.}},
+\bauthor{\bsnm{Raguer}, \binits{N.}},
+\bauthor{\bsnm{García-Arumí}, \binits{E.}},
+\bauthor{\bsnm{Juntas-Morales}, \binits{R.}}:
+\batitle{An atypical presentation of upper motor neuron predominant juvenile
+  amyotrophic lateral sclerosis associated with tardbp gene: A case report and
+  review of the literature}.
+\bjtitle{Genes (Basel)}
+\bvolume{13}(\bissue{8}),
+\bfpage{1483}
+(\byear{2022}).
+doi:\doiurl{10.3390/genes13081483}
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem{teyssou:hal-03001781}
+\begin{barticle}
+\bauthor{\bsnm{Teyssou}, \binits{E.}},
+\bauthor{\bsnm{Chartier}, \binits{L.}},
+\bauthor{\bsnm{Amador}, \binits{M.-D.-M.}},
+\bauthor{\bsnm{Lam}, \binits{R.}},
+\bauthor{\bsnm{Lautrette}, \binits{G.}},
+\bauthor{\bsnm{Nicol}, \binits{M.}},
+\bauthor{\bsnm{Machat}, \binits{S.}},
+\bauthor{\bparticle{da} \bsnm{Barroca}, \binits{S.}},
+\bauthor{\bsnm{Moigneu}, \binits{C.}},
+\bauthor{\bsnm{Mairey}, \binits{M.}},
+\bauthor{\bsnm{Larmonier}, \binits{T.}},
+\bauthor{\bsnm{Saker}, \binits{S.}},
+\bauthor{\bsnm{Dussert}, \binits{C.}},
+\bauthor{\bsnm{Forlani}, \binits{S.}},
+\bauthor{\bsnm{Fontaine}, \binits{B.}},
+\bauthor{\bsnm{Seilhean}, \binits{D.}},
+\bauthor{\bsnm{Bohl}, \binits{D.}},
+\bauthor{\bsnm{Boill{\'e}e}, \binits{S.}},
+\bauthor{\bsnm{Meininger}, \binits{V.}},
+\bauthor{\bsnm{Couratier}, \binits{P.}},
+\bauthor{\bsnm{Salachas}, \binits{F.}},
+\bauthor{\bsnm{Stevanin}, \binits{G.}},
+\bauthor{\bsnm{Millecamps}, \binits{S.}}:
+\batitle{{Novel UBQLN2 mutations linked to Amyotrophic Lateral Sclerosis and
+  atypical Hereditary Spastic Paraplegia phenotype through defective
+  HSP70-mediated proteolysis}}.
+\bjtitle{{Neurobiology of Aging}}
+\bvolume{58},
+\bfpage{239}--\blpage{1123920}
+(\byear{2017}).
+doi:\doiurl{10.1016/j.neurobiolaging.2017.06.018}
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem{mann2023NEK1}
+\begin{barticle}
+\bauthor{\bsnm{Mann}, \binits{J.R.}},
+\bauthor{\bsnm{McKenna}, \binits{E.D.}},
+\bauthor{\bsnm{Mawrie}, \binits{D.}},
+\bauthor{\bsnm{Papakis}, \binits{V.}},
+\bauthor{\bsnm{Alessandrini}, \binits{F.}},
+\bauthor{\bsnm{Anderson}, \binits{E.N.}},
+\bauthor{\bsnm{Mayers}, \binits{R.}},
+\bauthor{\bsnm{Ball}, \binits{H.E.}},
+\bauthor{\bsnm{Kaspi}, \binits{E.}},
+\bauthor{\bsnm{Lubinski}, \binits{K.}},
+\bauthor{\bsnm{Baron}, \binits{D.M.}},
+\bauthor{\bsnm{Tellez}, \binits{L.}},
+\bauthor{\bsnm{Landers}, \binits{J.E.}},
+\bauthor{\bsnm{Pandey}, \binits{U.B.}},
+\bauthor{\bsnm{Kiskinis}, \binits{E.}}:
+\batitle{Loss of function of the als-associated nek1 kinase disrupts
+  microtubule homeostasis and nuclear import}.
+\bjtitle{Science Advances}
+\bvolume{9}(\bissue{33}),
+\bfpage{5548}
+(\byear{2023}).
+doi:\doiurl{10.1126/sciadv.adi5548}.
+\bcomment{Epub 2023 Aug 16}
+\end{barticle}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -379,6 +490,117 @@ doi:\doiurl{10.1007/s12311-021-01345-5}.
   <lpage>-1084</lpage>
   <url>https://doi.org/10.1007/s12311-021-01345-5</url>
   <note>Published on 2022/12/01</note>
+</bibl>
+
+<bibl id="B8">
+  <title><p>The G41D mutation in SOD1-related amyotrophic lateral sclerosis
+  exhibits phenotypic heterogeneity among individuals: A case report and
+  literature review</p></title>
+  <aug>
+    <au><snm>Zhao</snm><fnm>X</fnm></au>
+    <au><snm>Feng</snm><fnm>X</fnm></au>
+    <au><snm>Li</snm><fnm>X</fnm></au>
+    <au><snm>Mou</snm><fnm>J</fnm></au>
+    <au><snm>Liu</snm><fnm>H</fnm></au>
+    <au><snm>Chen</snm><fnm>J</fnm></au>
+    <au><snm>Wu</snm><fnm>J</fnm></au>
+  </aug>
+  <source>Medicine (Baltimore)</source>
+  <pubdate>2022</pubdate>
+  <volume>101</volume>
+  <issue>6</issue>
+  <fpage>e28771</fpage>
+</bibl>
+
+<bibl id="B9">
+  <title><p>An Atypical Presentation of Upper Motor Neuron Predominant Juvenile
+  Amyotrophic Lateral Sclerosis Associated with TARDBP Gene: A Case Report and
+  Review of the Literature</p></title>
+  <aug>
+    <au><snm>Sánchez Tejerina</snm><fnm>D</fnm></au>
+    <au><snm>Restrepo Vera</snm><fnm>JL</fnm></au>
+    <au><snm>Rovira Moreno</snm><fnm>E</fnm></au>
+    <au><snm>Codina Sola</snm><fnm>M</fnm></au>
+    <au><snm>Llauradó</snm><fnm>A</fnm></au>
+    <au><snm>Sotoca</snm><fnm>J</fnm></au>
+    <au><snm>Salvado</snm><fnm>M</fnm></au>
+    <au><snm>Raguer</snm><fnm>N</fnm></au>
+    <au><snm>García Arumí</snm><fnm>E</fnm></au>
+    <au><snm>Juntas Morales</snm><fnm>R</fnm></au>
+  </aug>
+  <source>Genes (Basel)</source>
+  <pubdate>2022</pubdate>
+  <volume>13</volume>
+  <issue>8</issue>
+  <fpage>1483</fpage>
+</bibl>
+
+<bibl id="B10">
+  <title><p>{Novel UBQLN2 mutations linked to Amyotrophic Lateral Sclerosis and
+  atypical Hereditary Spastic Paraplegia phenotype through defective
+  HSP70-mediated proteolysis}</p></title>
+  <aug>
+    <au><snm>Teyssou</snm><fnm>E</fnm></au>
+    <au><snm>Chartier</snm><fnm>L</fnm></au>
+    <au><snm>Amador</snm><fnm>MDM</fnm></au>
+    <au><snm>Lam</snm><fnm>R</fnm></au>
+    <au><snm>Lautrette</snm><fnm>G</fnm></au>
+    <au><snm>Nicol</snm><fnm>M</fnm></au>
+    <au><snm>Machat</snm><fnm>S</fnm></au>
+    <au><snm>Barroca</snm><fnm>S</fnm></au>
+    <au><snm>Moigneu</snm><fnm>C</fnm></au>
+    <au><snm>Mairey</snm><fnm>M</fnm></au>
+    <au><snm>Larmonier</snm><fnm>T</fnm></au>
+    <au><snm>Saker</snm><fnm>S</fnm></au>
+    <au><snm>Dussert</snm><fnm>C</fnm></au>
+    <au><snm>Forlani</snm><fnm>S</fnm></au>
+    <au><snm>Fontaine</snm><fnm>B</fnm></au>
+    <au><snm>Seilhean</snm><fnm>D</fnm></au>
+    <au><snm>Bohl</snm><fnm>D</fnm></au>
+    <au><snm>Boill{\'e}e</snm><fnm>S</fnm></au>
+    <au><snm>Meininger</snm><fnm>V</fnm></au>
+    <au><snm>Couratier</snm><fnm>P</fnm></au>
+    <au><snm>Salachas</snm><fnm>F</fnm></au>
+    <au><snm>Stevanin</snm><fnm>G</fnm></au>
+    <au><snm>Millecamps</snm><fnm>S</fnm></au>
+  </aug>
+  <source>{Neurobiology of Aging}</source>
+  <publisher>{Elsevier}</publisher>
+  <pubdate>2017</pubdate>
+  <volume>58</volume>
+  <fpage>239.e11</fpage>
+  <lpage>239.e20</lpage>
+  <url>https://hal.science/hal-03001781</url>
+</bibl>
+
+<bibl id="B11">
+  <title><p>Loss of function of the ALS-associated NEK1 kinase disrupts
+  microtubule homeostasis and nuclear import</p></title>
+  <aug>
+    <au><snm>Mann</snm><fnm>JR</fnm></au>
+    <au><snm>McKenna</snm><fnm>ED</fnm></au>
+    <au><snm>Mawrie</snm><fnm>D</fnm></au>
+    <au><snm>Papakis</snm><fnm>V</fnm></au>
+    <au><snm>Alessandrini</snm><fnm>F</fnm></au>
+    <au><snm>Anderson</snm><fnm>EN</fnm></au>
+    <au><snm>Mayers</snm><fnm>R</fnm></au>
+    <au><snm>Ball</snm><fnm>HE</fnm></au>
+    <au><snm>Kaspi</snm><fnm>E</fnm></au>
+    <au><snm>Lubinski</snm><fnm>K</fnm></au>
+    <au><snm>Baron</snm><fnm>DM</fnm></au>
+    <au><snm>Tellez</snm><fnm>L</fnm></au>
+    <au><snm>Landers</snm><fnm>JE</fnm></au>
+    <au><snm>Pandey</snm><fnm>UB</fnm></au>
+    <au><snm>Kiskinis</snm><fnm>E</fnm></au>
+  </aug>
+  <source>Science Advances</source>
+  <publisher>American Association for the Advancement of Science</publisher>
+  <pubdate>2023</pubdate>
+  <volume>9</volume>
+  <issue>33</issue>
+  <fpage>eadi5548</fpage>
+  <url>https://doi.org/10.1126/sciadv.adi5548</url>
+  <note>Epub 2023 Aug 16</note>
 </bibl>
 
 </refgrp>
