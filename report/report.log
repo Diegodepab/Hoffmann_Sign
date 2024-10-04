@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  4 OCT 2024 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  4 OCT 2024 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,14 +460,6 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 48.
 
 \address@aff1=\toks35
-
-LaTeX Warning: Reference `fig:cost_genome' on page 1 undefined on input line 98
-.
-
-
-LaTeX Warning: Reference `fig:cost_megabase' on page 1 undefined on input line 
-98.
-
 (tex_files/introduction.tex
 
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <8> not available
@@ -475,7 +467,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <8> not available
 [1{C:/Users/Diego De Pablo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-<figures/Kabir_Hoffmann__Sign.jpg, id=60, 370.38374pt x 462.97969pt>
+<figures/Kabir_Hoffmann__Sign.jpg, id=59, 370.38374pt x 462.97969pt>
 File: figures/Kabir_Hoffmann__Sign.jpg Graphic file (type jpg)
 <use figures/Kabir_Hoffmann__Sign.jpg>
 Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 5
@@ -506,39 +498,36 @@ L3 programming layer <2024-08-30>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: A3EA61EFFBF3D2DE331C9EED6C20E6BE;629.
  ) 
 Here is how much of TeX's memory you used:
- 10545 strings out of 473899
- 166933 string characters out of 5722216
- 577416 words of memory out of 5000000
- 33237 multiletter control sequences out of 15000+600000
- 566694 words of font info for 66 fonts, out of 8000000 for 9000
+ 10546 strings out of 473899
+ 166969 string characters out of 5722216
+ 578416 words of memory out of 5000000
+ 33238 multiletter control sequences out of 15000+600000
+ 566725 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,13n,79p,960b,723s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx10.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Diego De Pablo/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Diego De Pabl
-o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Us
-ers/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr5.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Diego De Pablo/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Diego De
- Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb>
-<C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmss8.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Diego De Pablo/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Diego De Pablo
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Use
-rs/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmti10.pfb>
-Output written on report.pdf (4 pages, 231137 bytes).
+ 85i,13n,79p,960b,725s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
+i600\tcrm0700.pk><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb><C:/Users/Diego De Pablo/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Diego De Pablo/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users
+/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r10.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr5.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Diego De Pablo/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Diego De Pa
+blo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:
+/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmss8.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Diego De Pablo/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Diego De Pablo/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/
+Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on report.pdf (4 pages, 222170 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 500000)
