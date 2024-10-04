@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{11}
+\begin{thebibliography}{14}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -71,6 +71,45 @@ Accessed 2024-10-01
 \endbibitem
 
 %%% 3
+\bibitem{echols1936hoffmann}
+\begin{barticle}
+\bauthor{\bsnm{Echols}, \binits{D.H.}}:
+\batitle{The hoffmann sign}.
+\bjtitle{The Journal of Nervous and Mental Disease}
+\bvolume{84}(\bissue{4}),
+\bfpage{427}--\blpage{431}
+(\byear{1936})
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem{fay1933clinical}
+\begin{barticle}
+\bauthor{\bsnm{FAY}, \binits{T.}},
+\bauthor{\bsnm{GOTTEN}, \binits{H.B.}}:
+\batitle{Clinical observations on the value of the hoffmann sign}.
+\bjtitle{The Journal of Nervous and Mental Disease}
+\bvolume{77}(\bissue{6}),
+\bfpage{594}--\blpage{600}
+(\byear{1933})
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem{denno1991early}
+\begin{barticle}
+\bauthor{\bsnm{DENNO}, \binits{J.J.}},
+\bauthor{\bsnm{MEADOWS}, \binits{G.R.}}:
+\batitle{Early diagnosis of cervical spondylotic myelopathy: a useful clinical
+  sign}.
+\bjtitle{Spine}
+\bvolume{16}(\bissue{12}),
+\bfpage{1353}--\blpage{1355}
+(\byear{1991})
+\end{barticle}
+\endbibitem
+
+%%% 6
 \bibitem{whitney}
 \begin{botherref}
 \oauthor{\bsnm{Whitney}, \binits{E.}},
@@ -82,7 +121,7 @@ StatPearls [Internet]
 \end{botherref}
 \endbibitem
 
-%%% 4
+%%% 7
 \bibitem{Esteves2014}
 \begin{barticle}
 \bauthor{\bsnm{Esteves}, \binits{T.}},
@@ -119,7 +158,7 @@ doi:\doiurl{10.1016/j.ajhg.2013.12.005}.
 \end{barticle}
 \endbibitem
 
-%%% 5
+%%% 8
 \bibitem{10.1093/brain/awv143}
 \begin{barticle}
 \bauthor{\bsnm{Coutelier}, \binits{M.}},
@@ -167,7 +206,7 @@ doi:\doiurl{10.1093/brain/awv143}.
 \end{barticle}
 \endbibitem
 
-%%% 6
+%%% 9
 \bibitem{RIANCHO201927}
 \begin{barticle}
 \bauthor{\bsnm{Riancho}, \binits{J.}},
@@ -184,7 +223,7 @@ doi:\doiurl{10.1016/j.nrl.2015.12.001}
 \end{barticle}
 \endbibitem
 
-%%% 7
+%%% 10
 \bibitem{Pedroso2022}
 \begin{barticle}
 \bauthor{\bsnm{Pedroso}, \binits{J.L.}},
@@ -204,7 +243,7 @@ doi:\doiurl{10.1007/s12311-021-01345-5}.
 \end{barticle}
 \endbibitem
 
-%%% 8
+%%% 11
 \bibitem{zhao2022g41d}
 \begin{barticle}
 \bauthor{\bsnm{Zhao}, \binits{X.}},
@@ -225,7 +264,7 @@ doi:\doiurl{10.1097/MD.0000000000028771}
 \end{barticle}
 \endbibitem
 
-%%% 9
+%%% 12
 \bibitem{sanchez2022atypical}
 \begin{barticle}
 \bauthor{\bsnm{Sánchez-Tejerina}, \binits{D.}},
@@ -249,7 +288,7 @@ doi:\doiurl{10.3390/genes13081483}
 \end{barticle}
 \endbibitem
 
-%%% 10
+%%% 13
 \bibitem{teyssou:hal-03001781}
 \begin{barticle}
 \bauthor{\bsnm{Teyssou}, \binits{E.}},
@@ -286,7 +325,7 @@ doi:\doiurl{10.1016/j.neurobiolaging.2017.06.018}
 \end{barticle}
 \endbibitem
 
-%%% 11
+%%% 14
 \bibitem{mann2023NEK1}
 \begin{barticle}
 \bauthor{\bsnm{Mann}, \binits{J.R.}},
@@ -354,6 +393,51 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
 </bibl>
 
 <bibl id="B3">
+  <title><p>The Hoffmann sign</p></title>
+  <aug>
+    <au><snm>Echols</snm><fnm>DH</fnm></au>
+  </aug>
+  <source>The Journal of Nervous and Mental Disease</source>
+  <publisher>LWW</publisher>
+  <pubdate>1936</pubdate>
+  <volume>84</volume>
+  <issue>4</issue>
+  <fpage>427</fpage>
+  <lpage>-431</lpage>
+</bibl>
+
+<bibl id="B4">
+  <title><p>Clinical observations on the value of the Hoffmann sign</p></title>
+  <aug>
+    <au><snm>FAY</snm><fnm>TEMPLE</fnm></au>
+    <au><snm>GOTTEN</snm><fnm>HENRY B</fnm></au>
+  </aug>
+  <source>The Journal of Nervous and Mental Disease</source>
+  <publisher>LWW</publisher>
+  <pubdate>1933</pubdate>
+  <volume>77</volume>
+  <issue>6</issue>
+  <fpage>594</fpage>
+  <lpage>-600</lpage>
+</bibl>
+
+<bibl id="B5">
+  <title><p>Early diagnosis of cervical spondylotic myelopathy: a useful
+  clinical sign</p></title>
+  <aug>
+    <au><snm>DENNO</snm><fnm>JERJIS J</fnm></au>
+    <au><snm>MEADOWS</snm><fnm>GILBERT R</fnm></au>
+  </aug>
+  <source>Spine</source>
+  <publisher>LWW</publisher>
+  <pubdate>1991</pubdate>
+  <volume>16</volume>
+  <issue>12</issue>
+  <fpage>1353</fpage>
+  <lpage>-1355</lpage>
+</bibl>
+
+<bibl id="B6">
   <title><p>Hoffmann Sign</p></title>
   <aug>
     <au><snm>Whitney</snm><fnm>E</fnm></au>
@@ -366,7 +450,7 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
   <note>2024 Jan--</note>
 </bibl>
 
-<bibl id="B4">
+<bibl id="B7">
   <title><p>Loss of Association of REEP2 with Membranes Leads to Hereditary
   Spastic Paraplegia</p></title>
   <aug>
@@ -405,7 +489,7 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
   <note>doi: 10.1016/j.ajhg.2013.12.005</note>
 </bibl>
 
-<bibl id="B5">
+<bibl id="B8">
   <title><p>{Alteration of ornithine metabolism leads to dominant and recessive
   hereditary spastic paraplegia}</p></title>
   <aug>
@@ -453,7 +537,7 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
   <url>https://doi.org/10.1093/brain/awv143</url>
 </bibl>
 
-<bibl id="B6">
+<bibl id="B9">
   <title><p>¿Por qué degeneran las motoneuronas? Actualización en la
   patogenia de la esclerosis lateral amiotrófica</p></title>
   <aug>
@@ -471,7 +555,7 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
   <url>https://www.sciencedirect.com/science/article/pii/S0213485316000025</url>
 </bibl>
 
-<bibl id="B7">
+<bibl id="B10">
   <title><p>A Diagnostic Approach to Spastic Ataxia Syndromes</p></title>
   <aug>
     <au><snm>Pedroso</snm><fnm>JL</fnm></au>
@@ -492,7 +576,7 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
   <note>Published on 2022/12/01</note>
 </bibl>
 
-<bibl id="B8">
+<bibl id="B11">
   <title><p>The G41D mutation in SOD1-related amyotrophic lateral sclerosis
   exhibits phenotypic heterogeneity among individuals: A case report and
   literature review</p></title>
@@ -512,7 +596,7 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
   <fpage>e28771</fpage>
 </bibl>
 
-<bibl id="B9">
+<bibl id="B12">
   <title><p>An Atypical Presentation of Upper Motor Neuron Predominant Juvenile
   Amyotrophic Lateral Sclerosis Associated with TARDBP Gene: A Case Report and
   Review of the Literature</p></title>
@@ -535,7 +619,7 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
   <fpage>1483</fpage>
 </bibl>
 
-<bibl id="B10">
+<bibl id="B13">
   <title><p>{Novel UBQLN2 mutations linked to Amyotrophic Lateral Sclerosis and
   atypical Hereditary Spastic Paraplegia phenotype through defective
   HSP70-mediated proteolysis}</p></title>
@@ -573,7 +657,7 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
   <url>https://hal.science/hal-03001781</url>
 </bibl>
 
-<bibl id="B11">
+<bibl id="B14">
   <title><p>Loss of function of the ALS-associated NEK1 kinase disrupts
   microtubule homeostasis and nuclear import</p></title>
   <aug>
