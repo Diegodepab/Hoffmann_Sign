@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{14}
+\begin{thebibliography}{16}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -354,6 +354,27 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
 \end{barticle}
 \endbibitem
 
+%%% 15
+\bibitem{omim}
+\begin{botherref}
+\oauthor{\bsnm{{Online Mendelian Inheritance in Man, OMIM®}}}:
+McKusick-Nathans Institute of Genetic Medicine, Johns Hopkins University
+  (Baltimore, MD).
+\url{https://omim.org/}.
+Accessed: 3 October 2024
+\end{botherref}
+\endbibitem
+
+%%% 16
+\bibitem{orphanet}
+\begin{botherref}
+\oauthor{\bsnm{{An Online Database of Rare Diseases and Orphan Drugs}},
+  \binits{O.}}:
+INSERM, US14. Available at \url{https://www.orpha.net/}.
+Accessed: 3 October 2024
+\end{botherref}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -685,6 +706,25 @@ doi:\doiurl{10.1126/sciadv.adi5548}.
   <fpage>eadi5548</fpage>
   <url>https://doi.org/10.1126/sciadv.adi5548</url>
   <note>Epub 2023 Aug 16</note>
+</bibl>
+
+<bibl id="B15">
+  <title><p>McKusick-Nathans Institute of Genetic Medicine, Johns Hopkins
+  University (Baltimore, MD)</p></title>
+  <aug>
+    <au><cnm>{Online Mendelian Inheritance in Man, OMIM®}</cnm></au>
+  </aug>
+  <source>\url{https://omim.org/}</source>
+  <note>Accessed: 3 October 2024</note>
+</bibl>
+
+<bibl id="B16">
+  <title><p>INSERM, US14. Available at \url{https://www.orpha.net/}</p></title>
+  <aug>
+    <au><snm>{An Online Database of Rare Diseases and Orphan
+  Drugs}</snm><fnm>O</fnm></au>
+  </aug>
+  <note>Accessed: 3 October 2024</note>
 </bibl>
 
 </refgrp>
