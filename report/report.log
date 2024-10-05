@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.19)  5 OCT 2024 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.19)  5 OCT 2024 23:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -426,7 +426,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <8> not available
 [1{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<figures/Kabir_Hoffmann__Sign.jpg, id=63, 370.38374pt x 462.97969pt>
+<figures/Kabir_Hoffmann__Sign.jpg, id=62, 370.38374pt x 462.97969pt>
 File: figures/Kabir_Hoffmann__Sign.jpg Graphic file (type jpg)
 <use figures/Kabir_Hoffmann__Sign.jpg>
 Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 8
@@ -474,10 +474,10 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: A3EA61EFFBF3D2DE331C9EED6C20E6BE;629.
  ) 
 Here is how much of TeX's memory you used:
- 10663 strings out of 473578
- 163055 string characters out of 5732242
- 580819 words of memory out of 5000000
- 33368 multiletter control sequences out of 15000+600000
+ 10668 strings out of 473578
+ 163126 string characters out of 5732242
+ 580027 words of memory out of 5000000
+ 33373 multiletter control sequences out of 15000+600000
  567546 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,13n,79p,952b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -491,15 +491,16 @@ cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.p
 fb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/te
 xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2024
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2024/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmtt8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0
-700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb>
-Output written on report.pdf (5 pages, 235201 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2024/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><
+c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb>
+Output written on report.pdf (5 pages, 244254 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
+ 236 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
  44 named destinations out of 1000 (max. 500000)
  54 words of extra memory for PDF output out of 10000 (max. 10000000)
 
