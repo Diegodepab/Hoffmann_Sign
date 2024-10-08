@@ -2,10 +2,11 @@
 
 ## To-Do List
 
-- [ ] Correcciones en los primeros parrafos de historia simplificando y siendo más conciso (Juan y Diego)
-- [ ] Poner referencia de la imagen en la bibliografía (Diego)
-- [ ] Ultimo parrafo dando pie a objetivos (Marta/todos)
-- [ ] Evaluar añadir el cuadro (Ale y Diego, ya subi unos ejemplos de como lo tenía pensado) (REFERENCIAS OMIN)
+- [] Revisarlo alguien más para ver si todo esta en orden
+- [X] Correcciones en los primeros parrafos de historia simplificando y siendo más conciso (Juan y Diego)
+- [X] Poner referencia de la imagen en la bibliografía (Diego)
+- [X] Ultimo parrafo dando pie a objetivos (Marta/todos)
+- [X] Evaluar añadir el cuadro (Ale y Diego, ya subi unos ejemplos de como lo tenía pensado) (REFERENCIAS OMIN)
 
 ## Preguntas para la tutoría
 
