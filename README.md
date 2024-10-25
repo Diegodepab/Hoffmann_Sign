@@ -2,13 +2,20 @@
 
 ## To-Do List
 
-- [] Revisarlo alguien más para ver si todo esta en orden
-- [X] Correcciones en los primeros parrafos de historia simplificando y siendo más conciso (Juan y Diego)
-- [X] Poner referencia de la imagen en la bibliografía (Diego)
-- [X] Ultimo parrafo dando pie a objetivos (Marta/todos)
-- [X] Evaluar añadir el cuadro (Ale y Diego, ya subi unos ejemplos de como lo tenía pensado) (REFERENCIAS OMIN)
+- []  Ver si la hipótesisdel trabajo es correcta o hay que mejorarla (esperar corrección)
+- []  Objetivos (falta ver si hace falta un objetivo general y luego objetivos especificos, o si es una recopilación de objetivos)
+- []  Materiales
+    +  []  Human Phenotype Ontology
+    +  []  R
+    +  []  Python
+        + Librerías de python como iGraph, etc.
+    +  [] String
+    +  []  Algoritmos a usar??
+- []  Métodos? 
+- [X] Entrega de la introducción
 
-## Preguntas para la tutoría
+
+## Preguntas para la tutoría/correo
 
 - ¿Como rellenar la primera parte del trabajo de tutores, que cosas quitar y que cosas dejar
 
