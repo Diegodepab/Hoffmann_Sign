@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  27 OCT 2024 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  27 OCT 2024 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -512,6 +512,8 @@ e-trieval of In-ter-act-ing Genes/Proteins\OT1/cmr/m/n/10 )
 
 [4]) (tex_files/resultados.tex) (tex_files/discusion.tex)
 (tex_files/conclusiones.tex) (report.bbl
+
+[5]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 248.
 
@@ -519,30 +521,8 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line
 d
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-
-[5]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 382.
-
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.418 doi:\doiurl{10.1007/978-3-319-93791-5_2}
-                                              
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.418 doi:\doiurl{10.1007/978-3-319-93791-5_2}
-                                              
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 )
 
@@ -562,13 +542,13 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 3F27AB6DCF2D2A7CD3DA0521902693BA;2743.
  ) 
 Here is how much of TeX's memory you used:
- 10711 strings out of 473899
- 169312 string characters out of 5722216
- 577734 words of memory out of 5000000
- 33374 multiletter control sequences out of 15000+600000
+ 10713 strings out of 473899
+ 168419 string characters out of 5722216
+ 577769 words of memory out of 5000000
+ 33375 multiletter control sequences out of 15000+600000
  568232 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,10n,79p,1047b,725s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,10n,79p,1047b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
 i600\tcss0700.pk> <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\
@@ -576,18 +556,17 @@ fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Diego De Pablo/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Dieg
 o De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
 fb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr5.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Diego De Pablo/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/Diego De Pablo
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Use
-rs/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmssbx10.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmssi8.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Diego De Pablo/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (6 pages, 225373 bytes).
+sfonts/cm/cmss10.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/Diego De Pablo/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Diego De Pabl
+o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:
+/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmssi8.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb><C:/Users/Diego De Pablo/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on report.pdf (6 pages, 218475 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

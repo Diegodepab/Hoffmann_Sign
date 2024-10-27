@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{19}
+\begin{thebibliography}{20}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -415,8 +415,23 @@ In: \bbtitle{Advances in Experimental Medicine and Biology}
 vol. \bseriesno{1082},
 pp. \bfpage{47}--\blpage{122}
 (\byear{2018}).
-doi:\doiurl{10.1007/978-3-319-93791-5_2}
+doi:\doiurl{10.1007/978-3-319-93791-52}
 \end{bchapter}
+\endbibitem
+
+%%% 20
+\bibitem{dozmorov2018}
+\begin{barticle}
+\bauthor{\bsnm{Dozmorov}, \binits{M.G.}}:
+\batitle{Github statistics as a measure of the impact of open-source
+  bioinformatics software}.
+\bjtitle{Frontiers in Bioengineering and Biotechnology}
+\bvolume{6},
+\bfpage{198}
+(\byear{2018}).
+doi:\doiurl{10.3389/fbioe.2018.00198}.
+\bcomment{Published 2018 Dec 18}
+\end{barticle}
 \endbibitem
 
 \end{thebibliography}
@@ -815,6 +830,19 @@ doi:\doiurl{10.1007/978-3-319-93791-5_2}
   <volume>1082</volume>
   <fpage>47</fpage>
   <lpage>-122</lpage>
+</bibl>
+
+<bibl id="B20">
+  <title><p>GitHub Statistics as a Measure of the Impact of Open-Source
+  Bioinformatics Software</p></title>
+  <aug>
+    <au><snm>Dozmorov</snm><fnm>M. G.</fnm></au>
+  </aug>
+  <source>Frontiers in Bioengineering and Biotechnology</source>
+  <pubdate>2018</pubdate>
+  <volume>6</volume>
+  <fpage>198</fpage>
+  <note>Published 2018 Dec 18</note>
 </bibl>
 
 </refgrp>
