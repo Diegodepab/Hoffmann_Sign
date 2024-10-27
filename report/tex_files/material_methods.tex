@@ -1,1 +1,70 @@
-\section{Materiales y métodos}
+\section{Objetivos}
+
+Explorar las interacciones entre genes y proteínas asociadas al Signo de Hoffman, utilizando bases de datos bioinformáticas y herramientas de análisis de redes para identificar posibles grupos funcionales y patrones de interacción relevantes.
+
+\subsection{Objetivos Específicos}
+\begin{enumerate}
+	\item Identificar genes asociados al signo de Hoffman mediante la utilización de la Human Phenotype Ontology (HPO) y otras bases de datos relevantes.
+	\item Construir una red de interacciones proteína-proteína (PPI) basada en los genes obtenidos, utilizando StringDB para analizar las interacciones de las proteínas codificadas por estos genes.
+	\item Aplicar algoritmos de análisis de redes, como iGraph, para calcular métricas topológicas y determinar características clave de la red.
+	\item Aplicar clustering en la red de interacción para identificar grupos de genes o proteínas que presenten una alta conectividad.
+	\item Determinar las principales funciones biológicas y vías metabólicas en las que están involucrados los genes identificados mediante enriquecimiento funcional.
+\end{enumerate}
+
+\section{Materiales}
+
+El estudio se apoyó en diversas herramientas, bases de datos especializadas y lenguajes de programación. Para aplicar preprocesamiento de datos biológicos y lograr un buen análisis de redes. A continuación, se detalla cada uno de los materiales empleados para la realización de este trabajo.
+
+\subsection{Bases de datos}
+
+\subsubsection{Human Phenotype Ontology (HPO)}
+Es una base de datos que estandariza la representación de los fenotipos clínicos humanos y proporciona anotaciones de genes y enfermedades asociadas a cada fenotipo\cite{gargano2024}. Se utilizó HPO para identificar genes asociados al Signo de Hoffman, como parte del análisis de las interacciones genéticas. La ontología HPO fue fundamental para explorar las conexiones entre el Signo de Hoffman y diversos genes. Las consultas se realizaron mediante la API de HPO para obtener conjuntos de genes asociados a fenotipos de interés.
+
+\subsubsection{StringDB}
+La base de datos STRING (\textit{Search Tool for the Retrieval of Interacting Genes/Proteins}) se utilizó para construir redes de interacciones proteína-proteína (PPI) a partir de los genes identificados con HPO. STRINGDB es una base de datos que integra datos experimentales, predicciones computacionales y literatura científica para proporcionar información sobre interacciones proteicas \cite{szklarczyk2019}. A través de la API de StringDB, se obtuvo redes de interacción que sirvieron como base para los análisis de conectividad y agrupamiento de proteínas.
+
+\subsection{Lenguajes de Programación}
+
+\subsubsection{R}
+El lenguaje de programación \textit{R} se utilizó en diferentes etapas del análisis, principalmente para el procesamiento de datos, la realización de análisis estadísticos y la visualización gráfica de resultados, específicamente fue usado la versión 4.3.3. R es ampliamente utilizado en bioinformática debido a su potente ecosistema de paquetes y librerías diseñados para el análisis de datos biológicos \cite{chan2018}. En este trabajo, R fue empleado para manipular los conjuntos de genes obtenidos \textbf{(INSERTAR MÁS CUANDO AVANCEMOS LA METODOLOGÍA además que )}
+
+\subsubsection{Python}
+El lenguaje de programación \textit{Python} fue clave para la automatización de tareas, consultas a bases de datos, y análisis de redes. Python cuenta con un extenso conjunto de librerías que facilitan tanto la extracción de datos desde APIs como el análisis y modelado de redes. A continuación, se describen las librerías específicas empleadas en este estudio:
+
+\begin{itemize}
+	\item \textbf{iGraph}: ?
+	\item \textbf{Matplotlib} y \textbf{Seaborn}: ?
+	
+	\item \textbf{Requests}: ?
+	\item \textbf{Pandas}: ?
+\end{itemize}
+
+\subsection{Software y Herramientas Computacionales}
+
+\subsubsection{Entornos de Programación y Computación}
+Para el desarrollo de los scripts y la ejecución de los análisis, se utilizó un entorno de programación basado en \textit{Jupyter Notebooks}, un entorno interactivo que facilita la escritura de código Python y la generación de gráficos en tiempo real. Los Notebooks son una herramienta ideal para integrar código, resultados y anotaciones de manera clara y ordenada.
+
+Además, se emplearon editores de texto como \textit{Visual Studio Code} y \textit{RStudio} para escribir y depurar el código en Python y R, respectivamente. Ambos entornos ofrecen características avanzadas de edición.
+
+\subsubsection{GitHub}
+El control de versiones y la gestión de código se realizó mediante la plataforma \textit{GitHub}. A través de GitHub, se gestionaron los scripts de Python y R, así como los datos intermedios generados durante el análisis. GitHub es ...
+
+\subsubsection{API de HPO y StringDB}
+La API de \textit{Human Phenotype Ontology (HPO)} y la API de \textit{StringDB} ?? hace falta mencioanr las API por separado?
+
+\subsection{Algoritmos de Análisis}
+
+Posible texto:
+
+Para evaluar las redes de interacción obtenidas y realizar el análisis de agrupamiento, se utilizaron diversos algoritmos implementados en las librerías antes mencionadas:
+
+\begin{itemize}
+	\item \textbf{Algoritmo de Clustering (Louvain o Leiden)}: Estos algoritmos fueron utilizados para detectar comunidades o clusters en las redes de interacción proteína-proteína. El algoritmo de Louvain es ampliamente reconocido por su eficiencia en la detección de clusters grandes en redes de gran escala. Leiden, una mejora del método Louvain, también fue considerado por su capacidad para identificar clusters con mayor precisión.
+	
+	\item \textbf{Métricas de Análisis de Redes}: Para caracterizar las propiedades estructurales de las redes generadas, se utilizaron métricas como la centralidad de grado, el coeficiente de agrupamiento, y la centralidad de intermediación. Estas métricas permiten entender cómo los genes o proteínas se conectan entre sí dentro de la red y cuáles son los nodos más relevantes en términos biológicos.
+	
+	\item \textbf{Enriquecimiento Funcional}: Una vez identificados los clusters, se llevó a cabo un análisis de enriquecimiento funcional para determinar qué funciones biológicas, rutas metabólicas o procesos celulares están sobrerrepresentados en los grupos de genes o proteínas detectados. Este análisis es fundamental para interpretar los resultados en un contexto biológico.
+\end{itemize}
+
+
+\section{Métodos}
