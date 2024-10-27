@@ -4,6 +4,7 @@ import requests
 HPO="HP:0031993"
 HPO_GENES=f"https://ontology.jax.org/api/network/annotation/{HPO}/download/gene"
 HPO_DISEASES=f"https://ontology.jax.org/api/network/annotation/{HPO}/download/disease"
+
 def download_data(url, filename):
     response = requests.get(url)
     if response.status_code == 200:
