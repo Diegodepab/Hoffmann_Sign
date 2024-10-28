@@ -26,18 +26,44 @@ La base de datos STRING (\textit{Search Tool for the Retrieval of Interacting Ge
 \subsection{Lenguajes de Programación}
 
 \subsubsection{R}
-El lenguaje de programación \textit{R} se utilizó en diferentes etapas del análisis, principalmente para el procesamiento de datos, la realización de análisis estadísticos y la visualización gráfica de resultados, específicamente fue usado la versión 4.3.3. R es ampliamente utilizado en bioinformática debido a su potente ecosistema de paquetes y librerías diseñados para el análisis de datos biológicos\cite{chan2018}. En este trabajo, R fue empleado para manipular los conjuntos de genes obtenidos \textbf{(INSERTAR MÁS CUANDO AVANCEMOS LA METODOLOGÍA además que )}
+El lenguaje de programación \textit{R} se utilizó en diferentes etapas del análisis, principalmente para el procesamiento de datos, la realización de análisis estadísticos y la visualización gráfica de resultados, específicamente fue usado la versión 4.3.3. R es ampliamente utilizado en bioinformática debido a su potente ecosistema de paquetes y librerías diseñados para el análisis de datos biológicos\cite{chan2018}. En este trabajo, R fue empleado para manipular los conjuntos de genes obtenidos. Algunas librerías utilizadas son:
+
+
+\paragraph{Manipulación y Visualización de Datos:}
+\begin{itemize}
+	\item \textbf{tidyverse}: Conjunto de paquetes (incluyendo \textit{dplyr} y \textit{ggplot2}) que permiten manipular y graficar datos. \textit{dplyr} facilita el manejo de grandes datasets, mientras que \textit{ggplot2} permite generar gráficos de alta calidad \cite{Wickham2019}.
+\end{itemize}
+
+\paragraph{Análisis Bioinformático:}
+\begin{itemize}
+	\item \textbf{Bioconductor}: Conjunto de paquetes especializados en el análisis de datos genómicos. Fue utilizado para realizar análisis detallados de genes y anotaciones fenotípicas en el contexto del Signo de Hoffman \cite{Huber2015}.
+	\item \textbf{iGraph para R}: Versión de iGraph en R, utilizada para la comparación de redes de interacción generadas en Python y el análisis estadístico de propiedades de red \cite{Csardi2006}.
+\end{itemize}
+
 
 \subsubsection{Python}
 El lenguaje de programación \textit{Python} fue clave para la automatización de tareas, consultas a bases de datos, y análisis de redes. Python cuenta con un extenso conjunto de librerías que facilitan tanto la extracción de datos desde APIs como el análisis y modelado de redes. A continuación, se describen las librerías específicas empleadas en este estudio:
 
+\paragraph{Análisis de Redes y Grafos:}
 \begin{itemize}
-	\item \textbf{iGraph}: ?
-	\item \textbf{Matplotlib} y \textbf{Seaborn}: ?
-	
-	\item \textbf{Requests}: ?
-	\item \textbf{Pandas}: ?
+	\item \textbf{iGraph}: Utilizada en el cálculo de métricas topológicas, análisis de comunidades y otras manipulaciones de redes complejas \cite{igraph2006}.
+	\item \textbf{NetworkX}: Empleada como complemento de iGraph para la visualización y análisis interactivo de grafos, permitiendo inspeccionar la estructura y propiedades de redes de interacción proteína-proteína (PPI) \cite{hagberg2008}.
 \end{itemize}
+
+\paragraph{Visualización de Datos:}
+\begin{itemize}
+	\item \textbf{Matplotlib}: Proporciona las bases para crear gráficos y representaciones visuales básicas en Python, utilizadas en la representación gráfica de resultados bioinformáticos \cite{Hunter2007}.
+	\item \textbf{Seaborn}: Ofrece una visualización de datos avanzada y estilizada, ideal para gráficos estadísticos que ayudan a visualizar las propiedades estructurales de redes y distribuciones de datos \cite{Waskom2021}.
+\end{itemize}
+
+\paragraph{Extracción y Manipulación de Datos:}
+\begin{itemize}
+	\item \textbf{Requests}: Se utilizó para realizar consultas a APIs como HPO y StringDB, a fin de recuperar datos de interacciones y anotaciones genéticas necesarias para los análisis \cite{Requests2020}.
+	\item \textbf{Pandas}: Herramienta de manipulación de datos, utilizada para estructurar y limpiar datos previos a su análisis en redes. Facilita la gestión de grandes volúmenes de datos de genes y proteínas \cite{McKinney2010}.
+\end{itemize}
+
+
+
 
 \subsection{Software y Herramientas Computacionales}
 
@@ -55,17 +81,23 @@ La API de \textit{Human Phenotype Ontology (HPO)} y la API de \textit{StringDB} 
 
 \subsection{Algoritmos de Análisis}
 
-Posible texto:
-
-Para evaluar las redes de interacción obtenidas y realizar el análisis de agrupamiento, se utilizaron diversos algoritmos implementados en las librerías antes mencionadas:
+Para evaluar las redes de interacción obtenidas y realizar el análisis de agrupamiento, se utilizaron diversos algoritmos implementados en las librerías antes mencionadas. Cada algoritmo contribuye de manera única al análisis de la estructura y conectividad de las redes de interacción, permitiendo detectar patrones y comunidades relevantes en el contexto de las redes proteína-proteína.
+\\
 
 \begin{itemize}
-	\item \textbf{Algoritmo de Clustering (Louvain o Leiden)}: Estos algoritmos fueron utilizados para detectar comunidades o clusters en las redes de interacción proteína-proteína. El algoritmo de Louvain es ampliamente reconocido por su eficiencia en la detección de clusters grandes en redes de gran escala. Leiden, una mejora del método Louvain, también fue considerado por su capacidad para identificar clusters con mayor precisión.
+	\item \textbf{Algoritmo de Clustering (Louvain)}: Este algoritmo optimiza la partición de una red maximizando su modularidad, lo cual es especialmente útil en redes grandes y complejas. Es ampliamente utilizado para detectar comunidades en redes biológicas, proporcionando un análisis modular efectivo de interacciones genéticas \cite{Blondel2008}.
 	
-	\item \textbf{Métricas de Análisis de Redes}: Para caracterizar las propiedades estructurales de las redes generadas, se utilizaron métricas como la centralidad de grado, el coeficiente de agrupamiento, y la centralidad de intermediación. Estas métricas permiten entender cómo los genes o proteínas se conectan entre sí dentro de la red y cuáles son los nodos más relevantes en términos biológicos.
+	\item \textbf{Algoritmo de Girvan-Newman}: Este algoritmo detecta comunidades en redes complejas mediante la eliminación iterativa de enlaces con la mayor intermediación, revelando así la estructura modular subyacente. Es particularmente útil en redes densas donde se busca identificar patrones de comunidades \cite{Girvan2002}.
 	
-	\item \textbf{Enriquecimiento Funcional}: Una vez identificados los clusters, se llevó a cabo un análisis de enriquecimiento funcional para determinar qué funciones biológicas, rutas metabólicas o procesos celulares están sobrerrepresentados en los grupos de genes o proteínas detectados. Este análisis es fundamental para interpretar los resultados en un contexto biológico.
+	\item \textbf{Algoritmo de Optimización Voraz}: Este enfoque de resolución de problemas realiza decisiones locales en cada paso, eligiendo la opción más beneficiosa sin considerar impactos a largo plazo. Utilizado para maximizar la modularidad en redes, es eficaz para identificar comunidades cuando se requieren decisiones rápidas \cite{Fortunato2010}.
+	
+	\item \textbf{Propagación de Etiquetas}: Este algoritmo agrupa datos según su similitud, sin la necesidad de especificar el número de clústeres a priori, haciéndolo adecuado para una exploración inicial de la estructura de la red \cite{Raghavan2007}.
+	
+	\item \textbf{Métricas de Análisis de Redes}: Para caracterizar las propiedades estructurales de las redes generadas, se emplearon métricas como la centralidad de grado, el coeficiente de agrupamiento y la centralidad de intermediación. Estas métricas permiten comprender cómo los genes o proteínas se conectan entre sí dentro de la red y resaltar los nodos más relevantes en términos biológicos.
+	
+	\item \textbf{Enriquecimiento Funcional}: Una vez identificados los clusters, se realizó un análisis de enriquecimiento funcional para determinar qué funciones biológicas, rutas metabólicas o procesos celulares están sobrerrepresentados en los grupos de genes o proteínas detectados. Este análisis es fundamental para interpretar los resultados en un contexto biológico.
 \end{itemize}
+
 
 
 \section{Métodos}

@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{20}
+\begin{thebibliography}{33}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -420,6 +420,125 @@ doi:\doiurl{10.1007/978-3-319-93791-52}
 \endbibitem
 
 %%% 20
+\bibitem{Wickham2019}
+\begin{barticle}
+\bauthor{\bsnm{Wickham}, \binits{H.}}, \betal:
+\batitle{Welcome to the tidyverse}.
+\bjtitle{Journal of Open Source Software}
+\bvolume{4}(\bissue{43}),
+\bfpage{1686}
+(\byear{2019}).
+doi:\doiurl{10.21105/joss.01686}.
+Accessed 2024-10-01
+\end{barticle}
+\endbibitem
+
+%%% 21
+\bibitem{Huber2015}
+\begin{barticle}
+\bauthor{\bsnm{Huber}, \binits{W.}}, \betal:
+\batitle{Orchestrating high-throughput genomic analysis with bioconductor}.
+\bjtitle{Nature Methods}
+\bvolume{12},
+\bfpage{115}--\blpage{121}
+(\byear{2015}).
+doi:\doiurl{10.1038/nmeth.3252}.
+Accessed 2024-10-01
+\end{barticle}
+\endbibitem
+
+%%% 22
+\bibitem{Csardi2006}
+\begin{botherref}
+\oauthor{\bsnm{Csárdi}, \binits{G.}},
+\oauthor{\bsnm{Nepusz}, \binits{T.}}:
+The igraph software package for complex network research.
+InterJournal, Complex Systems
+\textbf{1695}
+(2006).
+Accessed 2024-10-01
+\end{botherref}
+\endbibitem
+
+%%% 23
+\bibitem{igraph2006}
+\begin{botherref}
+\oauthor{\bsnm{Csárdi}, \binits{G.}},
+\oauthor{\bsnm{Nepusz}, \binits{T.}}:
+The igraph software package for complex network research.
+InterJournal, Complex Systems
+\textbf{1695}
+(2006).
+Accessed 2024-10-01
+\end{botherref}
+\endbibitem
+
+%%% 24
+\bibitem{hagberg2008}
+\begin{botherref}
+\oauthor{\bsnm{Aric A.~Hagberg}, \binits{D.A.S.}},
+\oauthor{\bsnm{Swart}, \binits{P.J.}}:
+Exploring network structure, dynamics, and function using networkx.
+Proceedings of the 7th Python in Science Conference,
+11--15
+(2008).
+Accessed 2024-10-01
+\end{botherref}
+\endbibitem
+
+%%% 25
+\bibitem{Hunter2007}
+\begin{barticle}
+\bauthor{\bsnm{Hunter}, \binits{J.D.}}:
+\batitle{Matplotlib: A 2d graphics environment}.
+\bjtitle{Computing in Science \& Engineering}
+\bvolume{9}(\bissue{3}),
+\bfpage{90}--\blpage{95}
+(\byear{2007}).
+doi:\doiurl{10.1109/MCSE.2007.55}.
+Accessed 2024-10-01
+\end{barticle}
+\endbibitem
+
+%%% 26
+\bibitem{Waskom2021}
+\begin{barticle}
+\bauthor{\bsnm{Waskom}, \binits{M.L.}}:
+\batitle{Seaborn: Statistical data visualization}.
+\bjtitle{Journal of Open Source Software}
+\bvolume{6}(\bissue{60}),
+\bfpage{3021}
+(\byear{2021}).
+doi:\doiurl{10.21105/joss.03021}.
+Accessed 2024-10-01
+\end{barticle}
+\endbibitem
+
+%%% 27
+\bibitem{Requests2020}
+\begin{botherref}
+\oauthor{\bsnm{Reitz}, \binits{K.}},
+\oauthor{\bsnm{Benfield}, \binits{C.}}:
+Requests: Http for humans.
+Python Software Foundation
+(2020).
+Accessed 2024-10-01
+\end{botherref}
+\endbibitem
+
+%%% 28
+\bibitem{McKinney2010}
+\begin{botherref}
+\oauthor{\bsnm{McKinney}, \binits{W.}}:
+Data structures for statistical computing in python.
+Proceedings of the 9th Python in Science Conference,
+51--56
+(2010).
+Accessed 2024-10-01
+\end{botherref}
+\endbibitem
+
+%%% 29
 \bibitem{dozmorov2018}
 \begin{barticle}
 \bauthor{\bsnm{Dozmorov}, \binits{M.G.}}:
@@ -431,6 +550,65 @@ doi:\doiurl{10.1007/978-3-319-93791-52}
 (\byear{2018}).
 doi:\doiurl{10.3389/fbioe.2018.00198}.
 \bcomment{Published 2018 Dec 18}
+\end{barticle}
+\endbibitem
+
+%%% 30
+\bibitem{Blondel2008}
+\begin{barticle}
+\bauthor{\bsnm{Blondel}, \binits{V.D.}},
+\bauthor{\bsnm{Guillaume}, \binits{J.-L.}},
+\bauthor{\bsnm{Lambiotte}, \binits{R.}},
+\bauthor{\bsnm{Lefebvre}, \binits{E.}}:
+\batitle{Fast unfolding of communities in large networks}.
+\bjtitle{Journal of Statistical Mechanics: Theory and Experiment}
+\bvolume{2008}(\bissue{10}),
+\bfpage{10008}
+(\byear{2008}).
+Accessed 2024-10-01
+\end{barticle}
+\endbibitem
+
+%%% 31
+\bibitem{Girvan2002}
+\begin{barticle}
+\bauthor{\bsnm{Girvan}, \binits{M.}},
+\bauthor{\bsnm{Newman}, \binits{M.E.J.}}:
+\batitle{Community structure in social and biological networks}.
+\bjtitle{Proceedings of the National Academy of Sciences}
+\bvolume{99}(\bissue{12}),
+\bfpage{7821}--\blpage{7826}
+(\byear{2002}).
+Accessed 2024-10-01
+\end{barticle}
+\endbibitem
+
+%%% 32
+\bibitem{Fortunato2010}
+\begin{barticle}
+\bauthor{\bsnm{Fortunato}, \binits{S.}}:
+\batitle{Community detection in graphs}.
+\bjtitle{Physics Reports}
+\bvolume{486}(\bissue{3-5}),
+\bfpage{75}--\blpage{174}
+(\byear{2010}).
+Accessed 2024-10-01
+\end{barticle}
+\endbibitem
+
+%%% 33
+\bibitem{Raghavan2007}
+\begin{barticle}
+\bauthor{\bsnm{Raghavan}, \binits{U.N.}},
+\bauthor{\bsnm{Albert}, \binits{R.}},
+\bauthor{\bsnm{Kumara}, \binits{S.}}:
+\batitle{Near linear time algorithm to detect community structures in
+  large-scale networks}.
+\bjtitle{Physical Review E}
+\bvolume{76}(\bissue{3}),
+\bfpage{036106}
+(\byear{2007}).
+Accessed 2024-10-01
 \end{barticle}
 \endbibitem
 
@@ -833,6 +1011,125 @@ doi:\doiurl{10.3389/fbioe.2018.00198}.
 </bibl>
 
 <bibl id="B20">
+  <title><p>Welcome to the Tidyverse</p></title>
+  <aug>
+    <au><snm>Wickham</snm><fnm>H</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Journal of Open Source Software</source>
+  <pubdate>2019</pubdate>
+  <volume>4</volume>
+  <issue>43</issue>
+  <fpage>1686</fpage>
+  <url>https://www.tidyverse.org/</url>
+</bibl>
+
+<bibl id="B21">
+  <title><p>Orchestrating high-throughput genomic analysis with
+  Bioconductor</p></title>
+  <aug>
+    <au><snm>Huber</snm><fnm>W</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Nature Methods</source>
+  <pubdate>2015</pubdate>
+  <volume>12</volume>
+  <fpage>115</fpage>
+  <lpage>-121</lpage>
+  <url>https://bioconductor.org/</url>
+</bibl>
+
+<bibl id="B22">
+  <title><p>The igraph software package for complex network
+  research</p></title>
+  <aug>
+    <au><snm>Csárdi</snm><fnm>G</fnm></au>
+    <au><snm>Nepusz</snm><fnm>T</fnm></au>
+  </aug>
+  <source>InterJournal, Complex Systems</source>
+  <pubdate>2006</pubdate>
+  <volume>1695</volume>
+  <url>http://igraph.org</url>
+</bibl>
+
+<bibl id="B23">
+  <title><p>The igraph software package for complex network
+  research</p></title>
+  <aug>
+    <au><snm>Csárdi</snm><fnm>G</fnm></au>
+    <au><snm>Nepusz</snm><fnm>T</fnm></au>
+  </aug>
+  <source>InterJournal, Complex Systems</source>
+  <pubdate>2006</pubdate>
+  <volume>1695</volume>
+  <url>http://igraph.org</url>
+</bibl>
+
+<bibl id="B24">
+  <title><p>Exploring Network Structure, Dynamics, and Function using
+  NetworkX</p></title>
+  <aug>
+    <au><snm>Aric A. Hagberg</snm><fnm>DAS</fnm></au>
+    <au><snm>Swart</snm><fnm>PJ</fnm></au>
+  </aug>
+  <source>Proceedings of the 7th Python in Science Conference</source>
+  <pubdate>2008</pubdate>
+  <fpage>11</fpage>
+  <lpage>-15</lpage>
+  <url>https://networkx.github.io/documentation/latest/</url>
+</bibl>
+
+<bibl id="B25">
+  <title><p>Matplotlib: A 2D Graphics Environment</p></title>
+  <aug>
+    <au><snm>Hunter</snm><fnm>J. D.</fnm></au>
+  </aug>
+  <source>Computing in Science \& Engineering</source>
+  <pubdate>2007</pubdate>
+  <volume>9</volume>
+  <issue>3</issue>
+  <fpage>90</fpage>
+  <lpage>-95</lpage>
+  <url>https://matplotlib.org/</url>
+</bibl>
+
+<bibl id="B26">
+  <title><p>Seaborn: Statistical Data Visualization</p></title>
+  <aug>
+    <au><snm>Waskom</snm><fnm>ML</fnm></au>
+  </aug>
+  <source>Journal of Open Source Software</source>
+  <pubdate>2021</pubdate>
+  <volume>6</volume>
+  <issue>60</issue>
+  <fpage>3021</fpage>
+  <url>https://seaborn.pydata.org/</url>
+</bibl>
+
+<bibl id="B27">
+  <title><p>Requests: HTTP for Humans</p></title>
+  <aug>
+    <au><snm>Reitz</snm><fnm>K</fnm></au>
+    <au><snm>Benfield</snm><fnm>C</fnm></au>
+  </aug>
+  <source>Python Software Foundation</source>
+  <pubdate>2020</pubdate>
+  <url>https://requests.readthedocs.io/</url>
+</bibl>
+
+<bibl id="B28">
+  <title><p>Data Structures for Statistical Computing in Python</p></title>
+  <aug>
+    <au><snm>McKinney</snm><fnm>W</fnm></au>
+  </aug>
+  <source>Proceedings of the 9th Python in Science Conference</source>
+  <pubdate>2010</pubdate>
+  <fpage>51</fpage>
+  <lpage>-56</lpage>
+  <url>https://pandas.pydata.org/</url>
+</bibl>
+
+<bibl id="B29">
   <title><p>GitHub Statistics as a Measure of the Impact of Open-Source
   Bioinformatics Software</p></title>
   <aug>
@@ -843,6 +1140,71 @@ doi:\doiurl{10.3389/fbioe.2018.00198}.
   <volume>6</volume>
   <fpage>198</fpage>
   <note>Published 2018 Dec 18</note>
+</bibl>
+
+<bibl id="B30">
+  <title><p>Fast unfolding of communities in large networks</p></title>
+  <aug>
+    <au><snm>Blondel</snm><fnm>VD</fnm></au>
+    <au><snm>Guillaume</snm><fnm>JL</fnm></au>
+    <au><snm>Lambiotte</snm><fnm>R</fnm></au>
+    <au><snm>Lefebvre</snm><fnm>E</fnm></au>
+  </aug>
+  <source>Journal of Statistical Mechanics: Theory and Experiment</source>
+  <publisher>IOP Publishing</publisher>
+  <pubdate>2008</pubdate>
+  <volume>2008</volume>
+  <issue>10</issue>
+  <fpage>P10008</fpage>
+  <url>https://doi.org/10.1088/1742-5468/2008/10/P10008</url>
+</bibl>
+
+<bibl id="B31">
+  <title><p>Community structure in social and biological networks</p></title>
+  <aug>
+    <au><snm>Girvan</snm><fnm>M.</fnm></au>
+    <au><snm>Newman</snm><fnm>M.E.J.</fnm></au>
+  </aug>
+  <source>Proceedings of the National Academy of Sciences</source>
+  <publisher>National Academy of Sciences</publisher>
+  <pubdate>2002</pubdate>
+  <volume>99</volume>
+  <issue>12</issue>
+  <fpage>7821</fpage>
+  <lpage>-7826</lpage>
+  <url>https://doi.org/10.1073/pnas.122653799</url>
+</bibl>
+
+<bibl id="B32">
+  <title><p>Community detection in graphs</p></title>
+  <aug>
+    <au><snm>Fortunato</snm><fnm>S</fnm></au>
+  </aug>
+  <source>Physics Reports</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2010</pubdate>
+  <volume>486</volume>
+  <issue>3-5</issue>
+  <fpage>75</fpage>
+  <lpage>-174</lpage>
+  <url>https://doi.org/10.1016/j.physrep.2009.11.002</url>
+</bibl>
+
+<bibl id="B33">
+  <title><p>Near linear time algorithm to detect community structures in
+  large-scale networks</p></title>
+  <aug>
+    <au><snm>Raghavan</snm><fnm>UN</fnm></au>
+    <au><snm>Albert</snm><fnm>R</fnm></au>
+    <au><snm>Kumara</snm><fnm>S</fnm></au>
+  </aug>
+  <source>Physical Review E</source>
+  <publisher>American Physical Society</publisher>
+  <pubdate>2007</pubdate>
+  <volume>76</volume>
+  <issue>3</issue>
+  <fpage>036106</fpage>
+  <url>https://doi.org/10.1103/PhysRevE.76.036106</url>
 </bibl>
 
 </refgrp>
