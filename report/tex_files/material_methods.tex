@@ -101,3 +101,29 @@ Para evaluar las redes de interacción obtenidas y realizar el análisis de agru
 
 
 \section{Métodos}
+
+\subsection{Flujo de trabajo}
+
+\begin{figure}[h!]
+	\includegraphics[width=.95\textwidth]{figures/workflow.png}
+	\caption{Flujo de trabajo}
+	\label{fig:workflow}
+\end{figure}
+
+\subsection{Obtención de genes relacionados con signo de Hoffman}
+
+Se descargaron los genes relacionados con el termino HP:0031993 a través de la API de HPO a través del endpoint \url{https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene} 
+\subsection{Obtención de red de interacciones de genes}
+
+Se descargó una red de interacciones génicas a partir de la base de datos STRING. Posteriormente, los identificadores de las proteínas se transformaron a identificadores estándar HUGO.
+
+\subsection{Propagación de red}
+
+Se utilizó el algoritmo DIAMoND para propagar los genes relacionados con el fenotipo de signo de hoffman en la red de interacciones con el objetivo de formar una subred de genes relacionadas con el signo de hoffman.
+
+\subsection{Análisis de red}
+
+Se llevó a cabo un analisis de blablabla...
+\subsection{Análisis de enriquecimiento funcional}
+
+Se llevo a cabo un análisis funcional con ... 
