@@ -1,5 +1,6 @@
 import requests
 
+#función que busca genes asociados a un fenotipo específico utilizando la API de HPO
 # URL base del HPO
 HPO="HP:0031993"
 HPO_GENES=f"https://ontology.jax.org/api/network/annotation/{HPO}/download/gene"
@@ -10,9 +11,9 @@ def download_data(url, filename):
     if response.status_code == 200:
         with open(filename, 'wb') as file:
             file.write(response.content)
-        print(f"Data successfully downloaded to {filename}")
+        print(f"Datos descargados con éxito, guardados como: {filename}")
     else:
-        print(f"Failed to download data. Status code: {response.status_code}")
+        print(f"Error al descargar los datos. Código de estado: {response.status_code}")
 
 # Descargar genes y enfermedades
 download_data(HPO_GENES, "genes.tsv")
