@@ -14,15 +14,15 @@ Explorar las interacciones entre genes y proteínas asociadas al Signo de Hoffma
 
 \section{Materiales y Herramientas}
 
-El estudio se apoyó en diversas herramientas, bases de datos especializadas y lenguajes de programación. Para aplicar preprocesamiento de datos biológicos y lograr un buen análisis de redes. A continuación, se detalla cada uno de los materiales empleados para la realización de este trabajo.
+A continuación, se detalla cada uno de los materiales empleados para la realización de este trabajo.
 
 \subsection{Bases de datos}
 
 \subsubsection{Human Phenotype Ontology (HPO)}
-Es una base de datos que estandariza la representación de los fenotipos clínicos humanos y proporciona anotaciones de genes y enfermedades asociadas a cada fenotipo\cite{gargano2024}. Se utilizó HPO para identificar genes asociados al Signo de Hoffman, como parte del análisis de las interacciones genéticas. La ontología HPO fue fundamental para explorar las conexiones entre el Signo de Hoffman y diversos genes. Las consultas se realizaron mediante la API de HPO para obtener conjuntos de genes asociados a fenotipos de interés.
+ Se utilizó HPO para identificar genes asociados al Signo de Hoffman, como parte del análisis de las interacciones genéticas. HPO es una base de datos que estandariza los fenotipos clínicos humanos y vincula genes y enfermedades a cada fenotipo.\cite{gargano2024}.
 
 \subsubsection{StringDB}
-La base de datos STRING (\textit{Search Tool for the Retrieval of Interacting Genes/Proteins}) se utilizó para construir redes de interacciones proteína-proteína (PPI) a partir de los genes identificados con HPO. STRINGDB es una base de datos que integra datos experimentales, predicciones computacionales y literatura científica para proporcionar información sobre interacciones proteicas \cite{szklarczyk2019}. A través de la API de StringDB, se obtuvo redes de interacción que sirvieron como base para los análisis de conectividad y agrupamiento de proteínas.
+La base de datos STRING (\textit{Search Tool for the Retrieval of Interacting Genes/Proteins}) se utilizó para construir redes de interacciones proteína-proteína (PPI) a partir de los genes identificados con HPO. STRINGDB es una base de datos que reúne datos experimentales, predicciones y literatura para informar sobre interacciones proteicas. \cite{szklarczyk2019}.
 
 \subsection{Lenguajes de Programación}
 
