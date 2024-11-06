@@ -115,8 +115,7 @@ Para evaluar las redes de interacción obtenidas y realizar el análisis de agru
 
 \subsection{Obtención de genes relacionados con signo de Hoffman}
 
-Para obtener los genes relacionados con el signo de Hoffman, identificado con el término HPO HP:0031993, se utilizó la API de la Ontología de Fenotipos Humanos (HPO). En este caso, se emplearon endpoints de la API que devuelven listas tanto de genes (\url{https://ontology.jax.org/api/network/annotation/{HPO}/download/gene}) como de enfermedades vinculadas al fenotipo de interés (\url{https://ontology.jax.org/api/network/annotation/{HPO}/download/disease}). Mediante una solicitud HTTP, se extrajo y almacenó esta información en archivos con formato .tsv, facilitando así su posterior análisis. Este enfoque automatizado asegura una recopilación de datos precisa y reproducible, optimizando la integración de datos fenotípicos en el análisis de redes genéticas.
-
+Para obtener los genes relacionados con el signo de Hoffman (HP:0031993), se utilizó la API de la Ontología de Fenotipos Humanos (HPO). En este caso, se emplearon endpoints de la API que devuelven listas tanto de genes (\url{https://ontology.jax.org/api/network/annotation/{HPO}/download/gene}) como de enfermedades vinculadas al fenotipo de interés (\url{https://ontology.jax.org/api/network/annotation/{HPO}/download/disease}). Mediante una solicitud HTTP, se extrajo y almacenó esta información en archivos con formato .tsv, facilitando así su posterior análisis. 
 
 
 \subsection{Obtención de red de interacciones de genes}
@@ -128,14 +127,9 @@ Se descargó una red de interacciones génicas a partir de la base de datos STRI
 Se utilizó el algoritmo DIAMoND para propagar los genes relacionados con el fenotipo de signo de hoffman en la red de interacciones con el objetivo de formar una subred de genes relacionadas con el signo de hoffman.
 
 \subsection{Análisis de red}
+Se aplicó el algoritmo de Louvain para identificar módulos funcionales en la red, agrupando nodos en función de la densidad de sus interacciones. Posteriormente, se calcularon métricas topológicas para analizar la estructura y el rol de los genes en la red. La centralidad de grado permitió identificar nodos con alta conectividad dentro de sus módulos, mientras que la centralidad de intermediación destacó los genes clave en el flujo de información entre módulos. Por último, la centralidad de cercanía ayudó a identificar nodos importantes para la cohesión interna de los módulos.
 
-Para identificar módulos funcionales en la red, se aplicó el algoritmo de Louvain, un método eficiente para detectar comunidades en redes grandes. Este algoritmo agrupa los nodos en función de la densidad de sus interacciones, dividiendo la red en clusters que representan módulos con una alta cohesión interna. Cada módulo contiene genes que están más conectados entre sí que con otros nodos de la red, permitiendo así la identificación de posibles grupos funcionales.
-
-A continuación, se calcularon métricas topológicas para analizar la estructura y el rol de los genes en la red. En primer lugar, la centralidad de grado indicó el nivel de conexión de cada gen dentro de la red, lo cual fue útil para identificar nodos con una elevada conectividad dentro de sus módulos. La centralidad de intermediación permitió identificar genes críticos en el flujo de información, que actúan como puentes o enlaces entre distintos módulos. Por último, la centralidad de cercanía mostró la rapidez con la que un gen puede acceder a otros genes en la red, lo que destaca los nodos importantes para la cohesión interna del módulo.
-\\
-
-Este análisis topológico facilitó la identificación de los genes más relevantes en cada módulo. Como resultado, se obtuvo una red dividida en módulos funcionales que representan grupos de genes potencialmente relacionados en términos biológicos.
-
+Este análisis facilitó la identificación de módulos funcionales representados por grupos de genes con posibles relaciones biológicas.
 
 \subsection{Análisis de enriquecimiento funcional}
 
