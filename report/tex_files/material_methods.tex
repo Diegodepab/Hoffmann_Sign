@@ -115,7 +115,10 @@ Para evaluar las redes de interacción obtenidas y realizar el análisis de agru
 
 \subsection{Obtención de genes relacionados con signo de Hoffman}
 
-Se descargaron los genes relacionados con el termino HP:0031993 a través de la API de HPO a través del endpoint \url{https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene} 
+Para obtener los genes relacionados con el signo de Hoffman, identificado con el término HPO HP:0031993, se utilizó la API de la Ontología de Fenotipos Humanos (HPO). En este caso, se emplearon endpoints de la API que devuelven listas tanto de genes (\url{https://ontology.jax.org/api/network/annotation/{HPO}/download/gene}) como de enfermedades vinculadas al fenotipo de interés (\url{https://ontology.jax.org/api/network/annotation/{HPO}/download/disease}). Mediante una solicitud HTTP, se extrajo y almacenó esta información en archivos con formato .tsv, facilitando así su posterior análisis. Este enfoque automatizado asegura una recopilación de datos precisa y reproducible, optimizando la integración de datos fenotípicos en el análisis de redes genéticas.
+
+
+
 \subsection{Obtención de red de interacciones de genes}
 
 Se descargó una red de interacciones génicas a partir de la base de datos STRING. Posteriormente, los identificadores de las proteínas se transformaron a identificadores estándar HUGO.
@@ -126,11 +129,13 @@ Se utilizó el algoritmo DIAMoND para propagar los genes relacionados con el fen
 
 \subsection{Análisis de red}
 
-Para identificar módulos funcionales en la red, aplicaremos el algoritmo de Louvain, que es un método eficiente para detectar comunidades en redes grandes. Este algoritmo agrupa nodos en función de la densidad de sus interacciones, dividiendo la red en clusters que representan módulos con una alta cohesión interna. Cada módulo contiene genes que están más conectados entre sí que con otros nodos de la red, lo que permite identificar posibles grupos funcionales.
+Para identificar módulos funcionales en la red, se aplicó el algoritmo de Louvain, un método eficiente para detectar comunidades en redes grandes. Este algoritmo agrupa los nodos en función de la densidad de sus interacciones, dividiendo la red en clusters que representan módulos con una alta cohesión interna. Cada módulo contiene genes que están más conectados entre sí que con otros nodos de la red, permitiendo así la identificación de posibles grupos funcionales.
 
-Luego, calcularemos métricas topológicas para analizar la estructura y el rol de los genes en la red. Primero, la centralidad de grado nos indicará qué tan conectado está cada gen dentro de la red; este valor es útil para identificar nodos bien conectados dentro de sus módulos. La centralidad de intermediación nos permitirá ver cuáles genes son críticos en el flujo de información, actuando como puentes o enlaces entre distintos módulos. Por último, la centralidad de cercanía nos ayuda a ver qué tan rápidamente un gen puede acceder a otros genes en la red, indicando nodos que son importantes para la cohesión interna del módulo.
+A continuación, se calcularon métricas topológicas para analizar la estructura y el rol de los genes en la red. En primer lugar, la centralidad de grado indicó el nivel de conexión de cada gen dentro de la red, lo cual fue útil para identificar nodos con una elevada conectividad dentro de sus módulos. La centralidad de intermediación permitió identificar genes críticos en el flujo de información, que actúan como puentes o enlaces entre distintos módulos. Por último, la centralidad de cercanía mostró la rapidez con la que un gen puede acceder a otros genes en la red, lo que destaca los nodos importantes para la cohesión interna del módulo.
+\\
 
-Este análisis topológico ayuda a identificar los genes más relevantes de cada módulo. Al final, tendremos una red dividida en módulos funcionales que representan grupos de genes potencialmente parecidos en términos biológicos.
+Este análisis topológico facilitó la identificación de los genes más relevantes en cada módulo. Como resultado, se obtuvo una red dividida en módulos funcionales que representan grupos de genes potencialmente relacionados en términos biológicos.
+
 
 \subsection{Análisis de enriquecimiento funcional}
 
