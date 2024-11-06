@@ -16,3 +16,4 @@ Rscript -e 'install.packages(readLines("Rreqs.txt"), lib="./R_packages")'
 
 # Imprimir mensaje de finalización
 echo "Instalación de dependencias completada con éxito.
+
