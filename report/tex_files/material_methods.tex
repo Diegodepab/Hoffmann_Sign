@@ -19,15 +19,14 @@ A continuación, se detalla cada uno de los materiales empleados para la realiza
 \subsection{Bases de datos}
 
 \subsubsection{Human Phenotype Ontology (HPO)}
- Se utilizó HPO para identificar genes asociados al Signo de Hoffman, como parte del análisis de las interacciones genéticas. HPO es una base de datos que estandariza los fenotipos clínicos humanos y vincula genes y enfermedades a cada fenotipo.\cite{gargano2024}.
-
+  Es una base de datos que estandariza los fenotipos clínicos humanos y vincula genes y enfermedades a cada fenotipo obteniendo las interacciones genéticas.\cite{gargano2024}. 
 \subsubsection{StringDB}
-La base de datos STRING (\textit{Search Tool for the Retrieval of Interacting Genes/Proteins}) se utilizó para construir redes de interacciones proteína-proteína (PPI) a partir de los genes identificados con HPO. STRINGDB es una base de datos que reúne datos experimentales, predicciones y literatura para informar sobre interacciones proteicas. \cite{szklarczyk2019}.
+La base de datos STRING (\textit{Search Tool for the Retrieval of Interacting Genes/Proteins}) es una base de datos que reúne datos experimentales, predicciones y literatura para informar sobre interacciones proteicas. \cite{szklarczyk2019}.
 
 \subsection{Lenguajes de Programación}
 
 \subsubsection{R}
-El lenguaje de programación \textit{R} se utilizó en diferentes etapas del análisis, principalmente para el procesamiento de datos, la realización de análisis estadísticos y la visualización gráfica de resultados, específicamente fue usado la versión 4.3.3. R es ampliamente utilizado en bioinformática debido a su potente ecosistema de paquetes y librerías diseñados para el análisis de datos biológicos\cite{chan2018}. En este trabajo, R fue empleado para manipular los conjuntos de genes obtenidos. Las librerías utilizadas son:
+El lenguaje de programación \textit{R} específicamente la versión 4.3.3. Es un lenguaje para exploración estadística y creación de gráficos. Es flexible, ampliable con paquetes y de código abierto bajo el proyecto GNU. \cite{chan2018}.
 
 
 \paragraph{Manipulación y Visualización de Datos:}
@@ -37,30 +36,30 @@ El lenguaje de programación \textit{R} se utilizó en diferentes etapas del an�
 
 \paragraph{Análisis Bioinformático:}
 \begin{itemize}
-	\item \textbf{Bioconductor}: Conjunto de paquetes especializados en el análisis de datos genómicos. Fue utilizado para realizar análisis detallados de genes y anotaciones fenotípicas en el contexto del Signo de Hoffman \cite{Huber2015}.
-	\item \textbf{iGraph para R}: Versión de iGraph en R, utilizada para la comparación de redes de interacción generadas en Python y el análisis estadístico de propiedades de red \cite{Csardi2006}.
+	\item \textbf{Bioconductor}: Conjunto de paquetes especializados en el análisis de datos genómicos. \cite{Huber2015}.
+	\item \textbf{iGraph para R}: Versión de iGraph en R, útil para la comparación de redes de interacción generadas en Python y el análisis estadístico de propiedades de red. \cite{Csardi2006}.
 \end{itemize}
 
 
 \subsubsection{Python}
-El lenguaje de programación \textit{Python} fue clave para la automatización de tareas, consultas a bases de datos, y análisis de redes. Python cuenta con un extenso conjunto de librerías que facilitan tanto la extracción de datos desde APIs como el análisis y modelado de redes. A continuación, se describen las librerías específicas empleadas en este estudio:
+El lenguaje de programación \textit{Python} es versátil y de alto nivel, usado en diversas aplicaciones.  Es interpretado, por lo que no requiere compilación previa, que permite el uso de librerías y APIs para diversas funciones. A continuación, se describen las librerías específicas empleadas en este estudio:
 
 \paragraph{Análisis de Redes y Grafos:}
 \begin{itemize}
-	\item \textbf{iGraph}: Utilizada en el cálculo de métricas topológicas, análisis de comunidades y otras manipulaciones de redes complejas \cite{igraph2006}.
-	\item \textbf{NetworkX}: Empleada como complemento de iGraph para la visualización y análisis interactivo de grafos, permitiendo inspeccionar la estructura y propiedades de redes de interacción proteína-proteína (PPI) \cite{hagberg2008}.
+	\item \textbf{iGraph}: Capaz de calcular métricas topológicas, análisis de comunidades y otras manipulaciones de redes complejas \cite{igraph2006}.
+	\item \textbf{NetworkX}: Complemento de iGraph para la visualización y análisis interactivo de grafos, permitiendo inspeccionar la estructura y propiedades de redes de interacción proteína-proteína (PPI) \cite{hagberg2008}.
 \end{itemize}
 
 \paragraph{Visualización de Datos:}
 \begin{itemize}
-	\item \textbf{Matplotlib}: Proporciona las bases para crear gráficos y representaciones visuales básicas en Python, utilizadas en la representación gráfica de resultados bioinformáticos \cite{Hunter2007}.
+	\item \textbf{Matplotlib}: Proporciona las bases para crear gráficos y representaciones visuales básicas en Python, útil en la representación gráfica de resultados bioinformáticos \cite{Hunter2007}.
 	\item \textbf{Seaborn}: Ofrece una visualización de datos avanzada y estilizada, ideal para gráficos estadísticos que ayudan a visualizar las propiedades estructurales de redes y distribuciones de datos \cite{Waskom2021}.
 \end{itemize}
 
 \paragraph{Extracción y Manipulación de Datos:}
 \begin{itemize}
-	\item \textbf{Requests}: Se utilizó para realizar consultas a APIs como HPO y StringDB, a fin de recuperar datos de interacciones y anotaciones genéticas necesarias para los análisis \cite{Requests2020}.
-	\item \textbf{Pandas}: Herramienta de manipulación de datos, utilizada para estructurar y limpiar datos previos a su análisis en redes. Facilita la gestión de grandes volúmenes de datos de genes y proteínas \cite{McKinney2010}.
+	\item \textbf{Requests}: Necesario para realizar consultas a APIs como HPO y StringDB, a fin de recuperar datos de interacciones. \cite{Requests2020}.
+	\item \textbf{Pandas}: Herramienta de manipulación de datos, utilizada para estructurar y limpiar datos previos a su análisis en redes.\cite{McKinney2010}.
 \end{itemize}
 
 
@@ -69,20 +68,13 @@ El lenguaje de programación \textit{Python} fue clave para la automatización d
 \subsection{Software y Herramientas Computacionales}
 
 \subsubsection{Entornos de Programación y Computación}
-Para el desarrollo de los scripts y la ejecución de los análisis, se utilizó un entorno de programación basado en \textit{Jupyter Notebooks}, un entorno interactivo que facilita la escritura de código Python y la generación de gráficos en tiempo real. Los Notebooks son una herramienta ideal para integrar código, resultados y anotaciones de manera clara y ordenada.
-
-Además, se emplearon editores de texto como \textit{Visual Studio Code} y \textit{RStudio} para escribir y depurar el código en Python y R, respectivamente. Ambos entornos ofrecen características avanzadas de edición.
+Para el desarrollo de los scripts y la ejecución de los análisis, existen editores de texto como \textit{Visual Studio Code} y \textit{RStudio} para escribir y depurar el código en Python y R, respectivamente. Ambos entornos ofrecen características avanzadas de edición.
 
 \subsubsection{GitHub}
-El control de versiones y la gestión de código se realizó mediante la plataforma \textit{GitHub}. A través de GitHub, se gestionaron los scripts de Python y R, así como los datos intermedios generados durante el análisis. GitHub es una plataforma de desarrollo colaborativo de software que permite a los usuarios almacenar, compartir y gestionar proyectos de código abierto. En el contexto de la bioinformática, GitHub se utiliza como una medida del impacto y la difusión de software, ya que proporciona estadísticas sobre el uso de repositorios, contribuciones de usuarios y la popularidad de diferentes proyectos\cite{dozmorov2018}. 
+Para el control de versiones y la gestión de código  existen plataformas como \textit{GitHub}. Que permite gestionar los scripts de Python y R, así como los datos intermedios generados durante el análisis. GitHub es una plataforma de desarrollo colaborativo de software que permite a los usuarios almacenar, compartir y gestionar proyectos de código abierto.\cite{dozmorov2018}. 
 
-
-\subsubsection{API de HPO y StringDB}
-La API de \textit{Human Phenotype Ontology (HPO)} y la API de \textit{StringDB} hace falta mencioanr las API por separado?
 
 \subsection{Algoritmos de Análisis}
-
-\textbf{!!!CAMBIAR CUANDO HAGAMOS METODOLOGIA}
 
 Para evaluar las redes de interacción obtenidas y realizar el análisis de agrupamiento, se utilizaron diversos algoritmos implementados en las librerías antes mencionadas. Cada algoritmo contribuye de manera única al análisis de la estructura y conectividad de las redes de interacción, permitiendo detectar patrones y comunidades relevantes en el contexto de las redes proteína-proteína.
 \\
