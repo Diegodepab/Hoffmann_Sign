@@ -76,15 +76,13 @@ Para el control de versiones y la gestión de código  existen plataformas como 
 
 \subsection{Algoritmos de Análisis}
 
-Para evaluar las redes de interacción obtenidas y realizar el análisis de agrupamiento, se utilizaron diversos algoritmos implementados en las librerías antes mencionadas. Cada algoritmo contribuye de manera única al análisis de la estructura y conectividad de las redes de interacción, permitiendo detectar patrones y comunidades relevantes en el contexto de las redes proteína-proteína.
+Para evaluar las redes de interacción obtenidas y realizar el análisis de agrupamiento, se utilizaron diversas variaciones de algoritmos conocidos:
 \\
 
 \begin{itemize}
 	\item \textbf{Algoritmo de Clustering (Louvain)}: Este algoritmo optimiza la partición de una red maximizando su modularidad, lo cual es especialmente útil en redes grandes y complejas. Es ampliamente utilizado para detectar comunidades en redes biológicas, proporcionando un análisis modular efectivo de interacciones genéticas \cite{Blondel2008}.
 	
-	\item \textbf{Algoritmo de Girvan-Newman}: Este algoritmo detecta comunidades en redes complejas mediante la eliminación iterativa de enlaces con la mayor intermediación, revelando así la estructura modular subyacente. Es particularmente útil en redes densas donde se busca identificar patrones de comunidades \cite{Girvan2002}.
-	
-	\item \textbf{Algoritmo de Optimización Voraz}: Este enfoque de resolución de problemas realiza decisiones locales en cada paso, eligiendo la opción más beneficiosa sin considerar impactos a largo plazo. Utilizado para maximizar la modularidad en redes, es eficaz para identificar comunidades cuando se requieren decisiones rápidas \cite{Fortunato2010}.
+	\item \textbf{DIAMOnD}: (A DIseAse MOdule Detection) identifica módulos de enfermedades en redes de interacción proteína-proteína al expandir conjuntos de genes conocidos con nodos topológicamente cercanos. Aunque prioriza bien genes asociados a enfermedades, su eficacia disminuye con grandes volúmenes de genes candidatos.\cite{Ghiassian2015}.
 	
 	\item \textbf{Propagación de Etiquetas}: Este algoritmo agrupa datos según su similitud, sin la necesidad de especificar el número de clústeres a priori, haciéndolo adecuado para una exploración inicial de la estructura de la red \cite{Raghavan2007}.
 	
@@ -112,11 +110,15 @@ Para obtener los genes relacionados con el signo de Hoffman (HP:0031993), se uti
 
 \subsection{Obtención de red de interacciones de genes}
 
-Se descargó una red de interacciones génicas a partir de la base de datos STRING. Posteriormente, los identificadores de las proteínas se transformaron a identificadores estándar HUGO.
+Para el análisis de las interacciones génicas, se obtuvo una red de interacciones a partir de la base de datos STRING.
+
+El archivo correspondiente a las interacciones de proteínas humanas (\textit{Homo sapiens}, ID taxonómico: 9606) fue descargado directamente desde \href{https://stringdb-downloads.org/download/protein.links.v12.0/9606.protein.links.v12.0.txt.gz}{el repositorio público de STRING} utilizando un comando en la consola.
+
+Posteriormente, las interacciones fueron filtradas aplicando un umbral mínimo de puntuación combinada (\textit{combined score}) de 700. Posteriormente los identificadores de las proteínas se transformaron a identificadores estándar HUGO.
 
 \subsection{Propagación de red}
 
-Se utilizó el algoritmo DIAMoND para propagar los genes relacionados con el fenotipo de signo de hoffman en la red de interacciones con el objetivo de formar una subred de genes relacionadas con el signo de hoffman.
+Se utilizó el algoritmo DIAMOnD para expandir genes relacionados con el signo de Hoffman en la red de interacciones proteína-proteína. El algoritmo parte de un conjunto inicial de genes de semilla, identificando nodos adicionales cercanos en términos de proximidad topológica, evaluando su conectividad mediante una distribución hipergeométrica. La selección de nodos se basa en su número de conexiones con los genes de semilla, priorizando aquellos que forman una subred coherente, en el proceso biológico del signo de Hoffman. Lo que resultó en una red enriquecida de genes candidatos, visualizados como una subred relacionada con el fenotipo.
 
 \subsection{Análisis de red}
 Se aplicó el algoritmo de Louvain para identificar módulos funcionales en la red, agrupando nodos en función de la densidad de sus interacciones. Posteriormente, se calcularon métricas topológicas para analizar la estructura y el rol de los genes en la red. La centralidad de grado permitió identificar nodos con alta conectividad dentro de sus módulos, mientras que la centralidad de intermediación destacó los genes clave en el flujo de información entre módulos. Por último, la centralidad de cercanía ayudó a identificar nodos importantes para la cohesión interna de los módulos.

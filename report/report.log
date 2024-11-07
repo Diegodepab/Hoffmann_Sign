@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  7 NOV 2024 01:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  7 NOV 2024 02:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,7 +475,7 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 
 \address@aff1=\toks37
 (tex_files/introduction.tex
-<figures/Kabir_Hoffmann__Sign.jpg, id=116, 370.38374pt x 462.97969pt>
+<figures/Kabir_Hoffmann__Sign.jpg, id=112, 370.38374pt x 462.97969pt>
 File: figures/Kabir_Hoffmann__Sign.jpg Graphic file (type jpg)
 <use figures/Kabir_Hoffmann__Sign.jpg>
 Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 5
@@ -516,27 +516,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
 
 [4]
-<figures/workflow.png, id=225, 1071.25218pt x 643.6547pt>
+<figures/workflow.png, id=220, 1071.25218pt x 643.6547pt>
 File: figures/workflow.png Graphic file (type png)
 <use figures/workflow.png>
-Package pdftex.def Info: figures/workflow.png  used on input line 103.
+Package pdftex.def Info: figures/workflow.png  used on input line 101.
 (pdftex.def)             Requested size: 342.9489pt x 206.0621pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 110--111
+Underfull \hbox (badness 1337) in paragraph at lines 108--109
 \OT1/cmtt/m/n/10 ontology . jax . org / api / network / annotation / {HPO} / do
 wnload / gene$[][]\OT1/cmr/m/n/10 ) como de
  []
 
 
 
-[5]) (tex_files/resultados.tex) (tex_files/discusion.tex)
-(tex_files/conclusiones.tex)
+[5]) (tex_files/resultados.tex
 
-[6 <./figures/workflow.png (PNG copy)>] (report.bbl
+[6 <./figures/workflow.png (PNG copy)>]) (tex_files/discusion.tex)
+(tex_files/conclusiones.tex) (report.bbl
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 248.
 
@@ -563,46 +563,36 @@ L3 programming layer <2024-08-30>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 01C371616FEA3C245A43C1441FE73E7A;4294
-(rerunfilecheck)             After:  B13FB34F6E0FAE957C8796F544CAF2D8;4109.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: B13FB34F6E0FAE957C8796F544CAF2D8;4109.
  ) 
 Here is how much of TeX's memory you used:
- 10769 strings out of 473899
- 170205 string characters out of 5722216
- 581961 words of memory out of 5000000
- 33402 multiletter control sequences out of 15000+600000
+ 10765 strings out of 473899
+ 170138 string characters out of 5722216
+ 581716 words of memory out of 5000000
+ 33400 multiletter control sequences out of 15000+600000
  568400 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,10n,79p,1047b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{subsubsection.3.3.3} has been referenced but does n
-ot exist, replaced by a fixed one
-
- <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
-00\tcss0700.pk> <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\tcrm0700.pk> <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fo
-nts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Diego De Pablo/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Diego 
-De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb
-><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmss10.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/Diego De Pablo/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Diego De Pablo/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/U
-sers/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmssi8.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmti10.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Diego De Pablo/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (8 pages, 354468 bytes).
+ <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
+i600\tcss0700.pk> <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\
+fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Diego De Pablo/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Dieg
+o De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmss10.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/Diego De Pablo/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Diego De Pabl
+o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:
+/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmssi8.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb><C:/Users/Diego De Pablo/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Diego De Pablo/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on report.pdf (8 pages, 354977 bytes).
 PDF statistics:
- 359 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 227 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 356 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 

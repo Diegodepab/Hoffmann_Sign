@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{33}
+\begin{thebibliography}{32}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -570,33 +570,24 @@ Accessed 2024-10-01
 \endbibitem
 
 %%% 31
-\bibitem{Girvan2002}
+\bibitem{Ghiassian2015}
 \begin{barticle}
-\bauthor{\bsnm{Girvan}, \binits{M.}},
-\bauthor{\bsnm{Newman}, \binits{M.E.J.}}:
-\batitle{Community structure in social and biological networks}.
-\bjtitle{Proceedings of the National Academy of Sciences}
-\bvolume{99}(\bissue{12}),
-\bfpage{7821}--\blpage{7826}
-(\byear{2002}).
-Accessed 2024-10-01
+\bauthor{\bsnm{Ghiassian}, \binits{S.D.}},
+\bauthor{\bsnm{Menche}, \binits{J.}},
+\bauthor{\bsnm{Barabási}, \binits{A.-L.}}:
+\batitle{A disease module detection (diamond) algorithm derived from a
+  systematic analysis of connectivity patterns of disease proteins in the human
+  interactome}.
+\bjtitle{PLOS Computational Biology}
+\bvolume{11}(\bissue{4}),
+\bfpage{1004120}
+(\byear{2015}).
+doi:\doiurl{10.1371/journal.pcbi.1004120}.
+\bcomment{Published 2015 Apr 8}
 \end{barticle}
 \endbibitem
 
 %%% 32
-\bibitem{Fortunato2010}
-\begin{barticle}
-\bauthor{\bsnm{Fortunato}, \binits{S.}}:
-\batitle{Community detection in graphs}.
-\bjtitle{Physics Reports}
-\bvolume{486}(\bissue{3-5}),
-\bfpage{75}--\blpage{174}
-(\byear{2010}).
-Accessed 2024-10-01
-\end{barticle}
-\endbibitem
-
-%%% 33
 \bibitem{Raghavan2007}
 \begin{barticle}
 \bauthor{\bsnm{Raghavan}, \binits{U.N.}},
@@ -1160,37 +1151,24 @@ Accessed 2024-10-01
 </bibl>
 
 <bibl id="B31">
-  <title><p>Community structure in social and biological networks</p></title>
+  <title><p>A DIseAse MOdule Detection (DIAMOnD) algorithm derived from a
+  systematic analysis of connectivity patterns of disease proteins in the human
+  interactome</p></title>
   <aug>
-    <au><snm>Girvan</snm><fnm>M.</fnm></au>
-    <au><snm>Newman</snm><fnm>M.E.J.</fnm></au>
+    <au><snm>Ghiassian</snm><fnm>SD</fnm></au>
+    <au><snm>Menche</snm><fnm>J</fnm></au>
+    <au><snm>Barabási</snm><fnm>AL</fnm></au>
   </aug>
-  <source>Proceedings of the National Academy of Sciences</source>
-  <publisher>National Academy of Sciences</publisher>
-  <pubdate>2002</pubdate>
-  <volume>99</volume>
-  <issue>12</issue>
-  <fpage>7821</fpage>
-  <lpage>-7826</lpage>
-  <url>https://doi.org/10.1073/pnas.122653799</url>
+  <source>PLOS Computational Biology</source>
+  <pubdate>2015</pubdate>
+  <volume>11</volume>
+  <issue>4</issue>
+  <fpage>e1004120</fpage>
+  <url>https://doi.org/10.1371/journal.pcbi.1004120</url>
+  <note>Published 2015 Apr 8</note>
 </bibl>
 
 <bibl id="B32">
-  <title><p>Community detection in graphs</p></title>
-  <aug>
-    <au><snm>Fortunato</snm><fnm>S</fnm></au>
-  </aug>
-  <source>Physics Reports</source>
-  <publisher>Elsevier</publisher>
-  <pubdate>2010</pubdate>
-  <volume>486</volume>
-  <issue>3-5</issue>
-  <fpage>75</fpage>
-  <lpage>-174</lpage>
-  <url>https://doi.org/10.1016/j.physrep.2009.11.002</url>
-</bibl>
-
-<bibl id="B33">
   <title><p>Near linear time algorithm to detect community structures in
   large-scale networks</p></title>
   <aug>
