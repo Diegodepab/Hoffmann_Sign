@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: stringdb
+Version: 0.1.5
+Summary: Python functions to access the STRING API, a source of protein-protein association networks.
+Home-page: https://github.com/gpp-rnd/stringdb
+Author: Peter C DeWeirdt
+Author-email: petedeweirdt@gmail.com
+License: MIT license
+Keywords: stringdb
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: pandas
+Requires-Dist: requests
+
+========
+stringdb
+========
+
+
+.. image:: https://img.shields.io/pypi/v/stringdb.svg
+        :target: https://pypi.python.org/pypi/stringdb
+
+.. image:: https://api.travis-ci.com/gpp-rnd/stringdb.svg
+        :target: https://travis-ci.com/gpp-rnd/stringdb
+
+.. image:: https://readthedocs.org/projects/stringdb/badge/?version=latest
+        :target: https://stringdb.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Python functions to access the STRINGdb API, a source of protein-protein association networks.
+Documentation for the api can be found here: https://string-db.org/help/api/
+
+* Free software: MIT license
+* Documentation: https://stringdb.readthedocs.io.
+
+Tutorial
+--------
+To install::
+
+    $ pip install stringdb
+
+Basic Usage
+^^^^^^^^^^^
+::
+
+    import stringdb
+    genes = ['TP53', 'BRCA1', 'FANCD1', 'FANCL']
+    string_ids = stringdb.get_string_ids(genes)
+    enrichment_df = stringdb.get_enrichment(string_ids.queryItem)
+
+There are 5 functions for querying a list of stringIds, which follow
+the pattern get\_\*
+
+where \* can be 'enrichment', 'interaction\_partners', 'ppi\_enrichment',
+'network', and 'functional\_annotation'
+
+
+TODO
+----
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.5 (2020-08-18)
+------------------
+
+* Allow for background identifiers in enrichment analysis
+
+0.1.4 - 0.1.2 (2020-06-24)
+--------------------------
+
+* Setup travis pypi release
+
+0.1.1 (2020-06-24)
+------------------
+
+* Added requests to requirements
+
+0.1.0 (2020-06-22)
+------------------
+
+* First release on PyPI.
+
+
+
+
