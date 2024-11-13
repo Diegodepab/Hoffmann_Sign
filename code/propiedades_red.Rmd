@@ -1,0 +1,56 @@
+---
+title: "Propiedades de la red"
+author: "Marta Cuevas"
+date: "2024-11-13"
+output: html_document
+---
+
+#Cálculo de Propiedades de la Red
+Una vez que tenemos nuestra red en formato igraph, podemos calcular diversas propiedades que nos brindan información sobre su estructura y características. A continuación, se presentan algunas propiedades importantes que puedes calcular:
+
+##Número de Nodos y Aristas
+Podemos calcular el número total de nodos y aristas en la red utilizando las funciones gorder() y gsize():
+
+
+```{r setup}
+# Calculate numbers of nodes and edges
+num_nodes <- gorder(g)  # Number of nodes
+num_edges <- gsize(g)  # Number of edges
+
+cat("Number of nodes:", num_nodes, "\n")
+cat("Number of edges:", num_edges, "\n")
+```
+
+## Grado Promedio de los Nodos
+El grado de un nodo es el número de conexiones que tiene. Podemos calcular el grado promedio de todos los nodos en la red:
+
+```{r}
+# Calculate the degree (grado) of every node
+degree_values <- degree(g)
+
+# Calculate the average
+average_degree <- mean(degree_values)
+cat("Average degree of all nodes:", average_degree, "\n")
+```
+
+## Densidad de la Red
+La densidad de una red es una medida que indica qué tan conectados están los nodos entre sí. Se calcula como el número de aristas dividido por el número máximo posible de aristas:
+
+```{r}
+# Calculate the density of the network
+network_density <- edge_density(g)
+cat("Network density:", network_density, "\n")
+```
+
+## Centralidad
+La centralidad nos ayuda a identificar los nodos más importantes dentro de la red. Podemos calcular diferentes medidas de centralidad, aqui vemos centralidad de cercanía:
+
+```{r}
+# Calculate Closeness Centrality (centralidad de cercanía)
+centrality_closeness <- closeness(g)
+
+# Show results
+cat("Closeness Centrality (first 5 nodos):", head(centrality_closeness, 5), "\n")
+```
+
+
