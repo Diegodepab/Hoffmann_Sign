@@ -5,6 +5,27 @@ date: "2024-11-13"
 output: html_document
 ---
 
+
+```{r}
+# Install igraph if it's not already installed
+if (!requireNamespace("igraph", quietly = TRUE)) {
+  install.packages("igraph")
+}
+
+library(igraph)
+```
+
+#Conversión a Formato igraph
+Para convertir la red de interacción que hemos obtenido de STRINGdb a un objeto igraph, utilizaremos la función graph_from_data_frame(), que permite crear una red a partir de un data frame que contiene las interacciones.
+
+Asumamos que interaction_network tiene al menos dos columnas: gene1 y gene2, que representan los nodos conectados. La conversión se realiza de la siguiente manera:
+
+```{r}
+# Convert the interaction network downloaded from STRING into igraph format
+g <- graph_from_data_frame(interaction_network, directed = FALSE)
+```
+
+
 #Cálculo de Propiedades de la Red
 Una vez que tenemos nuestra red en formato igraph, podemos calcular diversas propiedades que nos brindan información sobre su estructura y características. A continuación, se presentan algunas propiedades importantes que puedes calcular:
 
