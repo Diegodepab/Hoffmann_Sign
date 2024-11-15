@@ -1,6 +1,6 @@
 ---
 title: "Propiedades de la red"
-author: "Marta Cuevas"
+author: "Marta Cuevas - Juan Soriano"
 date: "2024-11-13"
 output:
   html_document:
@@ -15,6 +15,9 @@ output:
     toc: yes
     fig_caption: yes
     df_print: kable
+params:
+  cluster_visualizar: 1  # Cluster a visualizar, por defecto es 1
+  cluster_guardar: 1     # Cluster a guardar, por defecto es 1
 ---
 
 
@@ -23,8 +26,14 @@ output:
 if (!requireNamespace("igraph", quietly = TRUE)) {
   install.packages("igraph")
 }
+if (!requireNamespace("clusterProfiler", quietly = TRUE)) BiocManager::install("clusterProfiler")
+
+if (!requireNamespace("org.Hs.eg.db", quietly = TRUE)) BiocManager::install("org.Hs.eg.db")
+
 
 library(igraph)
+library(clusterProfiler)
+library(org.Hs.eg.db)
 ```
 
 # Conversión a Formato igraph
@@ -33,9 +42,17 @@ Para convertir la red de interacción que hemos obtenido de STRINGdb a un objeto
 Asumamos que interaction_network tiene al menos dos columnas: gene1 y gene2, que representan los nodos conectados. La conversión se realiza de la siguiente manera:
 
 ```{r}
-# Convert the interaction network downloaded from STRING into igraph format
-g <- make_graph(edges = c(1, 2, 1, 3, 2, 3, 3, 4), n = 4, directed = FALSE)
-#g <- graph_from_data_frame(red, directed = FALSE)
+# Cargar la red de interacciones
+file_path <- "string_network_filtered_hugo-400.tsv"
+interaction_network <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+# Verificar las primeras filas para asegurarse de que el formato es correcto
+head(interaction_network)
+
+# Convertir a un objeto igraph (grafo no dirigido)
+g <- graph_from_data_frame(d = interaction_network, directed = FALSE)
+
+
 ```
 
 
@@ -80,34 +97,42 @@ cat("Network density:", network_density, "\n")
 La centralidad nos ayuda a identificar los nodos más importantes dentro de la red. Podemos calcular diferentes medidas de centralidad, aqui vemos centralidad de cercanía:
 
 ```{r}
+# TARDA MUCHO CON UNA RED GRANDE
 # Calculate Closeness Centrality (centralidad de cercanía)
-centrality_closeness <- closeness(g)
+#centrality_closeness <- closeness(g)
 
 # Show results
-cat("Closeness Centrality (first 5 nodos):", head(centrality_closeness, 5), "\n")
+
+#cat("Closeness Centrality (first 5 nodos):", head(centrality_closeness, 5), "\n")
 ```
 ```{r}
+# TARDA MUCHO CON UNA RED GRANDE
 # Calculate betweenness centrality for all nodes
-betweenness_centrality <- betweenness(g)
+#betweenness_centrality <- betweenness(g)
 
 # Normalize the betweenness values for better visualization (optional)
-betweenness_normalized <- (betweenness_centrality - min(betweenness_centrality)) / 
-    (max(betweenness_centrality) - min(betweenness_centrality))
+#betweenness_normalized <- (betweenness_centrality - min(betweenness_centrality)) / 
+  #(max(betweenness_centrality) - min(betweenness_centrality))
 
 # Visualize the graph with nodes colored by betweenness centrality
-plot(g, 
-     vertex.size = 20, 
-     vertex.color = heat.colors(100, rev=TRUE)[round(betweenness_normalized * 99) + 1], # Color nodes based on centrality # Optionally remove labels
-     main = "Graph colored by Betweenness Centrality")
+#plot(g, 
+#     vertex.size = 20, 
+ #    vertex.color = heat.colors(100, rev=TRUE)[round(betweenness_normalized * 99) + 1], # Color nodes based on centrality # Optionally remove labels
+   #  main = "Graph colored by Betweenness Centrality")
 ```
 
 ## Modularidad
 
 La modularidad se calcula para evaluar si una red tiene una estructura modular significativa. En redes de interacción proteína-proteína, la modularidad puede identificar comunidades que corresponden a complejos proteicos funcionales o a proteínas que participan en la misma ruta metabólica. Por ejemplo, en una red de proteínas involucradas en la respuesta inmune, los módulos de alta modularidad pueden corresponder a diferentes mecanismos inmunitarios, como la respuesta inflamatoria o la activación de células T.
 
+
 ```{r}
+
+
+# Visualizar la red de alta modularidad no es factible con un a red mínimamente grande. No se ve nada!!!!
+
 # Visualizamos la red de alta modularidad
-plot(g, main = "Modularidad de la Red", vertex.color = membership(cluster_louvain(g)), vertex.size = 8, edge.arrow.size = 0.5)
+#plot(g, main = "Modularidad de la Red", vertex.color = membership(cluster_louvain(g)), vertex.size = 8, edge.arrow.size = 0.5)
 
 ```
 ```{r}
@@ -149,17 +174,19 @@ cat("Sparsity de la red:", dense_density, "\n")
 La longitud promedio de camino en una red se define como el número promedio de pasos a lo largo de los caminos más cortos para todos los pares de nodos en la red. Es una medida importante de la propiedad de “pequeño mundo” de una red. En redes biológicas, las longitudes promedio de camino cortas suelen indicar una red altamente conectada y eficiente, mientras que las longitudes largas pueden sugerir redes más modulares o segregadas.
 
 ```{r}
+# TARDA MUCHO
 # Calcular la longitud promedio de camino
-average_path_length <- mean_distance(g)
-average_path_length
+#average_path_length <- mean_distance(g)
+#average_path_length
 ```
 
 ## Diámetro (Diameter)
 El diámetro de una red es la longitud del camino más largo entre cualquier par de nodos en la red. Es decir, el diámetro es el valor máximo de las distancias más cortas entre nodos. Esta medida es importante porque da una idea de cuán “extendida” o “compacta” es la red en términos de conectividad.
 
 ```{r}
-diameter <- diameter(g)
-cat("Diámetro de la red: ", diameter, "\n")
+# Innecesario
+#diameter <- diameter(g)
+#cat("Diámetro de la red: ", diameter, "\n")
 ```
 
 ## Asortatividad de Grado (Degree Assortativity) y Homofilia (Homophily)
@@ -173,6 +200,7 @@ cat("Diámetro de la red: ", diameter, "\n")
 ## Conectividad de la red
 
 ```{r}
+
 # Verificamos la conectividad de nodos y aristas
 cat("Conectividad de nodos:", vertex_connectivity(g), "\n")
 
@@ -198,7 +226,7 @@ V(g)$color <- ifelse(vertex_clustering > 0, "red", "lightblue")
 
 # Visualizar la red con coeficiente de clustering - si los vecinos estan conectadas, se visualiza en rojo!
 set.seed(321)
-plot(g, vertex.size = 5, vertex.label = NA, main = "Coeficiente de Clustering Local")
+#plot(g, vertex.size = 5, vertex.label = NA, main = "Coeficiente de Clustering Local")
 ```
 Este código calcula e imprime los coeficientes local de un pequeño grafo aleatorio y visualiza los nodos según el coeficiente de clustering > 1, donde los nodos rojos tienen un coeficiente > 1 (por lo menos un par de interactores interaccionan entre ellos - en otras palabras - FORMAN UN TRIANGULO) y los nodos azules tienen un coeficiente bajo.
 
@@ -214,9 +242,9 @@ global_clustering <- transitivity(g, type = "global")
 cat("Global Clustering Coefficient (High):", global_clustering, "\n")
 ```
 ```{r}
-par(mfrow = c(1, 2))
-plot(g, main = paste("Global Clustering (Coeff:", round(global_clustering, 2), ")"),
-     vertex.size = 8, vertex.label = NA, edge.color = "dodgerblue")
+#par(mfrow = c(1, 2))
+#plot(g, main = paste("Global Clustering (Coeff:", round(global_clustering, 2), ")"),
+  #   vertex.size = 8, vertex.label = NA, edge.color = "dodgerblue")
 
 ```
 Un coeficiente de clustering global cercano a 1 significa que la red está altamente agrupada (muchos nodos tienen coeficientes de clustering altos), mientras que un valor cercano a 0 sugiere que la red es más aleatoria, con menos agrupamientos locales.
@@ -233,3 +261,88 @@ hist(degree_distribution, breaks=50, main="Distribución de Grado de una Red de 
      xlab="Grado", ylab="Frecuencia")
 ```
 
+# Clustering y output esperado
+
+```{r }
+# Obtener los clusters de la red
+clusters <- cluster_louvain(g)
+
+# Obtener la membresía de cada nodo
+memberships <- membership(clusters)
+
+# Asegurarte de que los nombres de los nodos están presentes
+nombres_nodos <- V(g)$name
+
+# Definir la ruta del archivo de salida en la carpeta 'results'
+archivo_salida <- file.path("..", "results", "clusters_genes.txt")
+
+# Abrir el archivo en modo de escritura
+file_conn <- file(archivo_salida, "w")
+
+# Organizar los genes por cada cluster en una lista estructurada
+genes_por_cluster <- split(nombres_nodos, memberships)
+
+# Escribir los genes por cluster en el archivo
+for (cluster_id in names(genes_por_cluster)) {
+  cat("Cluster", cluster_id, ":", paste(genes_por_cluster[[cluster_id]], collapse = ", "), "\n", file = file_conn)
+}
+
+# Cerrar el archivo
+close(file_conn)
+
+cat("La salida se ha guardado en:", archivo_salida)
+
+```
+
+
+```{r}
+
+
+enrichment_results_clusters <- list()
+
+for (i in seq_along(genes_por_cluster)) {
+  enrichment_results_clusters[[i]] <- enrichGO(
+    gene          = genes_por_cluster[[i]],   # Conjunto de genes para el cluster actual
+    OrgDb         = org.Hs.eg.db,              # Base de datos de anotación de genes
+    keyType       = "SYMBOL",                  # Tipo de identificador (e.g., símbolos de genes)
+    ont           = "BP",                      # Ontología (BP: Proceso Biológico)
+    pAdjustMethod = "BH",                      # Método de ajuste de p-valor
+    pvalueCutoff  = 0.05,                      # Umbral de significancia para el p-valor
+    qvalueCutoff  = 0.2                        # Umbral de significancia para el q-valor
+  )
+}
+
+# Visualización de resultados para el cluster seleccionado
+cluster_a_visualizar <- params$cluster_visualizar  # Usamos el parámetro definido en el encabezado
+
+if (cluster_a_visualizar %in% seq_along(enrichment_results_clusters)) {
+  # Visualizar los resultados para el cluster seleccionado
+  dotplot(enrichment_results_clusters[[cluster_a_visualizar]], 
+          showCategory = 10, 
+          title = paste("GO Enrichment for Cluster", cluster_a_visualizar))
+} else {
+  cat("El número del cluster ingresado no es válido.\n")
+}
+
+# Guardar los resultados de enriquecimiento para el cluster seleccionado
+cluster_a_guardar <- params$cluster_guardar  # Usamos el parámetro definido en el encabezado
+
+if (cluster_a_guardar %in% seq_along(enrichment_results_clusters)) {
+  # Definir la ruta para guardar el archivo en la carpeta 'results'
+  archivo_salida <- file.path("..", "results", paste0("enrichment_cluster_", cluster_a_guardar, ".csv"))
+  
+  # Crear la carpeta 'results' si no existe
+  if (!dir.exists("results")) {
+    dir.create("results")
+  }
+  
+  # Convertir a data frame y guardar en CSV
+  write.csv2(
+    as.data.frame(enrichment_results_clusters[[cluster_a_guardar]]),  # Convertir a data frame
+    file = archivo_salida   # Guardar con el nombre especificado
+  )
+} else {
+  cat("El número del cluster ingresado no es válido.\n")
+}
+
+```
