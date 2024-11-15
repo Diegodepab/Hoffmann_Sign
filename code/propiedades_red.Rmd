@@ -2,7 +2,19 @@
 title: "Propiedades de la red"
 author: "Marta Cuevas"
 date: "2024-11-13"
-output: html_document
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_float: yes
+    toc_depth: 3
+    theme: journal # cosmo, flatly, journal, lumen, paper, readable, sandstone, simplex, spacelab, yeti
+    code_folding: "show"
+  pdf_document:
+    toc: yes
+    fig_caption: yes
+    df_print: kable
 ---
 
 
@@ -15,25 +27,26 @@ if (!requireNamespace("igraph", quietly = TRUE)) {
 library(igraph)
 ```
 
-#Conversión a Formato igraph
+# Conversión a Formato igraph
 Para convertir la red de interacción que hemos obtenido de STRINGdb a un objeto igraph, utilizaremos la función graph_from_data_frame(), que permite crear una red a partir de un data frame que contiene las interacciones.
 
 Asumamos que interaction_network tiene al menos dos columnas: gene1 y gene2, que representan los nodos conectados. La conversión se realiza de la siguiente manera:
 
 ```{r}
 # Convert the interaction network downloaded from STRING into igraph format
-g <- graph_from_data_frame(interaction_network, directed = FALSE)
+g <- make_graph(edges = c(1, 2, 1, 3, 2, 3, 3, 4), n = 4, directed = FALSE)
+#g <- graph_from_data_frame(red, directed = FALSE)
 ```
 
 
-#Cálculo de Propiedades de la Red
+# Cálculo de Propiedades de la Red
 Una vez que tenemos nuestra red en formato igraph, podemos calcular diversas propiedades que nos brindan información sobre su estructura y características. A continuación, se presentan algunas propiedades importantes que puedes calcular:
 
-##Número de Nodos y Aristas
+## Número de Nodos y Aristas
 Podemos calcular el número total de nodos y aristas en la red utilizando las funciones gorder() y gsize():
 
 
-```{r setup}
+```{r }
 # Calculate numbers of nodes and edges
 num_nodes <- gorder(g)  # Number of nodes
 num_edges <- gsize(g)  # Number of edges
@@ -73,5 +86,150 @@ centrality_closeness <- closeness(g)
 # Show results
 cat("Closeness Centrality (first 5 nodos):", head(centrality_closeness, 5), "\n")
 ```
+```{r}
+# Calculate betweenness centrality for all nodes
+betweenness_centrality <- betweenness(g)
 
+# Normalize the betweenness values for better visualization (optional)
+betweenness_normalized <- (betweenness_centrality - min(betweenness_centrality)) / 
+    (max(betweenness_centrality) - min(betweenness_centrality))
+
+# Visualize the graph with nodes colored by betweenness centrality
+plot(g, 
+     vertex.size = 20, 
+     vertex.color = heat.colors(100, rev=TRUE)[round(betweenness_normalized * 99) + 1], # Color nodes based on centrality # Optionally remove labels
+     main = "Graph colored by Betweenness Centrality")
+```
+
+## Modularidad
+
+La modularidad se calcula para evaluar si una red tiene una estructura modular significativa. En redes de interacción proteína-proteína, la modularidad puede identificar comunidades que corresponden a complejos proteicos funcionales o a proteínas que participan en la misma ruta metabólica. Por ejemplo, en una red de proteínas involucradas en la respuesta inmune, los módulos de alta modularidad pueden corresponder a diferentes mecanismos inmunitarios, como la respuesta inflamatoria o la activación de células T.
+
+```{r}
+# Visualizamos la red de alta modularidad
+plot(g, main = "Modularidad de la Red", vertex.color = membership(cluster_louvain(g)), vertex.size = 8, edge.arrow.size = 0.5)
+
+```
+```{r}
+# Calculamos y mostramos la modularidad de la red de alta modularidad
+modularity_value <- modularity(cluster_louvain(g))
+cat("Modularidad de la red con alta modularidad:", modularity_value, "\n")
+```
+La red con alta modularidad tendrá nodos dentro de cada comunidad con conexiones internas fuertes y escasas conexiones con nodos de otras comunidades. Esto resulta en una modularidad alta, ya que dentro de las comunidades es significativamente mayor al esperado.
+
+La red con baja modularidad no tendrá comunidades bien definidas. Las conexiones están distribuidas aleatoriamente, por lo que la diferencia entre el número de enlaces reales y el número esperado será baja, dando como resultado una modularidad baja.
+
+## Densidad de Aristas (Edge Density)
+
+La densidad en una red de señalización indica cuántas interacciones existen en relación con el total de interacciones posibles. En redes biológicas, particularmente en sistemas de señalización celular, la densidad puede influir en cómo se propagan las señales, en la redundancia de la información y en la posibilidad de regulaciones complejas.
+
+```{r}
+sparse_density <- edge_density(g)
+
+# Calculamos la dispersión
+sparse_sparsity <- 1 - sparse_density
+
+# Imprimimos los resultados
+cat("Densidad de la red:", sparse_density, "\n")
+```
+
+## Dispersión (Sparsity)
+
+La dispersión complementa a la densidad y ayuda a entender la organización de redes dispersas, comunes en sistemas de señalización que requieren alta especificidad. Una red con alta dispersión indica una arquitectura que favorece interacciones específicas y minimiza la redundancia, lo cual es común en redes de señalización de cascadas enzimáticas donde la señal sigue una ruta secuencial, evitando activaciones erróneas.
+
+
+```{r}
+dense_density <- edge_density(g)
+dense_sparsity <- 1 - dense_density
+cat("Sparsity de la red:", dense_density, "\n")
+```
+
+## Longitudes Promedio de Camino en Redes
+
+La longitud promedio de camino en una red se define como el número promedio de pasos a lo largo de los caminos más cortos para todos los pares de nodos en la red. Es una medida importante de la propiedad de “pequeño mundo” de una red. En redes biológicas, las longitudes promedio de camino cortas suelen indicar una red altamente conectada y eficiente, mientras que las longitudes largas pueden sugerir redes más modulares o segregadas.
+
+```{r}
+# Calcular la longitud promedio de camino
+average_path_length <- mean_distance(g)
+average_path_length
+```
+
+## Diámetro (Diameter)
+El diámetro de una red es la longitud del camino más largo entre cualquier par de nodos en la red. Es decir, el diámetro es el valor máximo de las distancias más cortas entre nodos. Esta medida es importante porque da una idea de cuán “extendida” o “compacta” es la red en términos de conectividad.
+
+```{r}
+diameter <- diameter(g)
+cat("Diámetro de la red: ", diameter, "\n")
+```
+
+## Asortatividad de Grado (Degree Assortativity) y Homofilia (Homophily)
+
+**Asortatividad de Grado (Degree Assortativity):** Mide la tendencia de los nodos a conectarse con otros nodos de grado similar.
+
+**Homofilia (Homophily):** Describe la tendencia de los nodos a conectarse con otros nodos similares en términos de atributos específicos.
+
+**!!!!!!!!!mirar si se puede hacer**
+
+## Conectividad de la red
+
+```{r}
+# Verificamos la conectividad de nodos y aristas
+cat("Conectividad de nodos:", vertex_connectivity(g), "\n")
+
+cat("Conectividad de aristas:", edge_connectivity(g), "\n")
+
+cat("¿Es conexo?", is_connected(g), "\n")
+```
+
+## Coeficiente de clustering
+
+El coeficiente de clustering es una medida que indica la tendencia de los nodos en una red a agruparse en clústeres. Un alto coeficiente de clustering para un nodo (local) sugiere que un nodo es parte de una comunidad densa. En biología, esto puede ser relevante para estudiar interacciones entre proteínas, donde un alto coeficiente de clustering entre varios genes puede indicar una comunidad de proteínas que interactúan fuertemente entre sí.
+
+###Interpretación
+Un coeficiente de clustering cercano a 1 indica que los vecinos de un nodo están muy interconectados, formando un clúster denso.
+Un coeficiente de clustering cercano a 0 indica que los vecinos de un nodo están poco interconectados.
+Esta definición es útil para visualizar cómo las interacciones locales entre los nodos contribuyen a la estructura global de la red, y es especialmente relevante en el contexto de redes sociales y biológicas, donde se pueden observar grupos de interacciones fuertes entre ciertos nodos.
+
+```{r}
+
+# Calcular el coeficiente de clustering por nodo
+vertex_clustering <- transitivity(g, type = "local")
+V(g)$color <- ifelse(vertex_clustering > 0, "red", "lightblue")
+
+# Visualizar la red con coeficiente de clustering - si los vecinos estan conectadas, se visualiza en rojo!
+set.seed(321)
+plot(g, vertex.size = 5, vertex.label = NA, main = "Coeficiente de Clustering Local")
+```
+Este código calcula e imprime los coeficientes local de un pequeño grafo aleatorio y visualiza los nodos según el coeficiente de clustering > 1, donde los nodos rojos tienen un coeficiente > 1 (por lo menos un par de interactores interaccionan entre ellos - en otras palabras - FORMAN UN TRIANGULO) y los nodos azules tienen un coeficiente bajo.
+
+##Coeficiente de Clustering Global
+
+El coeficiente de clustering global es una medida global que describe la tendencia general de la red de formar triángulos (conexiones entre tres nodos). Proporciona una visión general de la densidad de la red en términos de interacciones entre vecinos de los nodos.
+
+```{r}
+library(igraph)
+set.seed(333)
+
+global_clustering <- transitivity(g, type = "global")
+cat("Global Clustering Coefficient (High):", global_clustering, "\n")
+```
+```{r}
+par(mfrow = c(1, 2))
+plot(g, main = paste("Global Clustering (Coeff:", round(global_clustering, 2), ")"),
+     vertex.size = 8, vertex.label = NA, edge.color = "dodgerblue")
+
+```
+Un coeficiente de clustering global cercano a 1 significa que la red está altamente agrupada (muchos nodos tienen coeficientes de clustering altos), mientras que un valor cercano a 0 sugiere que la red es más aleatoria, con menos agrupamientos locales.
+
+##Análisis de Redes de Escala Libre
+
+
+```{r}
+# Obtener la distribución de grado
+degree_distribution <- degree(g)
+
+# Visualizar la distribución de grado
+hist(degree_distribution, breaks=50, main="Distribución de Grado de una Red de Escala Libre", 
+     xlab="Grado", ylab="Frecuencia")
+```
 
