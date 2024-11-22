@@ -1,8 +1,63 @@
-import networkx as nx
-import matplotlib.pyplot as plt
-import scipy.stats
-import numpy as np
-from collections import defaultdict
+############################################################
+########## Entradas y salidas de esta parte ################
+############################################################
+# entrada
+# data/network.txt Red del homosapiens
+# data/genes_string.tsv Genes iniciales
+
+# output 
+# data/red_propagada.txt
+
+# Codigo para ejecutarlo
+# python DIAMOnD.py data/genes_string.tsv data/network.txt data/red_propagada.txt
+
+############################################################
+########## Descarga o llamar las librerías #################
+############################################################
+try:
+    import subprocess
+except ImportError:
+    print("Error inesperado")
+
+# Función para instalar una librería si no está disponible
+def install_package(package):
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    except Exception as e:
+        print(f"Error installing package {package}: {e}")
+
+try:
+    import networkx as nx
+except ImportError:
+    install_package('networkx')
+    import networkx as nx
+
+try:
+    import scipy.stats
+except ImportError:
+    install_package('scipy')
+    import scipy.stats
+
+try:
+    import numpy as np
+except ImportError:
+    install_package('numpy')
+    import numpy as np
+
+try:
+    from collections import defaultdict
+except ImportError:
+    install_package('collections')  # Parte de la librería estándar
+    from collections import defaultdict
+
+try:
+    import sys
+except ImportError:
+    print("sys no está instalado. Intentando instalar...")
+    # sys es parte de la librería estándar, así que esto no debería ser necesario
+    install_package('sys')
+    import sys
+
 
 # ------------------- FUNCIONES DE DIAMOND -------------------
 def read_input(network_file, seed_file):
@@ -11,21 +66,25 @@ def read_input(network_file, seed_file):
     G = nx.Graph()
     with open(network_file, 'r') as f:
         for line in f:
-            if line.startswith("#") or "combined_score" in line:
+            if line.startswith("protein1") or line.startswith("#"):
                 continue  # Omitir líneas de encabezado o comentarios
-            node1, node2, score = line.strip().split(',')
+            node1, node2, score = line.strip().split()  # Cambié a split() para leer por espacios
             score = int(score)  # Convertimos el score a entero
-            G.add_edge(node1, node2, weight=score)
+
+            # Filtrar las conexiones con score <= 400
+            if score > 400:
+                G.add_edge(node1, node2, weight=score)
 
     # Leer los genes de semilla
     seed_genes = set()
     with open(seed_file, 'r') as f:
         for line in f:
-            if line.startswith("#"):
-                continue
-            seed_genes.add(line.strip().split(',')[0])
+            for gene in line.strip().split():  # Lee todos los genes separados por espacios
+                seed_genes.add(gene)
 
     return G, seed_genes
+
+
 
 def compute_all_gamma_ln(N):
     """Precomputa todas las funciones gamma logarítmicas."""
@@ -73,19 +132,32 @@ def diamond_iteration_of_first_X_nodes(G, S, X, alpha=1):
 
     return added_nodes
 
-
-
 # ------------------- EJECUCIÓN -------------------
-network_file = "red_diamond.txt"  # Cambia por la ruta de tu archivo
-seed_file = "genes.txt"    # Cambia por la ruta de tu archivo
-num_diamond_genes = 35          # Número de genes a agregar
-alpha = 1
 
-# Leer red y genes de semilla
-G, seed_genes = read_input(network_file, seed_file)
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
+        print("Uso: python dyamond.py <archivo_genes_string> <archivo_red> <archivo_salida>")
+        sys.exit("Error al aplicar DIAMOnD")
 
-# Ejecutar DIAMOnD
-diamond_genes = diamond_iteration_of_first_X_nodes(G, seed_genes, num_diamond_genes, alpha)
-print(f"Genes de semilla: {seed_genes}")
-print(f"Genes de DIAMOnD: {diamond_genes}")
+    seed_file = sys.argv[1]       # Archivo con genes de semilla
+    network_file = sys.argv[2]    # Archivo de la red
+    output_file = sys.argv[3]     # Archivo de salida para la red propagada
 
+    num_diamond_genes = 35        # Número de genes a agregar
+    alpha = 1
+
+    # Leer red y genes de semilla
+    G, seed_genes = read_input(network_file, seed_file)
+
+    # Ejecutar DIAMOnD
+    diamond_genes = diamond_iteration_of_first_X_nodes(G, seed_genes, num_diamond_genes, alpha)
+
+    # Eliminar el prefijo de los genes de DIAMOnD
+    diamond_genes_clean = [gene.split('.')[1] for gene in diamond_genes]
+
+    # Guardar los genes propagados en un archivo
+    with open(output_file, 'w') as f_out:
+        f_out.write("\n".join(seed_genes) + "\n")
+        f_out.write("\n".join(diamond_genes_clean) + "\n")
+
+    print(f"Genes propagados guardados en {output_file}")

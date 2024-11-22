@@ -20,7 +20,7 @@ wget https://stringdb-downloads.org/download/protein.links.v12.0/9606.protein.li
 gunzip data/network.txt.gz
 
 # Propagación de genes (descomentar cuando el script esté listo)
-# python dyamond.py data/genes_string.tsv data/network.txt data/red_propagada.txt
+python DIAMOnD.py data/genes_string.tsv data/network.txt data/red_propagada.txt
 
 # Análisis de la red (descomentar cuando el script esté listo)
 # python analisis.py data/red_propagada.txt data/clusters.txt
