@@ -97,7 +97,7 @@ cat("Network density:", network_density, "\n")
 La centralidad nos ayuda a identificar los nodos más importantes dentro de la red. Podemos calcular diferentes medidas de centralidad, aqui vemos centralidad de cercanía:
 
 ```{r}
-# TARDA MUCHO CON UNA RED GRANDE
+# escribir los genes en vez de graficarlos
 # Calculate Closeness Centrality (centralidad de cercanía)
 #centrality_closeness <- closeness(g)
 
@@ -106,7 +106,7 @@ La centralidad nos ayuda a identificar los nodos más importantes dentro de la r
 #cat("Closeness Centrality (first 5 nodos):", head(centrality_closeness, 5), "\n")
 ```
 ```{r}
-# TARDA MUCHO CON UNA RED GRANDE
+# se muestra losnonombres sin grafiacr
 # Calculate betweenness centrality for all nodes
 #betweenness_centrality <- betweenness(g)
 
@@ -164,6 +164,7 @@ La dispersión complementa a la densidad y ayuda a entender la organización de 
 
 
 ```{r}
+#innecesario teniendo la densidad
 dense_density <- edge_density(g)
 dense_sparsity <- 1 - dense_density
 cat("Sparsity de la red:", dense_density, "\n")
@@ -174,7 +175,7 @@ cat("Sparsity de la red:", dense_density, "\n")
 La longitud promedio de camino en una red se define como el número promedio de pasos a lo largo de los caminos más cortos para todos los pares de nodos en la red. Es una medida importante de la propiedad de “pequeño mundo” de una red. En redes biológicas, las longitudes promedio de camino cortas suelen indicar una red altamente conectada y eficiente, mientras que las longitudes largas pueden sugerir redes más modulares o segregadas.
 
 ```{r}
-# TARDA MUCHO
+# innecesario
 # Calcular la longitud promedio de camino
 #average_path_length <- mean_distance(g)
 #average_path_length
@@ -201,12 +202,12 @@ El diámetro de una red es la longitud del camino más largo entre cualquier par
 
 ```{r}
 
-# Verificamos la conectividad de nodos y aristas
-cat("Conectividad de nodos:", vertex_connectivity(g), "\n")
+# solo muestra los vertices minimos
+#cat("Conectividad de nodos:", vertex_connectivity(g), "\n")
 
-cat("Conectividad de aristas:", edge_connectivity(g), "\n")
+#cat("Conectividad de aristas:", edge_connectivity(g), "\n")
 
-cat("¿Es conexo?", is_connected(g), "\n")
+#cat("¿Es conexo?", is_connected(g), "\n")
 ```
 
 ## Coeficiente de clustering
