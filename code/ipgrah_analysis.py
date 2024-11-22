@@ -3,8 +3,8 @@ import requests
 import shutil
 
 # Cargar los genes desde el archivo genes.tsv
-genes_df = pd.read_csv("genes.tsv", sep="\t")
-gene_names = genes_df[" name"].tolist()
+genes_df = pd.read_csv("red_propagada.txt", sep="\t")
+
 
 # Parámetros de la solicitud
 base_url = "https://string-db.org/api/image/network"
@@ -14,7 +14,7 @@ add_white_nodes = 10  # Nodos extra para completar la red
 network_type = "functional"
 
 # Preparar los identificadores de genes para la solicitud
-identifiers = "%0d".join(gene_names)  # Formato URL de StringDB
+identifiers = "%0d".join(genes_df)  # Formato URL de StringDB
 
 # Construir la URL completa para la solicitud a STRING
 url_request = f"{base_url}?identifiers={identifiers}&species={species_id}&required_score={required_score}&add_white_nodes={add_white_nodes}&network_type={network_type}"
