@@ -1,7 +1,0 @@
-Term: Amyotrophic lateral sclerosis (ALS), P-value: 0.00023401370012414164, Combined Score: 236.3755759949328, Genes: ['NEFH', 'SOD1', 'PRPH'], Number of Genes: 3
-Term: Mitophagy, P-value: 0.000479665582070239, Combined Score: 167.17236519630865, Genes: ['TBK1', 'SQSTM1', 'OPTN'], Number of Genes: 3
-Term: Peroxisome, P-value: 0.0009795767128767106, Combined Score: 117.34763742117823, Genes: ['DAO', 'ABCD1', 'SOD1'], Number of Genes: 3
-Term: Arginine and proline metabolism, P-value: 0.005924913318962612, Combined Score: 96.53872061345717, Genes: ['DAO', 'ALDH18A1'], Number of Genes: 2
-Term: Inositol phosphate metabolism, P-value: 0.013111366946694592, Combined Score: 53.191194797908395, Genes: ['FIG4', 'PI4KA'], Number of Genes: 2
-Term: Ubiquinone and other terpenoid-quinone biosynthesis, P-value: 0.02555453587694348, Combined Score: 158.97781166869382, Genes: ['COQ7'], Number of Genes: 1
-Term: Pantothenate and CoA biosynthesis, P-value: 0.04373715736448407, Combined Score: 75.34749261223973, Genes: ['BCAT2'], Number of Genes: 1

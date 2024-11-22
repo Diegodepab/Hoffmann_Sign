@@ -5,13 +5,13 @@ export R_LIB="./R_packages"
 export PYTHON_LIB="./py_packages"
 
 # Crear directorios necesarios
-mkdir -p data
+#mkdir -p data
 
 # Descargar los datos de genes de HPO
-wget https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene -O data/genes.tsv
+#wget https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene -O data/genes.tsv
 
 # Convertir genes a string id (descomentar cuando el script esté listo)
-# python genes2string.py data/genes.tsv data/genes_string.tsv
+python genes2string.py --genes_iniciales data/genes.tsv --genes_mapeados data/genes_string.tsv
 
 # Descargar la red de String
 wget https://stringdb-downloads.org/download/protein.links.v12.0/9606.protein.links.v12.0.txt.gz -O data/network.txt.gz
