@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Definir las carpetas donde estarán las dependencias de Python y de R
-export R_LIB="./R_packages"
+export R_LIB="./R_packages:$R_LIB"
 export PYTHONPATH="./py_packages/local/lib/python3.11/dist-packages:$PYTHONPATH"
 
 # Crear directorios necesarios
@@ -33,25 +33,13 @@ python string_interactions.py --input data/red_propagada.txt --output data/strin
 
 # Análisis de la red con R
 echo "Analizando propiedades de la red con R..."
-Rscript propiedades_red.R data/string_interactions.tsv results/network_analysis_results.txt > logs/propiedades_red.log 2>&1
 
-# Mover imágenes generadas por propiedades_red.R
-if [[ -f "network_clustering_visualization.png" ]]; then
-    echo "Guardando visualización de la red en 'images/'..."
-    mv network_clustering_visualization.png images/network_clustering_visualization.png
-fi
+Rscript propiedades_red.R data/string_interactions.tsv results/
 
-# Verificar y mover el archivo de clusters de genes
-if [[ -f "clusters_genes.txt" ]]; then
-    echo "Guardando clusters de genes en 'results/'..."
-    mv clusters_genes.txt results/clusters_genes.txt
-else
-    echo "Error: No se generó el archivo 'clusters_genes.txt'."
-    exit 1
-fi
+
 
 # Análisis de enriquecimiento funcional (descomentar cuando esté listo)
-# echo "Realizando análisis de enriquecimiento funcional..."
-# python analisis_enriquecimiento.py results/clusters_genes.txt results/enrichment_results.txt
+echo "Realizando análisis de enriquecimiento funcional..."
+python analisis_enriquecimiento.py --file results/clusters_genes.txt 
 
 echo "Pipeline completado. Los resultados están en la carpeta 'results/'."

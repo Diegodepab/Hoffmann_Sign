@@ -86,7 +86,7 @@ def save_results_and_plot(all_results):
         plt.tight_layout()
 
         # Guardar el gráfico en 'data/enrichment_analysis'
-        plt.savefig(f"data/enrichment_analysis/enrichment_barplot_{cluster_name}.png")
+        plt.savefig(f"results/enrichment_analysis/enrichment_barplot_{cluster_name}.png")
         plt.close()
 
 def load_genes_from_file(file_path):
