@@ -1,6 +1,6 @@
-# stringdb_interaction_proteins.py
 import pandas as pd
 import requests
+import argparse
 
 def download_interactions(proteins_file, output_file):
     # Cargar los identificadores de proteínas desde el archivo
@@ -29,11 +29,11 @@ def download_interactions(proteins_file, output_file):
     else:
         print(f"Error al descargar datos de StringDB: {response.status_code}")
 
-# Ejecutar la función si el archivo se ejecuta directamente
 if __name__ == "__main__":
-    # Nombre del archivo de entrada y salida
-    input_file = "red_propagada.txt"
-    output_file = "string_interactions.tsv"
+    parser = argparse.ArgumentParser(description="Descargar red de interacciones de StringDB")
+    parser.add_argument("--input", required=True, help="Archivo con identificadores de proteínas")
+    parser.add_argument("--output", required=True, help="Archivo de salida para guardar la red de interacciones")
+    args = parser.parse_args()
 
     # Llamar a la función para descargar las interacciones
-    download_interactions(input_file, output_file)
+    download_interactions(args.input, args.output)
