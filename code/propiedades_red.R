@@ -1,3 +1,11 @@
+
+
+# Obtener el argumento de entrada
+# Instalar argparse si no está instalado
+if (!requireNamespace("argparse", quietly = TRUE)) {
+  install.packages("argparse")
+}
+
 # Verificar e instalar librerías necesarias
 if (!requireNamespace("igraph", quietly = TRUE)) install.packages("igraph")
 if (!requireNamespace("clusterProfiler", quietly = TRUE)) BiocManager::install("clusterProfiler")
@@ -7,12 +15,25 @@ library(igraph)
 library(clusterProfiler)
 library(org.Hs.eg.db)
 
-# Ruta al archivo de red
-file_path <- "string_interactions.tsv"
-output_file <- "network_analysis_results.txt"
-setwd('./project_template/code')
+# Configurar argparse para manejar los argumentos
+parser <- ArgumentParser(description = "Análisis de propiedades de red")
+
+parser$add_argument("input_file", help = "Ruta al archivo de la red propagada")
+parser$add_argument("output_file", help = "Ruta al archivo de salida")
+
+# Parsear los argumentos
+args <- parser$parse_args()
+
+input_file <- args$input_file
+output_file <- args$output_file
+
+# Verificar si el archivo de entrada existe
+if (!file.exists(input_file)) {
+  stop("El archivo de entrada especificado no existe: ", input_file)
+}
+
 # Cargar la red de interacciones
-interaction_network <- read.table(file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+interaction_network <- read.table(input_file, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
 # Convertir a un objeto igraph (grafo no dirigido)
 g <- graph_from_data_frame(d = interaction_network[, c("preferredName_A", "preferredName_B")], directed = FALSE)

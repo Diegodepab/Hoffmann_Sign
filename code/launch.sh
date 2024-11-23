@@ -22,8 +22,9 @@ gunzip data/network.txt.gz
 # Propagación de genes (descomentar cuando el script esté listo)
 python DIAMOnD.py data/genes_string.tsv data/network.txt data/red_propagada.txt
 
-# Análisis de la red (descomentar cuando el script esté listo)
-# python analisis.py data/red_propagada.txt data/clusters.txt
+# Análisis de la red con R
+Rscript propiedades_red.R data/red_propagada.txt results/network_analysis_results.txt
+
 
 # Análisis de enriquecimiento funcional (descomentar cuando el script esté listo)
 # python analisis_enriquecimiento.py data/clusters.txt
