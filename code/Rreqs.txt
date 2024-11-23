@@ -1,6 +1,4 @@
-#!/usr/bin/env Rscript
-
-# igraph
-if (!require("igraph")) {
-    install.packages("igraph")
-}
+igraph
+clusterProfiler
+org.Hs.eg.db
+BiocManager

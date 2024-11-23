@@ -17,7 +17,7 @@ if ! command -v Rscript &>/dev/null; then
 fi
 
 # Verificar si Python está instalado
-if ! command -v python3 &>/dev/null; then
+if ! command -v python &>/dev/null; then
   echo "Python no está instalado. Por favor, instala Python antes de continuar."
   exit 1
 fi
@@ -29,12 +29,16 @@ pip install --prefix=$PYTHON_LIB -r requirements.txt
 python -m pip cache purge
 
 # Instalar dependencias de R desde el archivo Rreqs.txt en la carpeta R
-Rscript -e 'install.packages(readLines("Rreqs.txt"), lib="./R_packages")'
+Rscript -e 'install.packages(readLines("Rreqs.txt"), lib="./R_packages", quietly = TRUE)'
 
 # Instalar librerías necesarias de R si no están incluidas en Rreqs.txt
 Rscript -e 'if (!requireNamespace("igraph", quietly = TRUE)) install.packages("igraph", lib="./R_packages")'
 Rscript -e 'if (!requireNamespace("clusterProfiler", quietly = TRUE)) install.packages("clusterProfiler", lib="./R_packages")'
 Rscript -e 'if (!requireNamespace("org.Hs.eg.db", quietly = TRUE)) install.packages("BiocManager"); BiocManager::install("org.Hs.eg.db", lib="./R_packages")'
+
+Rscript -e 'BiocManager::install("ggtree", lib = "./R_packages")'
+Rscript -e 'BiocManager::install("enrichplot", lib = "./R_packages")'
+Rscript -e 'BiocManager::install("clusterProfiler", lib = "./R_packages")'
 
 # Limpiar caché de R (opcional, puede ayudar a prevenir errores de instalación)
 Rscript -e 'unlink(file.path(Sys.getenv("R_LIBS_USER"), "00LOCK"), recursive = TRUE)'

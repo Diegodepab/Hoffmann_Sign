@@ -2,13 +2,13 @@
 
 # Definir las carpetas donde estarán las dependencias de Python y de R
 export R_LIB="./R_packages"
-export PYTHON_LIB="./py_packages"
+export PYTHONPATH="./py_packages/local/lib/python3.11/dist-packages:$PYTHONPATH"
 
 # Crear directorios necesarios
-#mkdir -p data
+mkdir -p data
 
 # Descargar los datos de genes de HPO
-#wget https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene -O data/genes.tsv
+wget https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene -O data/genes.tsv
 
 # Convertir genes a string id (descomentar cuando el script esté listo)
 python genes2string.py --genes_iniciales data/genes.tsv --genes_mapeados data/genes_string.tsv
