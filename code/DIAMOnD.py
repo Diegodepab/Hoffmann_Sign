@@ -58,6 +58,11 @@ except ImportError:
     install_package('sys')
     import sys
 
+try:
+    from tqdm import tqdm
+except ImportError:
+    install_package('tqdm')
+    from tqdm import tqdm
 
 # ------------------- FUNCIONES DE DIAMOND -------------------
 def read_input(network_file, seed_file):
@@ -113,24 +118,28 @@ def diamond_iteration_of_first_X_nodes(G, S, X, alpha=1):
     cluster_nodes = set(S)
     gamma_ln = compute_all_gamma_ln(len(G.nodes))
 
-    while len(added_nodes) < X:
-        min_p = float('inf')
-        next_node = None
-        for node in set(G.nodes) - cluster_nodes:
-            k = degrees[node]  # Grado total del nodo
-            kb = sum(1 for neighbor in neighbors[node] if neighbor in cluster_nodes)  # Grado en semillas
-            p = pvalue(kb, k, len(G.nodes), len(cluster_nodes), gamma_ln)
-            weight_sum = sum(G[node][neighbor]['weight'] for neighbor in neighbors[node] if neighbor in cluster_nodes)
+    # Barra de progreso en la iteración DIAMOnD
+    with tqdm(total=X, desc="Agregando genes con DIAMOnD", unit="gen", leave=True) as pbar:
+        while len(added_nodes) < X:
+            min_p = float('inf')
+            next_node = None
+            for node in set(G.nodes) - cluster_nodes:
+                k = degrees[node]  # Grado total del nodo
+                kb = sum(1 for neighbor in neighbors[node] if neighbor in cluster_nodes)  # Grado en semillas
+                p = pvalue(kb, k, len(G.nodes), len(cluster_nodes), gamma_ln)
+                weight_sum = sum(G[node][neighbor]['weight'] for neighbor in neighbors[node] if neighbor in cluster_nodes)
 
-            if p < min_p or (p == min_p and weight_sum > sum(G[next_node][n]['weight'] for n in neighbors[next_node] if n in cluster_nodes)):
-                min_p = p
-                next_node = node
+                if p < min_p or (p == min_p and weight_sum > sum(G[next_node][n]['weight'] for n in neighbors[next_node] if n in cluster_nodes)):
+                    min_p = p
+                    next_node = node
 
-        if next_node:
-            added_nodes.append(next_node)
-            cluster_nodes.add(next_node)
+            if next_node:
+                added_nodes.append(next_node)
+                cluster_nodes.add(next_node)
+                pbar.update(1)  # Actualizar la barra de progreso
 
     return added_nodes
+
 
 # ------------------- EJECUCIÓN -------------------
 

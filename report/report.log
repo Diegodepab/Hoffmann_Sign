@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  12 NOV 2024 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  27 NOV 2024 01:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,7 +475,7 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 
 \address@aff1=\toks37
 (tex_files/introduction.tex
-<figures/Kabir_Hoffmann__Sign.jpg, id=112, 370.38374pt x 462.97969pt>
+<figures/Kabir_Hoffmann__Sign.jpg, id=128, 370.38374pt x 462.97969pt>
 File: figures/Kabir_Hoffmann__Sign.jpg Graphic file (type jpg)
 <use figures/Kabir_Hoffmann__Sign.jpg>
 Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 5
@@ -498,9 +498,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
-) (tex_files/material_methods.tex
 
-[2]
+
+[2]) (tex_files/material_methods.tex
 Overfull \hbox (14.11809pt too wide) in paragraph at lines 24--25
 \OT1/cmr/m/n/10 La base de datos STRING (\OT1/cmr/m/it/10 Search Tool for the R
 e-trieval of In-ter-act-ing Genes/Proteins\OT1/cmr/m/n/10 )
@@ -509,28 +509,28 @@ e-trieval of In-ter-act-ing Genes/Proteins\OT1/cmr/m/n/10 )
 
 
 [3]
+
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
-
-
-[4]
-<figures/workflow.png, id=220, 1071.25218pt x 643.6547pt>
+<figures/workflow.png, id=235, 1071.25218pt x 643.6547pt>
 File: figures/workflow.png Graphic file (type png)
 <use figures/workflow.png>
 Package pdftex.def Info: figures/workflow.png  used on input line 101.
 (pdftex.def)             Requested size: 342.9489pt x 206.0621pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[5]) (tex_files/resultados.tex
+[5]
 
-[6 <./figures/workflow.png (PNG copy)>]) (tex_files/discusion.tex)
-(tex_files/conclusiones.tex) (report.bbl
+[6 <./figures/workflow.png (PNG copy)>]) (tex_files/resultados.tex)
+(tex_files/discusion.tex) (tex_files/conclusiones.tex) (report.bbl
+
+[7]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 248.
 
@@ -538,8 +538,6 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line
 d
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-
-[7]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 382.
 
@@ -557,23 +555,17 @@ L3 programming layer <2024-08-30>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: B13FB34F6E0FAE957C8796F544CAF2D8;4109
-(rerunfilecheck)             After:  9B1E01E825264276DB129E10115E7D10;5290.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 9B1E01E825264276DB129E10115E7D10;5290.
  ) 
 Here is how much of TeX's memory you used:
- 10769 strings out of 473899
- 170194 string characters out of 5722216
- 581661 words of memory out of 5000000
- 33400 multiletter control sequences out of 15000+600000
+ 10773 strings out of 473899
+ 170258 string characters out of 5722216
+ 586229 words of memory out of 5000000
+ 33404 multiletter control sequences out of 15000+600000
  568400 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,10n,79p,1047b,725s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,10n,79p,1047b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
 i600\tcss0700.pk> <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\Diego De Pablo\AppData\Local\MiKTeX\
@@ -590,9 +582,9 @@ o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:
 e1/public/amsfonts/cm/cmti10.pfb><C:/Users/Diego De Pablo/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Diego De Pablo/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (8 pages, 355756 bytes).
+Output written on report.pdf (8 pages, 359344 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
+ 373 PDF objects out of 1000 (max. 8388607)
  91 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 
