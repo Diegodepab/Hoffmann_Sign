@@ -23,18 +23,15 @@ if ! command -v python &>/dev/null; then
 fi
 
 # Instalar dependencias de Python en el directorio personalizado
-pip install --prefix=$PYTHON_LIB -r requirements.txt
+pip install --target=$PYTHON_LIB -r requirements.txt
 
 # Limpieza de caché de Python
 python -m pip cache purge
 
 # Instalar dependencias de R desde el archivo Rreqs.txt en la carpeta R
 Rscript -e 'install.packages(readLines("Rreqs.txt"), lib="./R_packages", quietly = TRUE)'
-
-# Instalar Bioconductor y clusterProfiler si no están en Rreqs.txt
-Rscript -e 'if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager", lib="./R_packages")'
-Rscript -e 'BiocManager::install("clusterProfiler", lib="./R_packages")'
-
+# Instalar dependencias de Bioconductor desde el archivo BioconductorReqs.txt en la carpeta R
+Rscript -e 'library(BiocManager, lib.loc="./R_packages"); BiocManager::install(readLines("BioconductorReqs.txt"), lib="./R_packages", quietly = TRUE)'
 # Limpiar caché de R (opcional, puede ayudar a prevenir errores de instalación)
 Rscript -e 'unlink(file.path(Sys.getenv("R_LIBS_USER"), "00LOCK"), recursive = TRUE)'
 

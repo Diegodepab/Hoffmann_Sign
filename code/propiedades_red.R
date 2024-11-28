@@ -1,13 +1,4 @@
-# Instalar argparse si no está instalado
-if (!requireNamespace("argparse", quietly = TRUE)) {
-  install.packages("argparse")
-}
-
-# Verificar e instalar librerías necesarias
-if (!requireNamespace("igraph", quietly = TRUE)) install.packages("igraph")
-if (!requireNamespace("clusterProfiler", quietly = TRUE)) BiocManager::install("clusterProfiler")
-if (!requireNamespace("org.Hs.eg.db", quietly = TRUE)) BiocManager::install("org.Hs.eg.db")
-
+library(argparse)
 library(igraph)
 library(clusterProfiler)
 library(org.Hs.eg.db)

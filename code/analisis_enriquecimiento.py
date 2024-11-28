@@ -5,12 +5,14 @@ import seaborn as sns
 import requests
 import argparse
 
-# Asegúrate de que el directorio 'data/enrichment_analysis' exista
+# Asegúrate de que los directorios necesarios existan
 if not os.path.exists('data/enrichment_analysis'):
     os.makedirs('data/enrichment_analysis')
+if not os.path.exists('results/enrichment_analysis'):
+    os.makedirs('results/enrichment_analysis')
 
 def enrichment_analysis_enrichr_keeg_func(genes_by_cluster, combined_score_threshold=40):
-    # Enrichr API URLs
+    # URLs de la API de Enrichr
     add_list_url = "https://maayanlab.cloud/Enrichr/addList"
     enrich_url = "https://maayanlab.cloud/Enrichr/enrich"
 
@@ -85,7 +87,7 @@ def save_results_and_plot(all_results):
         plt.ylabel('Term')
         plt.tight_layout()
 
-        # Guardar el gráfico en 'data/enrichment_analysis'
+        # Guardar el gráfico en 'results/enrichment_analysis'
         plt.savefig(f"results/enrichment_analysis/enrichment_barplot_{cluster_name}.png")
         plt.close()
 
@@ -110,7 +112,7 @@ def load_genes_from_file(file_path):
 if __name__ == "__main__":
     # Configuración de los argumentos de la línea de comandos
     parser = argparse.ArgumentParser(description="Análisis de enriquecimiento de genes usando Enrichr y KEGG.")
-    parser.add_argument('file', type=str, help="Ruta del archivo que contiene los genes por cluster.")
+    parser.add_argument('file', help="Ruta del archivo que contiene los genes por cluster.")
     args = parser.parse_args()
 
     # Cargar los genes desde el archivo especificado

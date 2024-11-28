@@ -1,4 +1,4 @@
 igraph
-clusterProfiler
-org.Hs.eg.db
 BiocManager
+ggplot2
+argparse

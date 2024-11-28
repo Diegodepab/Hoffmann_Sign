@@ -2,7 +2,7 @@
 
 # Definir las carpetas donde estarán las dependencias de Python y de R
 export R_LIB="./R_packages:$R_LIB"
-export PYTHONPATH="./py_packages/local/lib/python3.11/dist-packages:$PYTHONPATH"
+export PYTHONPATH="./py_packages:$PYTHONPATH"
 
 # Crear directorios necesarios
 mkdir -p data results images logs
@@ -34,12 +34,12 @@ python string_interactions.py --input data/red_propagada.txt --output data/strin
 # Análisis de la red con R
 echo "Analizando propiedades de la red con R..."
 
-Rscript propiedades_red.R data/string_interactions.tsv results/
+R_LIBS_USER="./R_packages" Rscript propiedades_red.R data/string_interactions.tsv results/
 
 
 
 # Análisis de enriquecimiento funcional (descomentar cuando esté listo)
 echo "Realizando análisis de enriquecimiento funcional..."
-python analisis_enriquecimiento.py --file results/clusters_genes.txt 
+python analisis_enriquecimiento.py  results/clusters_genes.txt 
 
 echo "Pipeline completado. Los resultados están en la carpeta 'results/'."
