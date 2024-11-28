@@ -8,8 +8,8 @@ import argparse
 # Asegúrate de que los directorios necesarios existan
 if not os.path.exists('data/enrichment_analysis'):
     os.makedirs('data/enrichment_analysis')
-if not os.path.exists('results/enrichment_analysis'):
-    os.makedirs('results/enrichment_analysis')
+if not os.path.exists('../results/enrichment_analysis'):
+    os.makedirs('../results/enrichment_analysis')
 
 def enrichment_analysis_enrichr_keeg_func(genes_by_cluster, combined_score_threshold=40):
     # URLs de la API de Enrichr
@@ -88,7 +88,7 @@ def save_results_and_plot(all_results):
         plt.tight_layout()
 
         # Guardar el gráfico en 'results/enrichment_analysis'
-        plt.savefig(f"results/enrichment_analysis/enrichment_barplot_{cluster_name}.png")
+        plt.savefig(f"../results/enrichment_analysis/enrichment_barplot_{cluster_name}.png")
         plt.close()
 
 def load_genes_from_file(file_path):
