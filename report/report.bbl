@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -461,19 +461,6 @@ Accessed 2024-10-01
 \endbibitem
 
 %%% 23
-\bibitem{igraph2006}
-\begin{botherref}
-\oauthor{\bsnm{Csárdi}, \binits{G.}},
-\oauthor{\bsnm{Nepusz}, \binits{T.}}:
-The igraph software package for complex network research.
-InterJournal, Complex Systems
-\textbf{1695}
-(2006).
-Accessed 2024-10-01
-\end{botherref}
-\endbibitem
-
-%%% 24
 \bibitem{hagberg2008}
 \begin{botherref}
 \oauthor{\bsnm{Aric A.~Hagberg}, \binits{D.A.S.}},
@@ -486,7 +473,7 @@ Accessed 2024-10-01
 \end{botherref}
 \endbibitem
 
-%%% 25
+%%% 24
 \bibitem{Hunter2007}
 \begin{barticle}
 \bauthor{\bsnm{Hunter}, \binits{J.D.}}:
@@ -500,7 +487,7 @@ Accessed 2024-10-01
 \end{barticle}
 \endbibitem
 
-%%% 26
+%%% 25
 \bibitem{Waskom2021}
 \begin{barticle}
 \bauthor{\bsnm{Waskom}, \binits{M.L.}}:
@@ -514,7 +501,7 @@ Accessed 2024-10-01
 \end{barticle}
 \endbibitem
 
-%%% 27
+%%% 26
 \bibitem{Requests2020}
 \begin{botherref}
 \oauthor{\bsnm{Reitz}, \binits{K.}},
@@ -526,7 +513,7 @@ Accessed 2024-10-01
 \end{botherref}
 \endbibitem
 
-%%% 28
+%%% 27
 \bibitem{McKinney2010}
 \begin{botherref}
 \oauthor{\bsnm{McKinney}, \binits{W.}}:
@@ -538,22 +525,7 @@ Accessed 2024-10-01
 \end{botherref}
 \endbibitem
 
-%%% 29
-\bibitem{dozmorov2018}
-\begin{barticle}
-\bauthor{\bsnm{Dozmorov}, \binits{M.G.}}:
-\batitle{Github statistics as a measure of the impact of open-source
-  bioinformatics software}.
-\bjtitle{Frontiers in Bioengineering and Biotechnology}
-\bvolume{6},
-\bfpage{198}
-(\byear{2018}).
-doi:\doiurl{10.3389/fbioe.2018.00198}.
-\bcomment{Published 2018 Dec 18}
-\end{barticle}
-\endbibitem
-
-%%% 30
+%%% 28
 \bibitem{Blondel2008}
 \begin{barticle}
 \bauthor{\bsnm{Blondel}, \binits{V.D.}},
@@ -569,7 +541,7 @@ Accessed 2024-10-01
 \end{barticle}
 \endbibitem
 
-%%% 31
+%%% 29
 \bibitem{Ghiassian2015}
 \begin{barticle}
 \bauthor{\bsnm{Ghiassian}, \binits{S.D.}},
@@ -587,7 +559,7 @@ doi:\doiurl{10.1371/journal.pcbi.1004120}.
 \end{barticle}
 \endbibitem
 
-%%% 32
+%%% 30
 \bibitem{Raghavan2007}
 \begin{barticle}
 \bauthor{\bsnm{Raghavan}, \binits{U.N.}},
@@ -601,6 +573,48 @@ doi:\doiurl{10.1371/journal.pcbi.1004120}.
 (\byear{2007}).
 Accessed 2024-10-01
 \end{barticle}
+\endbibitem
+
+%%% 31
+\bibitem{10.1093/nar/gkad393}
+\begin{barticle}
+\bauthor{\bsnm{Evangelista}, \binits{J.E.}},
+\bauthor{\bsnm{Xie}, \binits{Z.}},
+\bauthor{\bsnm{Marino}, \binits{G.B.}},
+\bauthor{\bsnm{Nguyen}, \binits{N.}},
+\bauthor{\bsnm{Clarke}, \binits{D.B.}},
+\bauthor{\bsnm{Ma’ayan}, \binits{A.}}:
+\batitle{Enrichr-kg: bridging enrichment analysis across multiple libraries}.
+\bjtitle{Nucleic Acids Research}
+\bvolume{51}(\bissue{W1}),
+\bfpage{168}--\blpage{179}
+(\byear{2023}).
+doi:\doiurl{10.1093/nar/gkad393}.
+\arxivurl{https://academic.oup.com/nar/article-pdf/51/W1/W168/50737163/gkad393\_supplemental\_file.pdf}
+\end{barticle}
+\endbibitem
+
+%%% 32
+\bibitem{ontology_api}
+\begin{botherref}
+\oauthor{\bsnm{{The Jackson Laboratory}}}:
+{Ontology API Endpoint for HP:0031993}.
+\url{https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene}.
+Accessed: 2024-11-28
+(2024)
+\end{botherref}
+\endbibitem
+
+%%% 33
+\bibitem{stringdb_human_proteins}
+\begin{botherref}
+\oauthor{\bsnm{{Szklarczyk et al.}}}:
+{STRING Database: Protein-Protein Interaction Network (Homo sapiens, v12.0)}.
+\url{https://stringdb-downloads.org/download/protein.links.v12.0/9606.protein.links.v12.0.txt.gz}.
+Accessed: 2024-11-28
+(2024).
+doi:\doiurl{10.1093/nar/gkab835}
+\end{botherref}
 \endbibitem
 
 \end{thebibliography}
@@ -1044,19 +1058,6 @@ Accessed 2024-10-01
 </bibl>
 
 <bibl id="B23">
-  <title><p>The igraph software package for complex network
-  research</p></title>
-  <aug>
-    <au><snm>Csárdi</snm><fnm>G</fnm></au>
-    <au><snm>Nepusz</snm><fnm>T</fnm></au>
-  </aug>
-  <source>InterJournal, Complex Systems</source>
-  <pubdate>2006</pubdate>
-  <volume>1695</volume>
-  <url>http://igraph.org</url>
-</bibl>
-
-<bibl id="B24">
   <title><p>Exploring Network Structure, Dynamics, and Function using
   NetworkX</p></title>
   <aug>
@@ -1070,7 +1071,7 @@ Accessed 2024-10-01
   <url>https://networkx.github.io/documentation/latest/</url>
 </bibl>
 
-<bibl id="B25">
+<bibl id="B24">
   <title><p>Matplotlib: A 2D Graphics Environment</p></title>
   <aug>
     <au><snm>Hunter</snm><fnm>J. D.</fnm></au>
@@ -1084,7 +1085,7 @@ Accessed 2024-10-01
   <url>https://matplotlib.org/</url>
 </bibl>
 
-<bibl id="B26">
+<bibl id="B25">
   <title><p>Seaborn: Statistical Data Visualization</p></title>
   <aug>
     <au><snm>Waskom</snm><fnm>ML</fnm></au>
@@ -1097,7 +1098,7 @@ Accessed 2024-10-01
   <url>https://seaborn.pydata.org/</url>
 </bibl>
 
-<bibl id="B27">
+<bibl id="B26">
   <title><p>Requests: HTTP for Humans</p></title>
   <aug>
     <au><snm>Reitz</snm><fnm>K</fnm></au>
@@ -1108,7 +1109,7 @@ Accessed 2024-10-01
   <url>https://requests.readthedocs.io/</url>
 </bibl>
 
-<bibl id="B28">
+<bibl id="B27">
   <title><p>Data Structures for Statistical Computing in Python</p></title>
   <aug>
     <au><snm>McKinney</snm><fnm>W</fnm></au>
@@ -1120,20 +1121,7 @@ Accessed 2024-10-01
   <url>https://pandas.pydata.org/</url>
 </bibl>
 
-<bibl id="B29">
-  <title><p>GitHub Statistics as a Measure of the Impact of Open-Source
-  Bioinformatics Software</p></title>
-  <aug>
-    <au><snm>Dozmorov</snm><fnm>M. G.</fnm></au>
-  </aug>
-  <source>Frontiers in Bioengineering and Biotechnology</source>
-  <pubdate>2018</pubdate>
-  <volume>6</volume>
-  <fpage>198</fpage>
-  <note>Published 2018 Dec 18</note>
-</bibl>
-
-<bibl id="B30">
+<bibl id="B28">
   <title><p>Fast unfolding of communities in large networks</p></title>
   <aug>
     <au><snm>Blondel</snm><fnm>VD</fnm></au>
@@ -1150,7 +1138,7 @@ Accessed 2024-10-01
   <url>https://doi.org/10.1088/1742-5468/2008/10/P10008</url>
 </bibl>
 
-<bibl id="B31">
+<bibl id="B29">
   <title><p>A DIseAse MOdule Detection (DIAMOnD) algorithm derived from a
   systematic analysis of connectivity patterns of disease proteins in the human
   interactome</p></title>
@@ -1168,7 +1156,7 @@ Accessed 2024-10-01
   <note>Published 2015 Apr 8</note>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B30">
   <title><p>Near linear time algorithm to detect community structures in
   large-scale networks</p></title>
   <aug>
@@ -1183,6 +1171,47 @@ Accessed 2024-10-01
   <issue>3</issue>
   <fpage>036106</fpage>
   <url>https://doi.org/10.1103/PhysRevE.76.036106</url>
+</bibl>
+
+<bibl id="B31">
+  <title><p>Enrichr-KG: bridging enrichment analysis across multiple
+  libraries</p></title>
+  <aug>
+    <au><snm>Evangelista</snm><fnm>JE</fnm></au>
+    <au><snm>Xie</snm><fnm>Z</fnm></au>
+    <au><snm>Marino</snm><fnm>GB</fnm></au>
+    <au><snm>Nguyen</snm><fnm>N</fnm></au>
+    <au><snm>Clarke</snm><fnm>DB</fnm></au>
+    <au><snm>Ma’ayan</snm><fnm>A</fnm></au>
+  </aug>
+  <source>Nucleic Acids Research</source>
+  <pubdate>2023</pubdate>
+  <volume>51</volume>
+  <issue>W1</issue>
+  <fpage>W168</fpage>
+  <lpage>W179</lpage>
+  <url>https://doi.org/10.1093/nar/gkad393</url>
+</bibl>
+
+<bibl id="B32">
+  <title><p>{Ontology API Endpoint for HP:0031993}</p></title>
+  <aug>
+    <au><cnm>{The Jackson Laboratory}</cnm></au>
+  </aug>
+  <source>\url{https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene}</source>
+  <pubdate>2024</pubdate>
+  <note>Accessed: 2024-11-28</note>
+</bibl>
+
+<bibl id="B33">
+  <title><p>{STRING Database: Protein-Protein Interaction Network (Homo
+  sapiens, v12.0)}</p></title>
+  <aug>
+    <au><cnm>{Szklarczyk et al.}</cnm></au>
+  </aug>
+  <source>\url{https://stringdb-downloads.org/download/protein.links.v12.0/9606.protein.links.v12.0.txt.gz}</source>
+  <pubdate>2024</pubdate>
+  <note>Accessed: 2024-11-28</note>
 </bibl>
 
 </refgrp>

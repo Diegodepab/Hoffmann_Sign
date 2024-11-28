@@ -98,6 +98,8 @@ dev.off()
 genes_por_cluster <- split(V(g)$name, membership(comunidades))
 clusters_file <- file.path(output_folder, "clusters_genes.txt")
 file_conn <- file(clusters_file, "w")
+# Primero guardamos todos los genes como primer cluster
+cat("Todos los genes de la red:", paste(V(g)$name, collapse = ", "), "\n", file = file_conn)
 for (cluster_id in names(genes_por_cluster)) {
   cat("Cluster", cluster_id, ":", paste(genes_por_cluster[[cluster_id]], collapse = ", "), "\n", file = file_conn)
 }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  28 NOV 2024 11:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  29 NOV 2024 00:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -416,7 +416,7 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 
 \address@aff1=\toks36
 (./tex_files/introduction.tex
-<figures/Kabir_Hoffmann__Sign.jpg, id=129, 370.38374pt x 462.97969pt>
+<figures/Kabir_Hoffmann__Sign.jpg, id=117, 370.38374pt x 462.97969pt>
 File: figures/Kabir_Hoffmann__Sign.jpg Graphic file (type jpg)
 <use figures/Kabir_Hoffmann__Sign.jpg>
 Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 5
@@ -438,36 +438,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
  []
 
 [2]) (./tex_files/material_methods.tex
-Overfull \hbox (14.11809pt too wide) in paragraph at lines 24--25
+Overfull \hbox (14.11809pt too wide) in paragraph at lines 22--23
 \OT1/cmr/m/n/10 La base de datos STRING (\OT1/cmr/m/it/10 Search Tool for the R
 e-trieval of In-ter-act-ing Genes/Proteins\OT1/cmr/m/n/10 )
  []
 
 [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
+<figures/workflow.png, id=226, 1071.25218pt x 643.6547pt>
+File: figures/workflow.png Graphic file (type png)
+<use figures/workflow.png>
+Package pdftex.def Info: figures/workflow.png  used on input line 90.
+(pdftex.def)             Requested size: 342.9489pt x 206.0621pt.
+ [5 <./figures/workflow.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
-<figures/workflow.png, id=237, 1071.25218pt x 643.6547pt>
-File: figures/workflow.png Graphic file (type png)
-<use figures/workflow.png>
-Package pdftex.def Info: figures/workflow.png  used on input line 101.
-(pdftex.def)             Requested size: 342.9489pt x 206.0621pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5] [6 <./figures/workflow.png (PNG copy)>]) (./tex_files/resultados.tex
-[7]) (./tex_files/discusion.tex) (./tex_files/conclusiones.tex) (./report.bbl
+) (./tex_files/resultados.tex [6]) (./tex_files/discusion.tex)
+(./tex_files/conclusiones.tex) (./report.bbl [7]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 248.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [8]
+)
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 382.
 
-)
+ [8])
 
 AED: lastpage setting LastPage
 [9] (./report.aux)
@@ -476,14 +474,14 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 9B1E01E825264276DB129E10115E7D10;5290.
+(rerunfilecheck)             Checksum: A7CC1AE15309D1BCB2FB7C070838A895;4919.
  ) 
 Here is how much of TeX's memory you used:
- 10389 strings out of 476091
- 160964 string characters out of 5794081
- 1867330 words of memory out of 5000000
- 30527 multiletter control sequences out of 15000+600000
- 522618 words of font info for 68 fonts, out of 8000000 for 9000
+ 10384 strings out of 476091
+ 160922 string characters out of 5794081
+ 1869330 words of memory out of 5000000
+ 30525 multiletter control sequences out of 15000+600000
+ 522450 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,76p,1045b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
@@ -495,14 +493,13 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 /amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfss0700.pfb>
-Output written on report.pdf (9 pages, 339637 bytes).
+t8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfss0700.pfb>
+Output written on report.pdf (9 pages, 328691 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 341 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 366 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 227 words of extra memory for PDF output out of 10000 (max. 10000000)
 
