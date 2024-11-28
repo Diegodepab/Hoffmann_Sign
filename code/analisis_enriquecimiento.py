@@ -8,8 +8,7 @@ import argparse
 # Asegúrate de que los directorios necesarios existan
 if not os.path.exists('data/enrichment_analysis'):
     os.makedirs('data/enrichment_analysis')
-if not os.path.exists('../results/enrichment_analysis'):
-    os.makedirs('../results/enrichment_analysis')
+
 
 def enrichment_analysis_enrichr_keeg_func(genes_by_cluster, combined_score_threshold=40):
     # URLs de la API de Enrichr
