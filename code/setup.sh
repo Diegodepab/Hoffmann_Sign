@@ -7,8 +7,9 @@ set -e
 export R_LIB="./R_packages"
 mkdir -p $R_LIB
 
-export PYTHON_LIB="./py_packages"
-mkdir -p $PYTHON_LIB
+python_libs="./py_packages"
+export PYTHONPATH=$python_libs:$PYTHONPATH
+mkdir -p $python_libs
 
 # Verificar si R está instalado
 if ! command -v Rscript &>/dev/null; then
@@ -23,17 +24,18 @@ if ! command -v python &>/dev/null; then
 fi
 
 # Instalar dependencias de Python en el directorio personalizado
-pip install --target=$PYTHON_LIB -r requirements.txt
+pip install -r requirements.txt
 
 # Limpieza de caché de Python
-python -m pip cache purge
+#python -m pip cache purge
 
 # Instalar dependencias de R desde el archivo Rreqs.txt en la carpeta R
-Rscript -e 'install.packages(readLines("Rreqs.txt"), lib="./R_packages", quietly = TRUE)'
+export R_LIBS_USER="./R_packages"
+Rscript -e 'install.packages(readLines("Rreqs.txt"), lib='$R_LIBS_USER')'
 # Instalar dependencias de Bioconductor desde el archivo BioconductorReqs.txt en la carpeta R
-Rscript -e 'library(BiocManager, lib.loc="./R_packages"); BiocManager::install(readLines("BioconductorReqs.txt"), lib="./R_packages", quietly = TRUE)'
+Rscript -e 'BiocManager::install(readLines("BioconductorReqs.txt"), lib='$R_LIBS_USER')'
 # Limpiar caché de R (opcional, puede ayudar a prevenir errores de instalación)
-Rscript -e 'unlink(file.path(Sys.getenv("R_LIBS_USER"), "00LOCK"), recursive = TRUE)'
+#Rscript -e 'unlink(file.path(Sys.getenv("R_LIBS_USER"), "00LOCK"), recursive = TRUE)'
 
 # Imprimir mensaje de finalización
 echo "Instalación de dependencias completada con éxito."
