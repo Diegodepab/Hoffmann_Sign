@@ -1,10 +1,12 @@
 #!/bin/bash
 
+export current_dir=$(pwd)
 # Definir las carpetas donde estarán las dependencias de Python y de R
-export R_LIB="./R_packages:$R_LIB"
-export PYTHONPATH="./py_packages:$PYTHONPATH"
+export R_LIBS_USER="$current_dir/R_packages"
 
 
+python_libs="$current_dir/py_packages"
+export PYTHONPATH=$python_libs:$PYTHONPATH
 
 # Descargar los datos de genes de HPO
 echo "Descargando datos de genes de HPO..."
