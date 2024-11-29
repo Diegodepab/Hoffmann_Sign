@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 # Instalar dependencias de R desde el archivo Rreqs.txt en la carpeta R
 export R_LIBS_USER="./R_packages"
-Rscript -e 'install.packages(readLines("Rreqs.txt"), lib='$R_LIBS_USER')'
+Rscript -e 'install.packages(readLines("Rreqs.txt"), lib='$R_LIBS_USER', repos="https://cloud.r-project.org")'
 # Instalar dependencias de Bioconductor desde el archivo BioconductorReqs.txt en la carpeta R
 Rscript -e 'BiocManager::install(readLines("BioconductorReqs.txt"), lib='$R_LIBS_USER')'
 # Limpiar caché de R (opcional, puede ayudar a prevenir errores de instalación)
