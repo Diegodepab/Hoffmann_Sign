@@ -33,7 +33,7 @@ python string_interactions.py --input data/red_propagada.txt --output data/strin
 # Análisis de la red con R
 echo "Analizando propiedades de la red con R..."
 
-R_LIBS_USER="./R_packages" Rscript propiedades_red.R data/string_interactions.tsv ../results/
+Rscript propiedades_red.R data/string_interactions.tsv ../results/
 
 
 
