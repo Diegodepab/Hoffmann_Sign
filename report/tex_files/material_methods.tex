@@ -35,7 +35,7 @@ El lenguaje de programación \textit{R} específicamente la versión 4.3.3. Es u
 \paragraph{Análisis Bioinformático:}
 \begin{itemize}
 	\item \textbf{Bioconductor}: Conjunto de paquetes especializados en el análisis de datos genómicos. \cite{Huber2015}.
-	\item \textbf{iGraph para R}: Versión de iGraph en R, útil para la comparación de redes de interacción generadas en Python y el análisis estadístico de propiedades de red. \cite{Csardi2006}.
+	\item \textbf{iGraph para R}: Paquete para R que contiene herramientas para la manipulación y análisis de redes. Además, incluye funciones para medir propiedades globales como modularidad y densidad \cite{Csardi2006}.
 \end{itemize}
 
 
@@ -69,10 +69,8 @@ El lenguaje de programación \textit{Python} es versátil y de alto nivel, usado
 	
 	\item \textbf{DIAMOnD}: (A DIseAse MOdule Detection) identifica módulos de enfermedades en redes de interacción proteína-proteína al expandir conjuntos de genes conocidos con nodos topológicamente cercanos. Aunque prioriza bien genes asociados a enfermedades, su eficacia disminuye con grandes volúmenes de genes candidatos.\cite{Ghiassian2015}.
 	
-	\item \textbf{Propagación de Etiquetas}: Este algoritmo agrupa datos según su similitud, sin la necesidad de especificar el número de clústeres a priori, haciéndolo adecuado para una exploración inicial de la estructura de la red \cite{Raghavan2007}.
 	
-	\item \textbf{Métricas de Análisis de Redes}: Para caracterizar las propiedades estructurales de las redes generadas, se emplearon métricas como la centralidad de grado, el coeficiente de agrupamiento y la centralidad de intermediación. Estas métricas permiten comprender cómo los genes o proteínas se conectan entre sí dentro de la red y resaltar los nodos más relevantes en términos biológicos.
-	
+
 	\item \textbf{Herramienta Enrichr}
 	
 	Enrichr es una herramienta bioinformática que permite realizar análisis de enriquecimiento funcional mediante la comparación de listas de genes con bases de datos biológicas. Facilita la identificación de vías metabólicas, procesos biológicos y términos funcionales asociados a conjuntos de genes mediante pruebas estadísticas y puntuaciones combinadas.\cite{10.1093/nar/gkad393}
@@ -105,14 +103,9 @@ Para el análisis de interacciones génicas, se utilizó una red de interaccione
 \subsection{Propagación de red}
 
 Se utilizó el algoritmo DIAMOnD para expandir genes relacionados con el signo de Hoffman en la red de interacciones proteína-proteína. El algoritmo parte de un conjunto inicial de genes de semilla, identificando nodos adicionales cercanos en términos de proximidad topológica, evaluando su conectividad mediante una distribución hipergeométrica. La selección de nodos se basa en su número de conexiones con los genes de semilla, priorizando aquellos que forman una subred coherente, en el proceso biológico del signo de Hoffman. Lo que resultó en una red enriquecida de genes candidatos, visualizados como una subred relacionada con el fenotipo.
-
 \subsection{Análisis de red}
-Se aplicó el algoritmo de Louvain para identificar módulos funcionales en la red, agrupando nodos en función de la densidad de sus interacciones. Posteriormente, se calcularon métricas topológicas para analizar la estructura y el rol de los genes en la red. 
-\\
 
-\textbf{¿ESTO VA EN RESULTADOS?}La centralidad de grado permitió identificar nodos con alta conectividad dentro de sus módulos, mientras que la centralidad de intermediación destacó los genes clave en el flujo de información entre módulos. Por último, la centralidad de cercanía ayudó a identificar nodos importantes para la cohesión interna de los módulos.
-
-Este análisis facilitó la identificación de módulos funcionales representados por grupos de genes con posibles relaciones biológicas.
+Para el análisis de redes, se utilizó el algoritmo de Louvain para detectar módulos funcionales en la red. Además, se implementaron métricas topológicas como la centralidad de grado, que mide el número de conexiones directas de cada nodo; la centralidad de intermediación, que identifica nodos clave en el flujo de información; y la centralidad de cercanía, que evalúa la proximidad de un nodo respecto al resto. Estas métricas, calculadas mediante la librería iGraph \cite{Csardi2006}, permitieron caracterizar la estructura de la red y analizar el rol topológico de cada nodo, proporcionando información clave sobre su conectividad.
 
 \subsection{Análisis de enriquecimiento funcional}
 

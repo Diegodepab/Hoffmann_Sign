@@ -47,45 +47,45 @@ Name 1 in "Aric A. Hagberg, Daniel A. Schult, and Pieter J. Swart" has a comma a
 while executing---line 3019 of file bmc-mathphys.bst
 Name 1 in "Aric A. Hagberg, Daniel A. Schult, and Pieter J. Swart" has a comma at the end for entry hagberg2008
 while executing---line 3019 of file bmc-mathphys.bst
-You've used 33 entries,
+You've used 32 entries,
             7128 wiz_defined-function locations,
-            1382 strings with 18441 characters,
-and the built_in function-call counts, 242728 in all, are:
-= -- 30563
-> -- 1400
-< -- 747
-+ -- 7834
-- -- 442
-* -- 19046
-:= -- 48103
-add.period$ -- 72
-call.type$ -- 33
-change.case$ -- 359
-chr.to.int$ -- 1461
-cite$ -- 33
-duplicate$ -- 3787
-empty$ -- 14016
-format.name$ -- 1706
-if$ -- 53631
+            1373 strings with 18184 characters,
+and the built_in function-call counts, 237280 in all, are:
+= -- 29893
+> -- 1366
+< -- 728
++ -- 7695
+- -- 433
+* -- 18606
+:= -- 46992
+add.period$ -- 70
+call.type$ -- 32
+change.case$ -- 349
+chr.to.int$ -- 1424
+cite$ -- 32
+duplicate$ -- 3693
+empty$ -- 13700
+format.name$ -- 1674
+if$ -- 52433
 int.to.chr$ -- 1
-int.to.str$ -- 78
-missing$ -- 1278
-newline$ -- 1176
-num.names$ -- 165
-pop$ -- 1617
+int.to.str$ -- 74
+missing$ -- 1244
+newline$ -- 1145
+num.names$ -- 160
+pop$ -- 1580
 preamble$ -- 1
-purify$ -- 141
-quote$ -- 66
-skip$ -- 14358
+purify$ -- 135
+quote$ -- 64
+skip$ -- 14046
 stack$ -- 0
-substring$ -- 34470
-swap$ -- 1238
-text.length$ -- 497
+substring$ -- 33737
+swap$ -- 1205
+text.length$ -- 480
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1341
+type$ -- 1295
 warning$ -- 0
-while$ -- 1333
+while$ -- 1299
 width$ -- 0
-write$ -- 1735
+write$ -- 1694
 (There were 9 error messages)

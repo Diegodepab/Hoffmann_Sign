@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{33}
+\begin{thebibliography}{32}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -560,22 +560,6 @@ doi:\doiurl{10.1371/journal.pcbi.1004120}.
 \endbibitem
 
 %%% 30
-\bibitem{Raghavan2007}
-\begin{barticle}
-\bauthor{\bsnm{Raghavan}, \binits{U.N.}},
-\bauthor{\bsnm{Albert}, \binits{R.}},
-\bauthor{\bsnm{Kumara}, \binits{S.}}:
-\batitle{Near linear time algorithm to detect community structures in
-  large-scale networks}.
-\bjtitle{Physical Review E}
-\bvolume{76}(\bissue{3}),
-\bfpage{036106}
-(\byear{2007}).
-Accessed 2024-10-01
-\end{barticle}
-\endbibitem
-
-%%% 31
 \bibitem{10.1093/nar/gkad393}
 \begin{barticle}
 \bauthor{\bsnm{Evangelista}, \binits{J.E.}},
@@ -594,7 +578,7 @@ doi:\doiurl{10.1093/nar/gkad393}.
 \end{barticle}
 \endbibitem
 
-%%% 32
+%%% 31
 \bibitem{ontology_api}
 \begin{botherref}
 \oauthor{\bsnm{{The Jackson Laboratory}}}:
@@ -605,7 +589,7 @@ Accessed: 2024-11-28
 \end{botherref}
 \endbibitem
 
-%%% 33
+%%% 32
 \bibitem{stringdb_human_proteins}
 \begin{botherref}
 \oauthor{\bsnm{{Szklarczyk et al.}}}:
@@ -1157,23 +1141,6 @@ doi:\doiurl{10.1093/nar/gkab835}
 </bibl>
 
 <bibl id="B30">
-  <title><p>Near linear time algorithm to detect community structures in
-  large-scale networks</p></title>
-  <aug>
-    <au><snm>Raghavan</snm><fnm>UN</fnm></au>
-    <au><snm>Albert</snm><fnm>R</fnm></au>
-    <au><snm>Kumara</snm><fnm>S</fnm></au>
-  </aug>
-  <source>Physical Review E</source>
-  <publisher>American Physical Society</publisher>
-  <pubdate>2007</pubdate>
-  <volume>76</volume>
-  <issue>3</issue>
-  <fpage>036106</fpage>
-  <url>https://doi.org/10.1103/PhysRevE.76.036106</url>
-</bibl>
-
-<bibl id="B31">
   <title><p>Enrichr-KG: bridging enrichment analysis across multiple
   libraries</p></title>
   <aug>
@@ -1193,7 +1160,7 @@ doi:\doiurl{10.1093/nar/gkab835}
   <url>https://doi.org/10.1093/nar/gkad393</url>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B31">
   <title><p>{Ontology API Endpoint for HP:0031993}</p></title>
   <aug>
     <au><cnm>{The Jackson Laboratory}</cnm></au>
@@ -1203,7 +1170,7 @@ doi:\doiurl{10.1093/nar/gkab835}
   <note>Accessed: 2024-11-28</note>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B32">
   <title><p>{STRING Database: Protein-Protein Interaction Network (Homo
   sapiens, v12.0)}</p></title>
   <aug>
