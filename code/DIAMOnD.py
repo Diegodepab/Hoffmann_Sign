@@ -100,7 +100,7 @@ def gauss_hypergeom(x, r, b, n, gamma_ln):
     """Distribución hipergeométrica."""
     max_index = len(gamma_ln) - 1
     if r + b > max_index or x > max_index or r < x or b < (n - x):
-        return 0  # Retorno seguro para valores fuera de rango
+        return 0  
 
     return np.exp(gamma_ln[r] - (gamma_ln[x] + gamma_ln[r - x]) +
                   gamma_ln[b] - (gamma_ln[n - x] + gamma_ln[b - n]) -
@@ -111,7 +111,7 @@ def pvalue(kb, k, N, s, gamma_ln):
     return sum(gauss_hypergeom(n, s, N - s, k, gamma_ln) for n in range(kb, k + 1))
 
 def diamond_iteration_of_first_X_nodes(G, S, X, alpha=1):
-    """Ejecuta una iteración del algoritmo DIAMOnD considerando el puntaje combinado."""
+    """Ejecuta una iteración del algoritmo DIAMOnD de manera determinista."""
     added_nodes = []
     neighbors = {node: set(G.neighbors(node)) for node in G.nodes}
     degrees = {node: G.degree(node) for node in G.nodes}
@@ -121,22 +121,25 @@ def diamond_iteration_of_first_X_nodes(G, S, X, alpha=1):
     # Barra de progreso en la iteración DIAMOnD
     with tqdm(total=X, desc="Agregando genes con DIAMOnD", unit="gen", leave=True) as pbar:
         while len(added_nodes) < X:
-            min_p = float('inf')
-            next_node = None
+            candidates = []
+
             for node in set(G.nodes) - cluster_nodes:
                 k = degrees[node]  # Grado total del nodo
                 kb = sum(1 for neighbor in neighbors[node] if neighbor in cluster_nodes)  # Grado en semillas
                 p = pvalue(kb, k, len(G.nodes), len(cluster_nodes), gamma_ln)
                 weight_sum = sum(G[node][neighbor]['weight'] for neighbor in neighbors[node] if neighbor in cluster_nodes)
 
-                if p < min_p or (p == min_p and weight_sum > sum(G[next_node][n]['weight'] for n in neighbors[next_node] if n in cluster_nodes)):
-                    min_p = p
-                    next_node = node
+                # Añadir los nodos candidatos junto con sus criterios
+                candidates.append((p, -weight_sum, node))  # Nota: -weight_sum para priorizar mayor peso
 
-            if next_node:
-                added_nodes.append(next_node)
-                cluster_nodes.add(next_node)
-                pbar.update(1)  # Actualizar la barra de progreso
+            # Ordenar por p-valor, luego por suma de pesos y finalmente por el ID del nodo (lexicográficamente)
+            candidates.sort()
+
+            # Seleccionar el nodo con menor p-valor, mayor peso y menor ID (criterio lexicográfico)
+            next_node = candidates[0][2]
+            added_nodes.append(next_node)
+            cluster_nodes.add(next_node)
+            pbar.update(1)  # Actualizar la barra de progreso
 
     return added_nodes
 
