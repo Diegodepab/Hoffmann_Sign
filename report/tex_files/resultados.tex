@@ -11,8 +11,109 @@ Se obtienen 46 genes relacionados con el termino del signo de Hoffmann de HPO, a
 \textbf{No se donde o que hacer con esto:}\\
 
  que permiten una representación visual de la red de interacciones entre los genes (Insertar figura).Y describir brevemente la red de la figura, sobre que tan conectada esta, si cada nodo tiene grado mayor a uno, si hay nodos aislados, etc.
+\vspace{4cm}
 
 \subsection{Análisis de enriquecimiento funcional}
+
+\begin{table}[ht]
+	\centering
+	\caption{Análisis de Enriquecimiento - GO Biological Process - Cluster 1}
+	\begin{tabularx}{\textwidth}{|l|X|l|}
+		\hline
+		\textbf{Término} & \textbf{Genes} & \textbf{p-value} \\ \hline
+		Golgi to plasma membrane transport (GO:0006893) & RAB10, EXOC8, EXOC6B, EXOC4, EXOC6, EXOC5, EXOC2, EXOC1 & 7.33e-17 \\ \hline
+		cilium organization (GO:0044782) & ARF4, EXOC8, EXOC7, RAB3IP, ASAP1, RAB11A, EXOC4, EXOC3, EXOC6, EXOC5, RAB11FIP3, RAB8A, EXOC2, EXOC1 & 1.53e-23 \\ \hline
+		plasma membrane bounded cell projection assembly (GO:0120031) & ARF4, EXOC8, EXOC7, RAB3IP, ASAP1, RAB11A, EXOC4, EXOC3, EXOC6, EXOC5, RAB11FIP3, RAB8A, EXOC2, EXOC1 & 2.60e-22 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+	\centering
+	\caption{Análisis de Enriquecimiento - GO Cellular Component - Cluster 1}
+	\begin{tabularx}{\textwidth}{|l|X|l|}
+		\hline
+		\textbf{Término} & \textbf{Genes} & \textbf{p-value} \\ \hline
+		insulin-responsive compartment (GO:0032593) & RAB10, MYO5A & 3.41e-05 \\ \hline
+		recycling endosome (GO:0055037) & RAB10, MYO5A, RAB11FIP3, RAB11A, RAB8A & 2.65e-07 \\ \hline
+		recycling endosome membrane (GO:0055038) & RAB11FIP3, RAB11A, RAB8A & 2.55e-05 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+	\centering
+	\caption{Análisis de Enriquecimiento - GO Molecular Function - Cluster 1}
+	\begin{tabularx}{\textwidth}{|l|X|l|}
+		\hline
+		\textbf{Término} & \textbf{Genes} & \textbf{p-value} \\ \hline
+		myosin V binding (GO:0031489) & RAB10, RAB11A, RAB8A & 3.86e-07 \\ \hline
+		myosin binding (GO:0017022) & RAB10, RALA, RAB11A, RAB8A & 2.58e-07 \\ \hline
+		small GTPase binding (GO:0031267) & EXOC8, EXOC4, MYO5A, EXOC5, RAB11FIP3, RAB8A, EXOC2 & 2.45e-10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+	\centering
+	\caption{Análisis de Enriquecimiento - KEGG Pathways - Cluster 1}
+	\begin{tabularx}{\textwidth}{|l|X|l|}
+		\hline
+		\textbf{Término} & \textbf{Genes} & \textbf{p-value} \\ \hline
+		Endocytosis & RAB10, ASAP1, RAB11FIP3, ARF5, RAB11A, RAB8A & 1.04e-07 \\ \hline
+		Pancreatic cancer & RALA, IKBKG & 0.00252 \\ \hline
+		Pancreatic secretion & RAB11A, RAB8A & 0.00426 \\ \hline
+	\end{tabularx}
+\end{table}
+
+
+\begin{table}[ht]
+	\centering
+	\caption{Análisis de Enriquecimiento - Procesos Biológicos (GO:BP) - Cluster 3}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{Término} & \textbf{Genes} & \textbf{p-value} \\ \hline
+		Positive regulation of ATP biosynthetic process (GO:2001171) & VCP, TREM2, PPARGC1A & 3.10e-07 \\ \hline
+		Positive regulation of purine nucleotide biosynthetic process (GO:1900373) & VCP, TREM2, PPARGC1A & 1.05e-06 \\ \hline
+		Regulation of ATP biosynthetic process (GO:2001169) & VCP, TREM2, PPARGC1A & 2.05e-06 \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+	\centering
+	\caption{Análisis de Enriquecimiento - Componentes Celulares (GO:CC) - Cluster 3}
+	\begin{tabularx}{\textwidth}{|l|X|l|}
+		\hline
+		\textbf{Término} & \textbf{Genes} & \textbf{p-value} \\ \hline
+		Intracellular non-membrane-bounded organelle (GO:0043232) & FIG4, GLE1, VCP, TAF15, DCTN1, ANXA11, ANG, NEFH & 3.72e-04 \\ \hline
+		Mitochondrial intermembrane space (GO:0005758) & CHCHD10, SOD1 & 3.88e-03 \\ \hline
+		Organelle envelope lumen (GO:0031970) & CHCHD10, SOD1 & 4.70e-03 \\ \hline
+	\end{tabularx}
+\end{table}
+
+
+\begin{table}[ht]
+	\centering
+	\caption{Análisis de Enriquecimiento - Funciones Moleculares (GO:MF) - Cluster 3}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{Término} & \textbf{Genes} & \textbf{p-value} \\ \hline
+		Polyubiquitin modification-dependent protein binding (GO:0031593) & VCP, SQSTM1, OPTN, UBQLN2 & 1.28e-06 \\ \hline
+		miRNA binding (GO:0035198) & MATR3, HNRNPA1 & 1.05e-03 \\ \hline
+		Regulatory RNA binding (GO:0061980) & MATR3, HNRNPA1 & 1.86e-03 \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+	\centering
+	\caption{Análisis de Enriquecimiento - Rutas KEGG - Cluster 3}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{Término} & \textbf{Genes} & \textbf{p-value} \\ \hline
+		Amyotrophic lateral sclerosis (ALS) & NEFH, SOD1, PRPH & 7.35e-05 \\ \hline
+		Mitophagy & TBK1, SQSTM1, OPTN & 1.52e-04 \\ \hline
+		Huntington disease & DCTN1, PPARGC1A, SOD1 & 3.57e-03 \\ \hline
+	\end{tabular}
+\end{table}
+
+
 
 \subsection{Propiedades de la red y detección de comunidades}
 
