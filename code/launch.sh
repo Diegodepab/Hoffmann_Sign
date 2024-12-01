@@ -1,12 +1,11 @@
 #!/bin/bash
 
-export current_dir=$(pwd)
 # Definir las carpetas donde estarán las dependencias de Python y de R
-export R_LIBS_USER="$current_dir/R_packages"
+export R_LIB="./R_packages:$R_LIB"
+export PYTHONPATH="./py_packages:$PYTHONPATH"
 
-
-python_libs="$current_dir/py_packages"
-export PYTHONPATH=$python_libs:$PYTHONPATH
+# Crear directorios necesarios
+mkdir -p data results images logs
 
 # Descargar los datos de genes de HPO
 echo "Descargando datos de genes de HPO..."
@@ -35,12 +34,12 @@ python string_interactions.py --input data/red_propagada.txt --output data/strin
 # Análisis de la red con R
 echo "Analizando propiedades de la red con R..."
 
-Rscript propiedades_red.R data/string_interactions.tsv ../results/
+R_LIBS_USER="./R_packages" Rscript propiedades_red.R data/string_interactions.tsv results/
 
 
 
 # Análisis de enriquecimiento funcional (descomentar cuando esté listo)
 echo "Realizando análisis de enriquecimiento funcional..."
-python analisis_enriquecimiento.py  ../results/clusters_genes.txt 
+python analisis_enriquecimiento.py  results/clusters_genes.txt 
 
 echo "Pipeline completado. Los resultados están en la carpeta 'results/'."

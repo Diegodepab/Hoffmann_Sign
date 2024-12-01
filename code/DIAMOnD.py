@@ -9,7 +9,7 @@
 # data/red_propagada.txt
 
 # Codigo para ejecutarlo
-# python DIAMOnD.py data/genes_string.tsv data/network.txt data/red_propagada.txt
+# python DIAMOnD.py data/genes_string.tsv data/network.txt 20 1 data/red_propagada.txt
 
 ############################################################
 ########## Descarga o llamar las librerías #################
@@ -110,8 +110,23 @@ def pvalue(kb, k, N, s, gamma_ln):
     """Calcula el p-valor para un nodo con kb enlaces a semillas y k enlaces totales."""
     return sum(gauss_hypergeom(n, s, N - s, k, gamma_ln) for n in range(kb, k + 1))
 
+from tqdm import tqdm
+
 def diamond_iteration_of_first_X_nodes(G, S, X, alpha=1):
-    """Ejecuta una iteración del algoritmo DIAMOnD de manera determinista."""
+    """
+    Ejecuta una iteración del algoritmo DIAMOnD de manera determinista,
+    priorizando nodos con menor p-valor y, en caso de empate, usando la suma ponderada
+    de los pesos de sus conexiones hacia los nodos del cluster.
+    
+    Parámetros:
+        G: La red de interacción proteica (grafo de NetworkX).
+        S: Conjunto de genes semilla.
+        X: Número de genes a agregar.
+        alpha: Parámetro opcional de ponderación (por defecto 1).
+        
+    Retorna:
+        added_nodes: Lista de los genes agregados.
+    """
     added_nodes = []
     neighbors = {node: set(G.neighbors(node)) for node in G.nodes}
     degrees = {node: G.degree(node) for node in G.nodes}
@@ -123,40 +138,47 @@ def diamond_iteration_of_first_X_nodes(G, S, X, alpha=1):
         while len(added_nodes) < X:
             candidates = []
 
+            # Iterar sobre los nodos que no están en el cluster actual
             for node in set(G.nodes) - cluster_nodes:
                 k = degrees[node]  # Grado total del nodo
                 kb = sum(1 for neighbor in neighbors[node] if neighbor in cluster_nodes)  # Grado en semillas
                 p = pvalue(kb, k, len(G.nodes), len(cluster_nodes), gamma_ln)
+
+                # Calcular la suma ponderada de los pesos hacia los genes semilla
                 weight_sum = sum(G[node][neighbor]['weight'] for neighbor in neighbors[node] if neighbor in cluster_nodes)
 
                 # Añadir los nodos candidatos junto con sus criterios
                 candidates.append((p, -weight_sum, node))  # Nota: -weight_sum para priorizar mayor peso
 
-            # Ordenar por p-valor, luego por suma de pesos y finalmente por el ID del nodo (lexicográficamente)
+            # Ordenar por p-valor, luego por suma de pesos (mayor primero) y finalmente por el ID del nodo
             candidates.sort()
 
             # Seleccionar el nodo con menor p-valor, mayor peso y menor ID (criterio lexicográfico)
             next_node = candidates[0][2]
             added_nodes.append(next_node)
             cluster_nodes.add(next_node)
-            pbar.update(1)  # Actualizar la barra de progreso
+
+            # Actualizar la barra de progreso
+            pbar.update(1)
 
     return added_nodes
+
 
 
 # ------------------- EJECUCIÓN -------------------
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Uso: python dyamond.py <archivo_genes_string> <archivo_red> <archivo_salida>")
-        sys.exit("Error al aplicar DIAMOnD")
+    # Verificar que se pasen exactamente 5 argumentos (script + 5 parámetros)
+    if len(sys.argv) != 6:
+        print("Uso: python diamond.py <archivo_genes_string> <archivo_red> <num_genes_diamond> <alpha> <archivo_salida>")
+        sys.exit("Error: número incorrecto de parámetros.")
 
+    # Asignación de argumentos
     seed_file = sys.argv[1]       # Archivo con genes de semilla
     network_file = sys.argv[2]    # Archivo de la red
-    output_file = sys.argv[3]     # Archivo de salida para la red propagada
-
-    num_diamond_genes = 35        # Número de genes a agregar
-    alpha = 1
+    num_diamond_genes = int(sys.argv[3])  # Número de genes a agregar (asegurar que sea un entero)
+    alpha = float(sys.argv[4])    # Alpha (convertirlo a flotante)
+    output_file = sys.argv[5]     # Archivo de salida para la red propagada
 
     # Leer red y genes de semilla
     G, seed_genes = read_input(network_file, seed_file)
