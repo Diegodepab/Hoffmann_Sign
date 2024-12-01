@@ -1,17 +1,12 @@
 import os
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import requests
 import argparse
 
 # Asegúrate de que los directorios necesarios existan
-if not os.path.exists('data/enrichment_analysis'):
-    os.makedirs('data/enrichment_analysis')
-if not os.path.exists('..results/enrichment_analysis'):
-    os.makedirs('../results/enrichment_analysis')
-
-
+results_dir = '../results/enrichment_analysis'
+if not os.path.exists(results_dir):
+    os.makedirs(results_dir)
 
 def enrichment_analysis_enrichr_keeg_func(genes_by_cluster, combined_score_threshold=40):
     # URLs de la API de Enrichr
@@ -47,7 +42,7 @@ def enrichment_analysis_enrichr_keeg_func(genes_by_cluster, combined_score_thres
                     enrichment_results = response.json()
 
                     if gene_set_library in enrichment_results:
-                        filtered_results = []
+                        grouped_results = {}
                         for result in enrichment_results[gene_set_library]:
                             term_name = result[1]
                             pvalue = result[2]
@@ -56,42 +51,43 @@ def enrichment_analysis_enrichr_keeg_func(genes_by_cluster, combined_score_thres
 
                             # Filtrar por puntuación combinada
                             if combined_score > combined_score_threshold:
-                                num_genes = len(involved_genes)
-                                filtered_results.append((term_name, pvalue, combined_score, involved_genes, num_genes))
+                                term_category = categorize_term(term_name)
+                                if term_category not in grouped_results:
+                                    grouped_results[term_category] = []
+                                grouped_results[term_category].append((term_name, pvalue, combined_score, involved_genes))
 
-                        # Ordenar resultados por número de genes involucrados y luego por combined score
-                        filtered_results.sort(key=lambda x: (x[4], x[2]), reverse=True)
-
-                        # Guardar los resultados para este cluster
-                        all_results[cluster_name] = filtered_results
+                        # Guardar los resultados agrupados para este cluster
+                        all_results[cluster_name] = grouped_results
         else:
             continue
 
-    # Guardar los resultados de enriquecimiento para cada cluster en un CSV y generar gráficos
+    # Guardar los resultados de enriquecimiento agrupados en tablas por categoría
     if all_results:
-        save_results_and_plot(all_results)
+        save_grouped_results(all_results, results_dir)
 
-def save_results_and_plot(all_results):
+def categorize_term(term_name):
     """
-    Guarda los resultados del análisis en archivos CSV y genera gráficos.
+    Categoriza un término en función de su contenido.
     """
-    for cluster_name, results in all_results.items():
-        # Guardar los resultados de enriquecimiento en un archivo CSV en 'data/enrichment_analysis'
-        df = pd.DataFrame(results, columns=["Term", "P-value", "Combined Score", "Genes", "Number of Genes"])
-        df.to_csv(f"data/enrichment_analysis/enrichment_results_{cluster_name}.csv", index=False)
+    if "pathway" in term_name.lower():
+        return "Pathway"
+    elif "cell" in term_name.lower():
+        return "Cellular Function"
+    elif "regulation" in term_name.lower():
+        return "Regulation"
+    else:
+        return "Other"
 
-        # Generar un gráfico de barras (p-value vs Term)
-        plt.figure(figsize=(10, 6))
-        top_results = df.head(10)  # Mostrar los 10 mejores resultados
-        sns.barplot(x='P-value', y='Term', data=top_results, palette='viridis', hue='Term', legend=False)
-        plt.title(f'Análisis de enriquecimiento para {cluster_name}')
-        plt.xlabel('P-value')
-        plt.ylabel('Term')
-        plt.tight_layout()
-
-        # Guardar el gráfico en 'results/enrichment_analysis'
-        plt.savefig(f"../results/enrichment_analysis/enrichment_barplot_{cluster_name}.png")
-        plt.close()
+def save_grouped_results(all_results, results_dir):
+    """
+    Guarda los resultados del análisis en archivos CSV agrupados por categoría.
+    """
+    for cluster_name, grouped_results in all_results.items():
+        for category, results in grouped_results.items():
+            # Crear un DataFrame para cada categoría
+            df = pd.DataFrame(results, columns=["Term", "P-value", "Combined Score", "Genes"])
+            # Guardar en la carpeta de resultados
+            df.to_csv(f"{results_dir}/{cluster_name}_{category}_enrichment_results.csv", index=False)
 
 def load_genes_from_file(file_path):
     """
@@ -101,7 +97,7 @@ def load_genes_from_file(file_path):
     cluster_name2: gene4, gene5, gene6
     """
     genes_by_cluster = {}
-    
+
     with open(file_path, 'r') as f:
         for line in f:
             # El archivo debe tener una línea por cada cluster, donde los genes están separados por comas
