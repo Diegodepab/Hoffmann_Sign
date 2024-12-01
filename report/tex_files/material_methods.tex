@@ -47,12 +47,6 @@ El lenguaje de programación \textit{Python} es versátil y de alto nivel, usado
 	\item \textbf{NetworkX}: Complemento de iGraph para la visualización y análisis interactivo de grafos, permitiendo inspeccionar la estructura y propiedades de redes de interacción proteína-proteína (PPI) \cite{hagberg2008}.
 \end{itemize}
 
-\paragraph{Visualización de Datos:}
-\begin{itemize}
-	\item \textbf{Matplotlib}: Proporciona las bases para crear gráficos y representaciones visuales básicas en Python, útil en la representación gráfica de resultados bioinformáticos \cite{Hunter2007}.
-	\item \textbf{Seaborn}: Ofrece una visualización de datos avanzada y estilizada, ideal para gráficos estadísticos que ayudan a visualizar las propiedades estructurales de redes y distribuciones de datos \cite{Waskom2021}.
-\end{itemize}
-
 \paragraph{Extracción y Manipulación de Datos:}
 \begin{itemize}
 	\item \textbf{Requests}: Necesario para realizar consultas a APIs como HPO y StringDB, a fin de recuperar datos de interacciones. \cite{Requests2020}.
@@ -60,21 +54,6 @@ El lenguaje de programación \textit{Python} es versátil y de alto nivel, usado
 \end{itemize}
 
 
-
-\subsection{Algoritmos de Análisis}
-
-
-\begin{itemize}
-	\item \textbf{Algoritmo de Clustering (Louvain)}: Este algoritmo optimiza la partición de una red maximizando su modularidad, lo cual es especialmente útil en redes grandes y complejas. Es ampliamente utilizado para detectar comunidades en redes biológicas, proporcionando un análisis modular efectivo de interacciones genéticas \cite{Blondel2008}.
-	
-	\item \textbf{DIAMOnD} (DIseAse MOdule Detection) es un algoritmo diseñado para identificar módulos de enfermedad en redes de interacción proteína-proteína, ampliando un conjunto inicial de genes asociados a enfermedades mediante la inclusión de nodos topológicamente cercanos. Este enfoque prioriza genes relevantes en función de su conectividad. \cite{Ghiassian2015}.
-
-	\item \textbf{Herramienta Enrichr}
-	
-	Enrichr es una herramienta bioinformática que permite realizar análisis de enriquecimiento funcional mediante la comparación de listas de genes con bases de datos biológicas. Facilita la identificación de vías metabólicas, procesos biológicos y términos funcionales asociados a conjuntos de genes mediante pruebas estadísticas y puntuaciones combinadas.\cite{10.1093/nar/gkad393/1}
-	
-	
-\end{itemize}
 
 
 
@@ -84,11 +63,11 @@ El lenguaje de programación \textit{Python} es versátil y de alto nivel, usado
 
 \begin{figure}[h!]
 	\includegraphics[width=.95\textwidth]{figures/workflow.png}
-	\caption{Flujo de trabajo \textit{NO ES AUTROEXPLICATIVO, Y TOCA CAMBIAR LA IMAGEN INTERNA}}
+	\caption{Flujo de trabajo para obtener analisis de enriquecimiento mejorado del fenotipo signo de Hoffmann}
 	\label{fig:workflow}
 \end{figure}
 
-\subsection{Obtención de genes relacionados con signo de Hoffman IMPORTANTE COMO SE PONEN LOS URL, ¿COMO CITA? }
+\subsection{Obtención de genes relacionados con signo de Hoffman}
 
 Para obtener los genes relacionados con el signo de Hoffman (HP:0031993), se utilizó la API de la Ontología de Fenotipos Humanos (HPO). El recurso consultado contiene nuestro termino HPO y el endpoint de genes (https://ontology.jax.org/api/
 network/annotation/HP:0031993/download/gene). Mediante una solicitud HTTP, se extrajo y almacenó esta información en archivos con formato .tsv, facilitando así su posterior análisis. 
@@ -103,13 +82,13 @@ Para el análisis de interacciones génicas, se utilizó una red de interaccione
 \subsection{Propagación de red}
 
 
-Para identificar genes adicionales asociados al conjunto de genes iniciales relacionados con el Signo de Hoffman, se aplicó DIAMOnD \cite{Ghiassian2015}. Se utilizó la red de interacciones génicas como base, y el algoritmo añadió nodos que optimizaban la cercanía topológica al clúster de genes, priorizando aquellos con menor p-valor. En caso de empate, se empleó la suma ponderada de los pesos de las conexiones con los genes del grafo para desempatar, dando preferencia a los nodos con conexiones más relevantes y fuertemente conectados. Se agregaron 20 genes adicionales, formando una red enriquecida de genes candidatos para el estudio.
+Para identificar genes adicionales asociados al conjunto de genes iniciales relacionados con el Signo de Hoffman, se aplicó el algoritmo de propagación de red DIAMOnD \cite{Ghiassian2015}. Se utilizó la red de interacciones génicas como base, y el algoritmo añadió nodos que optimizaban la cercanía topológica al clúster de genes, priorizando aquellos con menor p-valor. En caso de empate, se empleó la suma ponderada de los pesos de las conexiones con los genes del grafo para desempatar, dando preferencia a los nodos con conexiones más relevantes y fuertemente conectados.
 
 
 \subsection{Análisis de red}
 
-Para el análisis de redes, se utilizó el algoritmo de Louvain \cite{Blondel2008} para detectar módulos funcionales en la red. Además, se implementaron métricas topológicas como la centralidad de grado, que mide el número de conexiones directas de cada nodo; la centralidad de intermediación, que identifica nodos clave en el flujo de información; y la centralidad de cercanía, que evalúa la proximidad de un nodo respecto al resto. Estas métricas, calculadas mediante la librería iGraph \cite{Csardi2006}, permitieron caracterizar la estructura de la red y analizar el rol topológico de cada nodo, proporcionando información clave sobre su conectividad.
+Para el análisis de redes, se utilizó el algoritmo de Louvain \cite{Blondel2008} para detectar módulos funcionales en la red optimizando la partición de la red y maximizando su modularidad. Además, se implementaron métricas topológicas como la centralidad de grado, que mide el número de conexiones directas de cada nodo; la centralidad de intermediación, que identifica nodos clave en el flujo de información; y la centralidad de cercanía, que evalúa la proximidad de un nodo respecto al resto. Estas métricas, calculadas mediante la librería iGraph descrita en los materiales.
 
 \subsection{Análisis de enriquecimiento funcional}
 
-Una vez identificados los clusters, se realizó un análisis de enriquecimiento funcional para determinar qué funciones biológicas, rutas metabólicas o procesos celulares están sobrerrepresentados en los grupos de genes detectados.
+Una vez identificados los clusters, se realizó un análisis de enriquecimiento funcional con la herramienta Enrichr \cite{10.1093/nar/gkad393/1} que compara diferentes fuentes de datos para determinar qué funciones biológicas, rutas metabólicas o procesos celulares están sobrerrepresentados en los grupos de genes detectados.
