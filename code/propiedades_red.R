@@ -92,6 +92,8 @@ visualization_file <- file.path(output_folder, "network_clustering_visualization
 png(visualization_file, width = 800, height = 800)
 set.seed(321)
 plot(g, vertex.size = 5, vertex.label = NA, main = "Coeficiente de Clustering Local")
+legend("topright", legend = c("Clustering > 0", "Clustering = 0"),
+       col = c("red", "lightblue"), pch = 19, title = "Leyenda")
 dev.off()
 
 # Guardar genes por cluster
@@ -104,6 +106,18 @@ for (cluster_id in names(genes_por_cluster)) {
   cat("Cluster", cluster_id, ":", paste(genes_por_cluster[[cluster_id]], collapse = ", "), "\n", file = file_conn)
 }
 close(file_conn)
+
+# Visualización de clusters con colores distintos
+cluster_visualization_file <- file.path(output_folder, "network_clusters_colored.png")
+cluster_colors <- rainbow(length(unique(membership(comunidades))))
+V(g)$color <- cluster_colors[membership(comunidades)]
+
+png(cluster_visualization_file, width = 800, height = 800)
+set.seed(321)
+plot(g, vertex.size = 5, vertex.label = NA, main = "Clusters de la Red")
+legend("topright", legend = paste("Cluster", 1:length(cluster_colors)),
+       col = cluster_colors, pch = 19, title = "Clusters")
+dev.off()
 
 # Mensaje de finalización
 cat("Todos los resultados se han guardado en el folder:", output_folder, "\n")
