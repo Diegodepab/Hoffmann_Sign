@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{32}
+\begin{thebibliography}{30}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -158,7 +158,7 @@ doi:\doiurl{10.1016/j.ajhg.2013.12.005}.
 \endbibitem
 
 %%% 8
-\bibitem{10.1093/brain/awv143}
+\bibitem{10.1093/brain/awv143/1}
 \begin{barticle}
 \bauthor{\bsnm{Coutelier}, \binits{M.}},
 \bauthor{\bsnm{Goizet}, \binits{C.}},
@@ -200,8 +200,7 @@ doi:\doiurl{10.1016/j.ajhg.2013.12.005}.
 \bvolume{138}(\bissue{8}),
 \bfpage{2191}--\blpage{2205}
 (\byear{2015}).
-doi:\doiurl{10.1093/brain/awv143}.
-\arxivurl{https://academic.oup.com/brain/article-pdf/138/8/2191/13800016/awv143.pdf}
+doi:\doiurl{10.1093/brain/awv143}
 \end{barticle}
 \endbibitem
 
@@ -560,7 +559,7 @@ doi:\doiurl{10.1371/journal.pcbi.1004120}.
 \endbibitem
 
 %%% 30
-\bibitem{10.1093/nar/gkad393}
+\bibitem{10.1093/nar/gkad393/1}
 \begin{barticle}
 \bauthor{\bsnm{Evangelista}, \binits{J.E.}},
 \bauthor{\bsnm{Xie}, \binits{Z.}},
@@ -573,32 +572,8 @@ doi:\doiurl{10.1371/journal.pcbi.1004120}.
 \bvolume{51}(\bissue{W1}),
 \bfpage{168}--\blpage{179}
 (\byear{2023}).
-doi:\doiurl{10.1093/nar/gkad393}.
-\arxivurl{https://academic.oup.com/nar/article-pdf/51/W1/W168/50737163/gkad393\_supplemental\_file.pdf}
+doi:\doiurl{10.1093/nar/gkad393}
 \end{barticle}
-\endbibitem
-
-%%% 31
-\bibitem{ontology_api}
-\begin{botherref}
-\oauthor{\bsnm{{The Jackson Laboratory}}}:
-{Ontology API Endpoint for HP:0031993}.
-\url{https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene}.
-Accessed: 2024-11-28
-(2024)
-\end{botherref}
-\endbibitem
-
-%%% 32
-\bibitem{stringdb_human_proteins}
-\begin{botherref}
-\oauthor{\bsnm{{Szklarczyk et al.}}}:
-{STRING Database: Protein-Protein Interaction Network (Homo sapiens, v12.0)}.
-\url{https://stringdb-downloads.org/download/protein.links.v12.0/9606.protein.links.v12.0.txt.gz}.
-Accessed: 2024-11-28
-(2024).
-doi:\doiurl{10.1093/nar/gkab835}
-\end{botherref}
 \endbibitem
 
 \end{thebibliography}
@@ -1158,27 +1133,6 @@ doi:\doiurl{10.1093/nar/gkab835}
   <fpage>W168</fpage>
   <lpage>W179</lpage>
   <url>https://doi.org/10.1093/nar/gkad393</url>
-</bibl>
-
-<bibl id="B31">
-  <title><p>{Ontology API Endpoint for HP:0031993}</p></title>
-  <aug>
-    <au><cnm>{The Jackson Laboratory}</cnm></au>
-  </aug>
-  <source>\url{https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene}</source>
-  <pubdate>2024</pubdate>
-  <note>Accessed: 2024-11-28</note>
-</bibl>
-
-<bibl id="B32">
-  <title><p>{STRING Database: Protein-Protein Interaction Network (Homo
-  sapiens, v12.0)}</p></title>
-  <aug>
-    <au><cnm>{Szklarczyk et al.}</cnm></au>
-  </aug>
-  <source>\url{https://stringdb-downloads.org/download/protein.links.v12.0/9606.protein.links.v12.0.txt.gz}</source>
-  <pubdate>2024</pubdate>
-  <note>Accessed: 2024-11-28</note>
 </bibl>
 
 </refgrp>
