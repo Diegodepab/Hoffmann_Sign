@@ -67,11 +67,7 @@ El lenguaje de programación \textit{Python} es versátil y de alto nivel, usado
 \begin{itemize}
 	\item \textbf{Algoritmo de Clustering (Louvain)}: Este algoritmo optimiza la partición de una red maximizando su modularidad, lo cual es especialmente útil en redes grandes y complejas. Es ampliamente utilizado para detectar comunidades en redes biológicas, proporcionando un análisis modular efectivo de interacciones genéticas \cite{Blondel2008}.
 	
-	\item \textbf{DIAMOnD}: (A DIseAse MOdule Detection) Se utilizó para expandir genes relacionados con el signo de Hoffman en la red de interacciones proteína-proteína. El algoritmo parte de un conjunto inicial de genes de semilla, identificando nodos adicionales cercanos en términos de proximidad topológica, evaluando su conectividad mediante una distribución hipergeométrica. La selección de nodos se basa en su número de conexiones con los genes de semilla, priorizando aquellos que forman una subred coherente, en el proceso biológico del signo de Hoffman.\cite{Ghiassian2015}
-	
-	
-	
-	
+	\item \textbf{DIAMOnD} (DIseAse MOdule Detection) es un algoritmo diseñado para identificar módulos de enfermedad en redes de interacción proteína-proteína, ampliando un conjunto inicial de genes asociados a enfermedades mediante la inclusión de nodos topológicamente cercanos. Este enfoque prioriza genes relevantes en función de su conectividad. \cite{Ghiassian2015}.
 
 	\item \textbf{Herramienta Enrichr}
 	
@@ -88,7 +84,7 @@ El lenguaje de programación \textit{Python} es versátil y de alto nivel, usado
 
 \begin{figure}[h!]
 	\includegraphics[width=.95\textwidth]{figures/workflow.png}
-	\caption{Flujo de trabajo}
+	\caption{Flujo de trabajo \textit{NO ES AUTROEXPLICATIVO, Y TOCA CAMBIAR LA IMAGEN INTERNA}}
 	\label{fig:workflow}
 \end{figure}
 
@@ -102,10 +98,14 @@ network/annotation/HP:0031993/download/gene). Mediante una solicitud HTTP, se ex
 
 Para el análisis de interacciones génicas, se utilizó una red de interacciones obtenida de la base de datos STRING. Las interacciones de proteínas humanas (\textit{Homo sapiens}, ID taxonómico: 9606) fueron descargadas de el endpoint de descargas de STRING (https://stringdb-downloads.org/download/prot ein.links.v12.0/9606.protein.links.v12.0.txt.gz). Solo se consideraron interacciones con una puntuación combinada (\textit{combined score}) mayor o igual a 400.
 
+\newpage
 
 \subsection{Propagación de red}
 
-Se utilizó el algoritmo DIAMOnD. Resultó en una red enriquecida de genes candidatos, visualizados como una subred relacionada con el fenotipo.
+
+Para identificar genes adicionales asociados al conjunto de genes iniciales relacionados con el Signo de Hoffman, se aplicó DIAMOnD \cite{Ghiassian2015}. Se utilizó la red de interacciones génicas como base, y el algoritmo añadió nodos que optimizaban la cercanía topológica al clúster de genes, priorizando aquellos con menor p-valor. En caso de empate, se empleó la suma ponderada de los pesos de las conexiones con los genes del grafo para desempatar, dando preferencia a los nodos con conexiones más relevantes y fuertemente conectados. Se agregaron 20 genes adicionales, formando una red enriquecida de genes candidatos para el estudio.
+
+
 \subsection{Análisis de red}
 
 Para el análisis de redes, se utilizó el algoritmo de Louvain \cite{Blondel2008} para detectar módulos funcionales en la red. Además, se implementaron métricas topológicas como la centralidad de grado, que mide el número de conexiones directas de cada nodo; la centralidad de intermediación, que identifica nodos clave en el flujo de información; y la centralidad de cercanía, que evalúa la proximidad de un nodo respecto al resto. Estas métricas, calculadas mediante la librería iGraph \cite{Csardi2006}, permitieron caracterizar la estructura de la red y analizar el rol topológico de cada nodo, proporcionando información clave sobre su conectividad.

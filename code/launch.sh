@@ -25,7 +25,7 @@ gunzip -f data/network.txt.gz
 
 # Propagación de genes con DIAMOnD
 echo "Propagando genes usando DIAMOnD..."
-python DIAMOnD.py data/genes_string.tsv data/network.txt data/red_propagada.txt
+python DIAMOnD.py data/genes_string.tsv data/network.txt 20 1 data/red_propagada.txt
 
 # Descargar interacciones usando el script string_interactions.py
 echo "Obteniendo interacciones de STRING..."
