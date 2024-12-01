@@ -1,11 +1,12 @@
 #!/bin/bash
 
+export current_dir=$(pwd)
 # Definir las carpetas donde estarán las dependencias de Python y de R
-export R_LIB="./R_packages:$R_LIB"
-export PYTHONPATH="./py_packages:$PYTHONPATH"
+export R_LIBS_USER="$current_dir/R_packages"
 
-# Crear directorios necesarios
-mkdir -p data results images logs
+
+python_libs="$current_dir/py_packages"
+export PYTHONPATH=$python_libs:$PYTHONPATH
 
 # Descargar los datos de genes de HPO
 echo "Descargando datos de genes de HPO..."
@@ -24,6 +25,7 @@ echo "Descomprimiendo red STRING..."
 gunzip -f data/network.txt.gz
 
 # Propagación de genes con DIAMOnD
+
 echo "Propagando genes usando DIAMOnD..."
 python DIAMOnD.py data/genes_string.tsv data/network.txt 20 1 data/red_propagada.txt
 
@@ -34,12 +36,14 @@ python string_interactions.py --input data/red_propagada.txt --output data/strin
 # Análisis de la red con R
 echo "Analizando propiedades de la red con R..."
 
-R_LIBS_USER="./R_packages" Rscript propiedades_red.R data/string_interactions.tsv results/
+Rscript propiedades_red.R data/string_interactions.tsv ../results/
 
 
 
 # Análisis de enriquecimiento funcional (descomentar cuando esté listo)
 echo "Realizando análisis de enriquecimiento funcional..."
-python analisis_enriquecimiento.py  results/clusters_genes.txt 
+python analisis_enriquecimiento.py  ../results/clusters_genes.txt 
 
 echo "Pipeline completado. Los resultados están en la carpeta 'results/'."
+
+
