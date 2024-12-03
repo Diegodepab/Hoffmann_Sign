@@ -10,6 +10,7 @@ export PYTHONPATH=$python_libs:$PYTHONPATH
 
 # Descargar los datos de genes de HPO
 echo "Descargando datos de genes de HPO..."
+mkdir -p data
 wget -q https://ontology.jax.org/api/network/annotation/HP:0031993/download/gene -O data/genes.tsv
 
 # Convertir genes a string ID (descomentar cuando el script esté listo)
