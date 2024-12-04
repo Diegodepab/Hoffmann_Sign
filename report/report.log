@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  1 DEC 2024 20:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  4 DEC 2024 18:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -342,45 +342,73 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \TX@cols=\count287
 \TX@ftn=\toks35
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen165
+\captionmargin=\dimen166
+\caption@leftmargin=\dimen167
+\caption@rightmargin=\dimen168
+\caption@width=\dimen169
+\caption@indent=\dimen170
+\caption@parindent=\dimen171
+\caption@hangindent=\dimen172
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2-> \vskip \abovecaptionsk
+ip \parbox [t]{\hsize }{\floatcaption@size {\floatcaptionname@size #1}\hskip .5
+em #2\par }\vskip \belowcaptionskip  on input line 1176.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count288
+\c@continuedfloat=\count289
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count288
+\l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box61
 )
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
-\scratchdimen=\dimen165
+\scratchcounter=\count291
+\scratchdimen=\dimen173
 \scratchbox=\box62
-\nofMPsegments=\count290
-\nofMParguments=\count291
+\nofMPsegments=\count292
+\nofMParguments=\count293
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count292
-\MPscratchDim=\dimen166
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen174
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
 \everyMPtoPDFconversion=\toks37
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -393,34 +421,36 @@ e
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 29.
-Package hyperref Info: Link coloring ON on input line 29.
+(lastpage)             ! on input line 30.
+Package hyperref Info: Link coloring ON on input line 30.
 
 (./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 34.
+(Font)              size <12> substituted on input line 35.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <24> not available
-(Font)              size <24.88> substituted on input line 40.
+(Font)              size <24.88> substituted on input line 41.
 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 51.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 52.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 51.
+(Font)              size <5> substituted on input line 52.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 51.
+(Font)              size <5> substituted on input line 52.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 51.
+(Font)              size <5> substituted on input line 52.
 
 \address@aff1=\toks38
 (./tex_files/introduction.tex
@@ -430,9 +460,15 @@ File: figures/Kabir_Hoffmann__Sign.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 5
 .
 (pdftex.def)             Requested size: 126.3522pt x 157.93378pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 6.
+See the caption package documentation for explanation.
+
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <8> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 15.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./figures/Kabir_Hoffmann__Sign.jpg>]
 Underfull \hbox (badness 995) in paragraph at lines 16--17
@@ -457,13 +493,22 @@ File: figures/workflow.png Graphic file (type png)
 <use figures/workflow.png>
 Package pdftex.def Info: figures/workflow.png  used on input line 65.
 (pdftex.def)             Requested size: 342.9489pt x 192.89992pt.
- [4 <./figures/workflow.png (PNG copy)>]
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 66.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 977) in paragraph at lines 78--79
 \OT1/cmr/m/n/10 obtenida de la base de datos STRING. Las in-ter-ac-ciones de pr
 ote^^S^^Pnas hu-
  []
 
-[5]) (./tex_files/resultados.tex
+[4]) (./tex_files/resultados.tex [5 <./figures/workflow.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
@@ -474,186 +519,174 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []|\OT1/cmss/m/n/8 Golgi to plasma mem-brane
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []|\OT1/cmss/m/n/8 RAB10, EXOC8, EXOC6B,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 \OT1/cmss/m/n/8 EXOC4, EXOC6, EXOC5,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
 []|\OT1/cmss/m/n/8 cilium or-ga-ni-za-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
 []|\OT1/cmss/m/n/8 ARF4, EXOC8, EXOC7,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
 \OT1/cmss/m/n/8 RAB3IP, ASAP1, RAB11A,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
 \OT1/cmss/m/n/8 EXOC4, EXOC3, EXOC6,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 []|\OT1/cmss/m/n/8 plasma mem-brane bounded
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 \OT1/cmss/m/n/8 cell pro-jec-tion as-sem-bly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 []|\OT1/cmss/m/n/8 ARF4, EXOC8, EXOC7,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 \OT1/cmss/m/n/8 RAB3IP, ASAP1, RAB11A,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 \OT1/cmss/m/n/8 EXOC4, EXOC3, EXOC6,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 []|\OT1/cmss/m/n/8 recycling en-do-some
  []
 
 
-Underfull \hbox (badness 887) in paragraph at lines 53--53
+Underfull \hbox (badness 887) in paragraph at lines 122--122
 []|\OT1/cmss/m/n/8 recycling en-do-some mem-brane
  []
 
 
-Underfull \vbox (badness 3000) has occurred while \output is active []
-
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 []|\OT1/cmss/m/n/8 RAB10, RALA, RAB11A,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 []|\OT1/cmss/m/n/8 small GT-Pase bind-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 []|\OT1/cmss/m/n/8 EXOC8, EXOC4, MYO5A,
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 77--77
+Underfull \hbox (badness 2042) in paragraph at lines 146--146
 []|\OT1/cmss/m/n/8 RAB10, ASAP1, RAB11FIP3,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--91
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 []|\OT1/cmss/m/n/8 Positive reg-u-la-tion of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--91
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \OT1/cmss/m/n/8 ATP biosyn-thetic pro-cess
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 92--92
+Underfull \hbox (badness 3492) in paragraph at lines 161--161
 []|\OT1/cmss/m/n/8 Positive reg-u-la-tion of purine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []|\OT1/cmss/m/n/8 Intracellular non-membrane-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
 \OT1/cmss/m/n/8 bounded or-ganelle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []|\OT1/cmss/m/n/8 FIG4, GLE1, VCP, TAF15,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
 []|\OT1/cmss/m/n/8 Mitochondrial in-ter-mem-brane
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--106
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
 []|\OT1/cmss/m/n/8 Organelle en-ve-lope lu-men
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
 []|\OT1/cmss/m/n/8 Polyubiquitin modification-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
 \OT1/cmss/m/n/8 dependent pro-tein bind-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
 []|\OT1/cmss/m/n/8 VCP, SQSTM1, OPTN,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 189--189
 []|\OT1/cmss/m/n/8 Regulatory RNA bind-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 []|\OT1/cmss/m/n/8 Amyotrophic lat-eral scle-ro-sis
  []
 
-
-Underfull \vbox (badness 1924) has occurred while \output is active []
-
- [8])
-(./tex_files/discusion.tex) (./tex_files/conclusiones.tex) (./report.bbl
+) (./tex_files/discusion.tex) (./tex_files/conclusiones.tex) (./report.bbl
+[8]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 247.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [9]
+)
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 381.
 
 )
 
 AED: lastpage setting LastPage
-[10] (./report.aux)
+[9] (./report.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -662,13 +695,13 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 608BFA2687F908EBB117D0FE8616745D;4096.
  ) 
 Here is how much of TeX's memory you used:
- 10460 strings out of 476091
- 162028 string characters out of 5794081
- 1874330 words of memory out of 5000000
- 30594 multiletter control sequences out of 15000+600000
+ 11746 strings out of 476091
+ 187410 string characters out of 5794081
+ 1873330 words of memory out of 5000000
+ 31870 multiletter control sequences out of 15000+600000
  522450 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,76p,1045b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,76p,1045b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
@@ -681,10 +714,10 @@ cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/t
 exmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfss0700.pfb>
-Output written on report.pdf (10 pages, 325951 bytes).
+Output written on report.pdf (9 pages, 324537 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 330 compressed objects within 4 object streams
+ 97 named destinations out of 1000 (max. 500000)
  211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

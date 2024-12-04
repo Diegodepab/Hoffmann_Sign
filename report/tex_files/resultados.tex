@@ -12,17 +12,86 @@ Se obtienen 46 genes relacionados con el termino del signo de Hoffmann de HPO, a
 
 \subsection{Propiedades de la red y detección de comunidades}
 
+En el análisis de la red generada a partir de los genes asociados al signo de Hoffman, se identificaron las siguientes propiedades generales de la red (ver Tabla \ref{tab:propiedades_red}):
 
-\textbf{AQUI ES MEJOR QUE SEA EN TABLA}
-\\
+\begin{table}[h!]
+	\centering
+	\caption{Propiedades generales de la red}
+	\label{tab:propiedades_red}
+	\begin{tabular}{|l|c|}
+		\hline
+		\textbf{Propiedad} & \textbf{Valor} \\ \hline
+		\hline
+		Número de nodos & 63 \\ \hline
+		Número de aristas & 439 \\ \hline
+		Grado promedio & 13.94 \\ \hline
+		Densidad de la red & 0.22 \\ \hline
+		Modularidad & 0.41 \\ \hline
+	\end{tabular}
+\end{table}
 
-En el análisis de la red generada a partir de los genes asociados al signo de Hoffman, se identificaron un total de 78 nodos y 799 aristas, lo que evidencia un nivel significativo de interacciones entre los genes estudiados. El grado promedio de la red fue de 20.49, indicando que, en promedio, cada gen está conectado a más de 20 otros genes en la red.
 
-Entre las métricas topológicas evaluadas, la centralidad de cercanía y la centralidad de intermediación destacan como indicadores clave del rol estructural de ciertos nodos en la red. En cuanto a la centralidad de cercanía, los genes \textbf{COQ4} y \textbf{COQ7} presentaron los valores más altos, indicando que estos nodos están óptimamente posicionados para acceder rápidamente a otros genes en la red. Otros genes destacados en esta métrica incluyen \textbf{CTNNB1}, \textbf{SMAD3} y \textbf{SMAD4}, que también mostraron valores elevados de cercanía. Por otro lado, la centralidad de intermediación identificó a \textbf{CTNNB1} como el nodo más relevante en términos de flujo de información dentro de la red, seguido de \textbf{FUS}, \textbf{VCP}, \textbf{SQSTM1} y \textbf{TGFB1}, lo que resalta su importancia en la conectividad global y en el enlace entre distintas comunidades.
+La modularidad de la red, calculada como 0.41, indica una estructura modular moderada con comunidades bien definidas. En total, se detectaron siete comunidades principales, cuyos tamaños se presentan en la Tabla \ref{tab:modularidad_comunidades}.
 
-La modularidad de la red fue de 0.42, lo que sugiere una estructura modular moderada con comunidades bien definidas. Se identificaron seis comunidades principales, siendo la más grande la comunidad 1, con 37 nodos, seguida por la comunidad 3, con 32 nodos. Las otras comunidades presentaron tamaños significativamente menores, con 3, 2, 2 y 2 nodos respectivamente. Esto indica que la red está compuesta por un núcleo principal de genes altamente interconectados, junto con comunidades más pequeñas y especializadas.
+\begin{table}[h!]
+	\centering
+	\caption{Tamaños de las comunidades detectadas en la red}
+	\label{tab:modularidad_comunidades}
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Comunidad} & \textbf{Tamaño} \\ 
+		& \textbf{(Número de nodos)} \\ \hline
+		1 & 20 \\ \hline
+		2 & 3 \\ \hline
+		3 & 32 \\ \hline
+		4 & 2 \\ \hline
+		5 & 2 \\ \hline
+		6 & 2 \\ \hline
+		7 & 2 \\ \hline
+	\end{tabular}
+\end{table}
 
-Finalmente, la densidad de la red fue de 0.27, reflejando una conectividad moderada dentro de la red, compatible con redes biológicas donde no todos los genes están directamente conectados pero presentan interacciones relevantes en función de sus roles funcionales. Estos resultados proporcionan una base sólida para realizar análisis funcionales y explorar el papel de las comunidades detectadas en el contexto del signo de Hoffman.
+
+
+Para evaluar el papel estructural de los genes en la red, se calcularon métricas topológicas como la centralidad de cercanía y la centralidad de intermediación. Los resultados para los cinco nodos principales en cada métrica se presentan en las Tablas \ref{tab:centralidad_cercania} y \ref{tab:centralidad_intermediacion}.
+
+\begin{table}[h!]
+	\centering
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\caption{Top 5 nodos con mayor centralidad de cercanía}
+		\label{tab:centralidad_cercania}
+		\begin{tabular}{|l|c|}
+			\hline
+			\textbf{Gen} & \textbf{Centralidad de cercanía} \\ 
+			\hline
+			DAO          & 1.0000                           \\ \hline
+			COQ4         & 1.0000                           \\ \hline
+			ERBB4        & 1.0000                           \\ \hline
+			COQ7         & 1.0000                           \\ \hline
+			OPTN         & 0.0108                           \\ \hline
+		\end{tabular}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\caption{Top 5 nodos con mayor centralidad de intermediación}
+		\label{tab:centralidad_intermediacion}
+		\begin{tabular}{|l|c|}
+			\hline
+			\textbf{Gen} & \textbf{\begin{tabular}[c]{@{}c@{}}Centralidad de\\ intermediación\end{tabular}} \\ 
+			\hline
+			RAB11A       & 208.26                                 \\ \hline
+			UNC13A       & 188.01                                 \\ \hline
+			VCP          & 148.44                                 \\ \hline
+			DCTN1        & 139.38                                 \\ \hline
+			PON1         & 112.00                                 \\ \hline
+		\end{tabular}
+	\end{minipage}
+\end{table}
+
+
+
 
 
 \subsection{Análisis de enriquecimiento funcional}
