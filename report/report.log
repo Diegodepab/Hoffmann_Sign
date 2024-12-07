@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.12)  5 DEC 2024 12:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.12)  7 DEC 2024 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -476,7 +476,7 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 
 \address@aff1=\toks39
 (tex_files/introduction.tex
-<figures/Kabir_Hoffmann__Sign.jpg, id=112, 370.38374pt x 462.97969pt>
+<figures/Kabir_Hoffmann__Sign.jpg, id=124, 370.38374pt x 462.97969pt>
 File: figures/Kabir_Hoffmann__Sign.jpg Graphic file (type jpg)
 <use figures/Kabir_Hoffmann__Sign.jpg>
 Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 5
@@ -516,7 +516,7 @@ e-trieval of In-ter-act-ing Genes/Proteins\OT1/cmr/m/n/10 )
 
 
 [3]
-<figures/workflow.png, id=195, 1445.4pt x 813.0375pt>
+<figures/workflow.png, id=207, 1445.4pt x 813.0375pt>
 File: figures/workflow.png Graphic file (type png)
 <use figures/workflow.png>
 Package pdftex.def Info: figures/workflow.png  used on input line 65.
@@ -550,76 +550,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-<figures/network_clusters_colored.png, id=230, 803.0pt x 803.0pt>
-File: figures/network_clusters_colored.png Graphic file (type png)
-<use figures/network_clusters_colored.png>
-Package pdftex.def Info: figures/network_clusters_colored.png  used on input li
-ne 97.
-(pdftex.def)             Requested size: 288.8011pt x 288.81021pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 98.
-See the caption package documentation for explanation.
-
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+<figures/network_clusters_colored.png, id=251, 803.0pt x 803.0pt>
+File: figures/network_clusters_colored.png Graphic file (type png)
+<use figures/network_clusters_colored.png>
+Package pdftex.def Info: figures/network_clusters_colored.png  used on input li
+ne 99.
+(pdftex.def)             Requested size: 288.8011pt x 288.81021pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 100.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 []|\OT1/cmss/m/n/8 Golgi to plasma mem-brane
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 []|\OT1/cmss/m/n/8 RAB10, EXOC8, EXOC6B,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 \OT1/cmss/m/n/8 EXOC4, EXOC6, EXOC5,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 []|\OT1/cmss/m/n/8 cilium or-ga-ni-za-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 []|\OT1/cmss/m/n/8 ARF4, EXOC8, EXOC7,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 \OT1/cmss/m/n/8 RAB3IP, ASAP1, RAB11A,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 \OT1/cmss/m/n/8 EXOC4, EXOC3, EXOC6,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []|\OT1/cmss/m/n/8 plasma mem-brane bounded
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 \OT1/cmss/m/n/8 cell pro-jec-tion as-sem-bly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []|\OT1/cmss/m/n/8 ARF4, EXOC8, EXOC7,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 \OT1/cmss/m/n/8 RAB3IP, ASAP1, RAB11A,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 \OT1/cmss/m/n/8 EXOC4, EXOC3, EXOC6,
  []
 
@@ -629,72 +631,72 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [7 <./figures/network_clusters_colored.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
 []|\OT1/cmss/m/n/8 recycling en-do-some
  []
 
 
-Underfull \hbox (badness 887) in paragraph at lines 129--129
+Underfull \hbox (badness 887) in paragraph at lines 131--131
 []|\OT1/cmss/m/n/8 recycling en-do-some mem-brane
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 []|\OT1/cmss/m/n/8 RAB10, RALA, RAB11A,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []|\OT1/cmss/m/n/8 small GT-Pase bind-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []|\OT1/cmss/m/n/8 EXOC8, EXOC4, MYO5A,
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 153--153
+Underfull \hbox (badness 2042) in paragraph at lines 155--155
 []|\OT1/cmss/m/n/8 RAB10, ASAP1, RAB11FIP3,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 []|\OT1/cmss/m/n/8 Positive reg-u-la-tion of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 \OT1/cmss/m/n/8 ATP biosyn-thetic pro-cess
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 168--168
+Underfull \hbox (badness 3492) in paragraph at lines 170--170
 []|\OT1/cmss/m/n/8 Positive reg-u-la-tion of purine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
 []|\OT1/cmss/m/n/8 Intracellular non-membrane-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
 \OT1/cmss/m/n/8 bounded or-ganelle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
 []|\OT1/cmss/m/n/8 FIG4, GLE1, VCP, TAF15,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
 []|\OT1/cmss/m/n/8 Mitochondrial in-ter-mem-brane
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
 []|\OT1/cmss/m/n/8 Organelle en-ve-lope lu-men
  []
 
@@ -704,44 +706,47 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
 []|\OT1/cmss/m/n/8 Polyubiquitin modification-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
 \OT1/cmss/m/n/8 dependent pro-tein bind-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
 []|\OT1/cmss/m/n/8 VCP, SQSTM1, OPTN,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
 []|\OT1/cmss/m/n/8 Regulatory RNA bind-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
 []|\OT1/cmss/m/n/8 Amyotrophic lat-eral scle-ro-sis
  []
 
-) (tex_files/discusion.tex) (tex_files/conclusiones.tex) (report.bbl
+) (tex_files/discusion.tex
 
-[9]
+[9]) (tex_files/conclusiones.tex) (report.bbl
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 247.
- (C:\Users\jismbs\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+
+(C:\Users\jismbs\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
+
+[10]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 381.
 
 )
 
-[10] 
+[11] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (report.aux)
  ***********
@@ -753,17 +758,23 @@ L3 programming layer <2024-11-02>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: DE44BEACEDE5892994307A7DFE0601FC;4214.
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 92A70EC9E93941FC12FB1681F6AB5435;5344
+(rerunfilecheck)             After:  F5F6951D531210B1A186DDA24091B175;5713.
  ) 
 Here is how much of TeX's memory you used:
- 12172 strings out of 473681
- 195210 string characters out of 5718718
- 613219 words of memory out of 5000000
- 34996 multiletter control sequences out of 15000+600000
+ 12180 strings out of 473681
+ 195346 string characters out of 5718718
+ 613225 words of memory out of 5000000
+ 34999 multiletter control sequences out of 15000+600000
  568232 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,17n,79p,1047b,726s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,17n,79p,1047b,724s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jismbs\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcs
 s0700.pk> <C:\Users\jismbs\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\tcrm0700.pk> <C:\Users\jismbs\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -778,9 +789,9 @@ pfb><C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmssi8.pfb><C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmti10.pfb><C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (10 pages, 452311 bytes).
+Output written on report.pdf (11 pages, 457661 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 500000)
- 224 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 
