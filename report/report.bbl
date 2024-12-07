@@ -581,8 +581,9 @@ pp. \bfpage{595}--\blpage{618}.
 \bpublisher{Springer},
 \blocation{New York, NY}
 (\byear{2023}).
-doi:\doiurl{10.1007/978-1-0716-2639-9_36}.
-\burl{https://doi.org/10.1007/978-1-0716-2639-9_36}
+\doiurl{https://doi.org/10.1007/978-1-0716-2639-9_36}
+\url{https://doi.org/10.1007/978-1-0716-2639-9_36}
+
 \end{bbook}
 \endbibitem
 
