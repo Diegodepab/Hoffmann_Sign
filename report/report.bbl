@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{30}
+\begin{thebibliography}{37}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -473,34 +473,6 @@ Accessed 2024-10-01
 \endbibitem
 
 %%% 24
-\bibitem{Hunter2007}
-\begin{barticle}
-\bauthor{\bsnm{Hunter}, \binits{J.D.}}:
-\batitle{Matplotlib: A 2d graphics environment}.
-\bjtitle{Computing in Science \& Engineering}
-\bvolume{9}(\bissue{3}),
-\bfpage{90}--\blpage{95}
-(\byear{2007}).
-doi:\doiurl{10.1109/MCSE.2007.55}.
-Accessed 2024-10-01
-\end{barticle}
-\endbibitem
-
-%%% 25
-\bibitem{Waskom2021}
-\begin{barticle}
-\bauthor{\bsnm{Waskom}, \binits{M.L.}}:
-\batitle{Seaborn: Statistical data visualization}.
-\bjtitle{Journal of Open Source Software}
-\bvolume{6}(\bissue{60}),
-\bfpage{3021}
-(\byear{2021}).
-doi:\doiurl{10.21105/joss.03021}.
-Accessed 2024-10-01
-\end{barticle}
-\endbibitem
-
-%%% 26
 \bibitem{Requests2020}
 \begin{botherref}
 \oauthor{\bsnm{Reitz}, \binits{K.}},
@@ -512,7 +484,7 @@ Accessed 2024-10-01
 \end{botherref}
 \endbibitem
 
-%%% 27
+%%% 25
 \bibitem{McKinney2010}
 \begin{botherref}
 \oauthor{\bsnm{McKinney}, \binits{W.}}:
@@ -524,23 +496,7 @@ Accessed 2024-10-01
 \end{botherref}
 \endbibitem
 
-%%% 28
-\bibitem{Blondel2008}
-\begin{barticle}
-\bauthor{\bsnm{Blondel}, \binits{V.D.}},
-\bauthor{\bsnm{Guillaume}, \binits{J.-L.}},
-\bauthor{\bsnm{Lambiotte}, \binits{R.}},
-\bauthor{\bsnm{Lefebvre}, \binits{E.}}:
-\batitle{Fast unfolding of communities in large networks}.
-\bjtitle{Journal of Statistical Mechanics: Theory and Experiment}
-\bvolume{2008}(\bissue{10}),
-\bfpage{10008}
-(\byear{2008}).
-Accessed 2024-10-01
-\end{barticle}
-\endbibitem
-
-%%% 29
+%%% 26
 \bibitem{Ghiassian2015}
 \begin{barticle}
 \bauthor{\bsnm{Ghiassian}, \binits{S.D.}},
@@ -558,7 +514,23 @@ doi:\doiurl{10.1371/journal.pcbi.1004120}.
 \end{barticle}
 \endbibitem
 
-%%% 30
+%%% 27
+\bibitem{Blondel2008}
+\begin{barticle}
+\bauthor{\bsnm{Blondel}, \binits{V.D.}},
+\bauthor{\bsnm{Guillaume}, \binits{J.-L.}},
+\bauthor{\bsnm{Lambiotte}, \binits{R.}},
+\bauthor{\bsnm{Lefebvre}, \binits{E.}}:
+\batitle{Fast unfolding of communities in large networks}.
+\bjtitle{Journal of Statistical Mechanics: Theory and Experiment}
+\bvolume{2008}(\bissue{10}),
+\bfpage{10008}
+(\byear{2008}).
+Accessed 2024-10-01
+\end{barticle}
+\endbibitem
+
+%%% 28
 \bibitem{10.1093/nar/gkad393/1}
 \begin{barticle}
 \bauthor{\bsnm{Evangelista}, \binits{J.E.}},
@@ -573,6 +545,177 @@ doi:\doiurl{10.1371/journal.pcbi.1004120}.
 \bfpage{168}--\blpage{179}
 (\byear{2023}).
 doi:\doiurl{10.1093/nar/gkad393}
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem{Bonvento2017}
+\begin{barticle}
+\bauthor{\bsnm{Bonvento}, \binits{G.}},
+\bauthor{\bsnm{Valette}, \binits{J.}},
+\bauthor{\bsnm{Flament}, \binits{J.}},
+\bauthor{\bsnm{Mochel}, \binits{F.}},
+\bauthor{\bsnm{Brouillet}, \binits{E.}}:
+\batitle{Imaging and spectroscopic approaches to probe brain energy metabolism
+  dysregulation in neurodegenerative diseases}.
+\bjtitle{Journal of Cerebral Blood Flow \& Metabolism}
+\bvolume{37}(\bissue{6}),
+\bfpage{1927}--\blpage{1943}
+(\byear{2017}).
+doi:\doiurl{10.1177/0271678X17697989}
+\end{barticle}
+\endbibitem
+
+%%% 30
+\bibitem{Mulligan2023}
+\begin{bbook}
+\bauthor{\bsnm{Mulligan}, \binits{R.J.}},
+\bauthor{\bsnm{Yap}, \binits{C.C.}},
+\bauthor{\bsnm{Winckler}, \binits{B.}}:
+In: \beditor{\bsnm{Wang}, \binits{Y.}},
+\beditor{\bsnm{Lupashin}, \binits{V.V.}},
+\beditor{\bsnm{Graham}, \binits{T.R.}} (eds.)
+\bbtitle{Endosomal Transport to Lysosomes and the Trans-Golgi Network in
+  Neurons and Other Cells: Visualizing Maturational Flux},
+pp. \bfpage{595}--\blpage{618}.
+\bpublisher{Springer},
+\blocation{New York, NY}
+(\byear{2023}).
+doi:\doiurl{10.1007/978-1-0716-2639-9_36}.
+\burl{https://doi.org/10.1007/978-1-0716-2639-9_36}
+\end{bbook}
+\endbibitem
+
+%%% 31
+\bibitem{Batool2019}
+\begin{barticle}
+\bauthor{\bsnm{Batool}, \binits{S.}},
+\bauthor{\bsnm{Raza}, \binits{H.}},
+\bauthor{\bsnm{Zaidi}, \binits{J.}},
+\bauthor{\bsnm{Riaz}, \binits{S.}},
+\bauthor{\bsnm{Hasan}, \binits{S.}},
+\bauthor{\bsnm{Syed}, \binits{N.I.}}:
+\batitle{Synapse formation: from cellular and molecular mechanisms to
+  neurodevelopmental and neurodegenerative disorders}.
+\bjtitle{Journal of Neurophysiology}
+\bvolume{121}(\bissue{4}),
+\bfpage{1381}--\blpage{1397}
+(\byear{2019}).
+doi:\doiurl{10.1152/jn.00833.2018}
+\end{barticle}
+\endbibitem
+
+%%% 32
+\bibitem{Kathiresan2024}
+\begin{barticle}
+\bauthor{\bsnm{Kathiresan}, \binits{D.S.}},
+\bauthor{\bsnm{Balasubramani}, \binits{R.}},
+\bauthor{\bsnm{Marudhachalam}, \binits{K.}}, \betal:
+\batitle{Role of mitochondrial dysfunctions in neurodegenerative disorders:
+  Advances in mitochondrial biology}.
+\bjtitle{Molecular Neurobiology}
+(\byear{2024}).
+doi:\doiurl{10.1007/s12035-024-04469-x}
+\end{barticle}
+\endbibitem
+
+%%% 33
+\bibitem{10.1093/nar/gkae655}
+\begin{barticle}
+\bauthor{\bsnm{Glineburg}, \binits{M.}},
+\bauthor{\bsnm{Yildirim}, \binits{E.}},
+\bauthor{\bsnm{Gomez}, \binits{N.}},
+\bauthor{\bsnm{Rodriguez}, \binits{G.}},
+\bauthor{\bsnm{Pak}, \binits{J.}},
+\bauthor{\bsnm{Li}, \binits{X.}},
+\bauthor{\bsnm{Altheim}, \binits{C.}},
+\bauthor{\bsnm{Waksmacki}, \binits{J.}},
+\bauthor{\bsnm{McInerney}, \binits{G.}},
+\bauthor{\bsnm{Barmada}, \binits{S.}},
+\bauthor{\bsnm{Todd}, \binits{P.}}:
+\batitle{Stress granule formation helps to mitigate neurodegeneration}.
+\bjtitle{Nucleic Acids Research}
+\bvolume{52}(\bissue{16}),
+\bfpage{9745}--\blpage{9759}
+(\byear{2024}).
+doi:\doiurl{10.1093/nar/gkae655}.
+\arxivurl{https://academic.oup.com/nar/article-pdf/52/16/9745/59042444/gkae655.pdf}
+\end{barticle}
+\endbibitem
+
+%%% 34
+\bibitem{PMID:34248597}
+\begin{barticle}
+\bauthor{\bsnm{Asadi}, \binits{M.R.}},
+\bauthor{\bsnm{Sadat~Moslehian}, \binits{M.}},
+\bauthor{\bsnm{Sabaie}, \binits{H.}},
+\bauthor{\bsnm{Jalaiei}, \binits{A.}},
+\bauthor{\bsnm{Ghafouri-Fard}, \binits{S.}},
+\bauthor{\bsnm{Taheri}, \binits{M.}},
+\bauthor{\bsnm{Rezazadeh}, \binits{M.}}:
+\batitle{Stress granules and neurodegenerative disorders: A scoping review}.
+\bjtitle{Frontiers in aging neuroscience}
+\bvolume{13},
+\bfpage{650740}
+(\byear{2021}).
+doi:\doiurl{10.3389/fnagi.2021.650740}
+\end{barticle}
+\endbibitem
+
+%%% 35
+\bibitem{Schmidt2021}
+\begin{barticle}
+\bauthor{\bsnm{Schmidt}, \binits{M.F.}},
+\bauthor{\bsnm{Gan}, \binits{Z.Y.}},
+\bauthor{\bsnm{Komander}, \binits{D.}}, \betal:
+\batitle{Ubiquitin signalling in neurodegeneration: mechanisms and therapeutic
+  opportunities}.
+\bjtitle{Cell Death & Differentiation}
+\bvolume{28},
+\bfpage{570}--\blpage{590}
+(\byear{2021}).
+doi:\doiurl{10.1038/s41418-020-00706-7}
+\end{barticle}
+\endbibitem
+
+%%% 36
+\bibitem{10.1093/hmg/ddm320}
+\begin{barticle}
+\bauthor{\bsnm{Tan}, \binits{J.M.M.}},
+\bauthor{\bsnm{Wong}, \binits{E.S.P.}},
+\bauthor{\bsnm{Kirkpatrick}, \binits{D.S.}},
+\bauthor{\bsnm{Pletnikova}, \binits{O.}},
+\bauthor{\bsnm{Ko}, \binits{H.S.}},
+\bauthor{\bsnm{Tay}, \binits{S.-P.}},
+\bauthor{\bsnm{Ho}, \binits{M.W.L.}},
+\bauthor{\bsnm{Troncoso}, \binits{J.}},
+\bauthor{\bsnm{Gygi}, \binits{S.P.}},
+\bauthor{\bsnm{Lee}, \binits{M.K.}},
+\bauthor{\bsnm{Dawson}, \binits{V.L.}},
+\bauthor{\bsnm{Dawson}, \binits{T.M.}},
+\bauthor{\bsnm{Lim}, \binits{K.-L.}}:
+\batitle{Lysine 63-linked ubiquitination promotes the formation and autophagic
+  clearance of protein inclusions associated with neurodegenerative diseases}.
+\bjtitle{Human Molecular Genetics}
+\bvolume{17}(\bissue{3}),
+\bfpage{431}--\blpage{439}
+(\byear{2007}).
+doi:\doiurl{10.1093/hmg/ddm320}
+\end{barticle}
+\endbibitem
+
+%%% 37
+\bibitem{Zhang2022}
+\begin{barticle}
+\bauthor{\bsnm{Zhang}, \binits{Y.}},
+\bauthor{\bsnm{Wang}, \binits{X.}}:
+\batitle{Role of mitophagy in the neurodegenerative diseases and its
+  pharmacological advances: A review}.
+\bjtitle{Frontiers in Molecular Neuroscience}
+\bvolume{15},
+\bfpage{1014251}
+(\byear{2022}).
+doi:\doiurl{10.3389/fnmol.2022.1014251}
 \end{barticle}
 \endbibitem
 
@@ -1031,33 +1174,6 @@ doi:\doiurl{10.1093/nar/gkad393}
 </bibl>
 
 <bibl id="B24">
-  <title><p>Matplotlib: A 2D Graphics Environment</p></title>
-  <aug>
-    <au><snm>Hunter</snm><fnm>J. D.</fnm></au>
-  </aug>
-  <source>Computing in Science \& Engineering</source>
-  <pubdate>2007</pubdate>
-  <volume>9</volume>
-  <issue>3</issue>
-  <fpage>90</fpage>
-  <lpage>-95</lpage>
-  <url>https://matplotlib.org/</url>
-</bibl>
-
-<bibl id="B25">
-  <title><p>Seaborn: Statistical Data Visualization</p></title>
-  <aug>
-    <au><snm>Waskom</snm><fnm>ML</fnm></au>
-  </aug>
-  <source>Journal of Open Source Software</source>
-  <pubdate>2021</pubdate>
-  <volume>6</volume>
-  <issue>60</issue>
-  <fpage>3021</fpage>
-  <url>https://seaborn.pydata.org/</url>
-</bibl>
-
-<bibl id="B26">
   <title><p>Requests: HTTP for Humans</p></title>
   <aug>
     <au><snm>Reitz</snm><fnm>K</fnm></au>
@@ -1068,7 +1184,7 @@ doi:\doiurl{10.1093/nar/gkad393}
   <url>https://requests.readthedocs.io/</url>
 </bibl>
 
-<bibl id="B27">
+<bibl id="B25">
   <title><p>Data Structures for Statistical Computing in Python</p></title>
   <aug>
     <au><snm>McKinney</snm><fnm>W</fnm></au>
@@ -1080,24 +1196,7 @@ doi:\doiurl{10.1093/nar/gkad393}
   <url>https://pandas.pydata.org/</url>
 </bibl>
 
-<bibl id="B28">
-  <title><p>Fast unfolding of communities in large networks</p></title>
-  <aug>
-    <au><snm>Blondel</snm><fnm>VD</fnm></au>
-    <au><snm>Guillaume</snm><fnm>JL</fnm></au>
-    <au><snm>Lambiotte</snm><fnm>R</fnm></au>
-    <au><snm>Lefebvre</snm><fnm>E</fnm></au>
-  </aug>
-  <source>Journal of Statistical Mechanics: Theory and Experiment</source>
-  <publisher>IOP Publishing</publisher>
-  <pubdate>2008</pubdate>
-  <volume>2008</volume>
-  <issue>10</issue>
-  <fpage>P10008</fpage>
-  <url>https://doi.org/10.1088/1742-5468/2008/10/P10008</url>
-</bibl>
-
-<bibl id="B29">
+<bibl id="B26">
   <title><p>A DIseAse MOdule Detection (DIAMOnD) algorithm derived from a
   systematic analysis of connectivity patterns of disease proteins in the human
   interactome</p></title>
@@ -1115,7 +1214,24 @@ doi:\doiurl{10.1093/nar/gkad393}
   <note>Published 2015 Apr 8</note>
 </bibl>
 
-<bibl id="B30">
+<bibl id="B27">
+  <title><p>Fast unfolding of communities in large networks</p></title>
+  <aug>
+    <au><snm>Blondel</snm><fnm>VD</fnm></au>
+    <au><snm>Guillaume</snm><fnm>JL</fnm></au>
+    <au><snm>Lambiotte</snm><fnm>R</fnm></au>
+    <au><snm>Lefebvre</snm><fnm>E</fnm></au>
+  </aug>
+  <source>Journal of Statistical Mechanics: Theory and Experiment</source>
+  <publisher>IOP Publishing</publisher>
+  <pubdate>2008</pubdate>
+  <volume>2008</volume>
+  <issue>10</issue>
+  <fpage>P10008</fpage>
+  <url>https://doi.org/10.1088/1742-5468/2008/10/P10008</url>
+</bibl>
+
+<bibl id="B28">
   <title><p>Enrichr-KG: bridging enrichment analysis across multiple
   libraries</p></title>
   <aug>
@@ -1133,6 +1249,180 @@ doi:\doiurl{10.1093/nar/gkad393}
   <fpage>W168</fpage>
   <lpage>W179</lpage>
   <url>https://doi.org/10.1093/nar/gkad393</url>
+</bibl>
+
+<bibl id="B29">
+  <title><p>Imaging and spectroscopic approaches to probe brain energy
+  metabolism dysregulation in neurodegenerative diseases</p></title>
+  <aug>
+    <au><snm>Bonvento</snm><fnm>G.</fnm></au>
+    <au><snm>Valette</snm><fnm>J.</fnm></au>
+    <au><snm>Flament</snm><fnm>J.</fnm></au>
+    <au><snm>Mochel</snm><fnm>F.</fnm></au>
+    <au><snm>Brouillet</snm><fnm>E.</fnm></au>
+  </aug>
+  <source>Journal of Cerebral Blood Flow \& Metabolism</source>
+  <pubdate>2017</pubdate>
+  <volume>37</volume>
+  <issue>6</issue>
+  <fpage>1927</fpage>
+  <lpage>-1943</lpage>
+  <url>https://doi.org/10.1177/0271678X17697989</url>
+</bibl>
+
+<bibl id="B30">
+  <title><p>Endosomal Transport to Lysosomes and the Trans-Golgi Network in
+  Neurons and Other Cells: Visualizing Maturational Flux</p></title>
+  <aug>
+    <au><snm>Mulligan</snm><fnm>RJ</fnm></au>
+    <au><snm>Yap</snm><fnm>CC</fnm></au>
+    <au><snm>Winckler</snm><fnm>B</fnm></au>
+  </aug>
+  <source>Golgi: Methods and Protocols</source>
+  <publisher>New York, NY: Springer US</publisher>
+  <editor>Wang, Yanzhuang and Lupashin, Vladimir V. and Graham, Todd
+  R.</editor>
+  <pubdate>2023</pubdate>
+  <fpage>595</fpage>
+  <lpage>-618</lpage>
+  <url>https://doi.org/10.1007/978-1-0716-2639-9_36</url>
+</bibl>
+
+<bibl id="B31">
+  <title><p>Synapse formation: from cellular and molecular mechanisms to
+  neurodevelopmental and neurodegenerative disorders</p></title>
+  <aug>
+    <au><snm>Batool</snm><fnm>S.</fnm></au>
+    <au><snm>Raza</snm><fnm>H.</fnm></au>
+    <au><snm>Zaidi</snm><fnm>J.</fnm></au>
+    <au><snm>Riaz</snm><fnm>S.</fnm></au>
+    <au><snm>Hasan</snm><fnm>S.</fnm></au>
+    <au><snm>Syed</snm><fnm>N. I.</fnm></au>
+  </aug>
+  <source>Journal of Neurophysiology</source>
+  <pubdate>2019</pubdate>
+  <volume>121</volume>
+  <issue>4</issue>
+  <fpage>1381</fpage>
+  <lpage>-1397</lpage>
+  <url>https://doi.org/10.1152/jn.00833.2018</url>
+</bibl>
+
+<bibl id="B32">
+  <title><p>Role of Mitochondrial Dysfunctions in Neurodegenerative Disorders:
+  Advances in Mitochondrial Biology</p></title>
+  <aug>
+    <au><snm>Kathiresan</snm><fnm>D. S.</fnm></au>
+    <au><snm>Balasubramani</snm><fnm>R.</fnm></au>
+    <au><snm>Marudhachalam</snm><fnm>K.</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Molecular Neurobiology</source>
+  <pubdate>2024</pubdate>
+  <url>https://doi.org/10.1007/s12035-024-04469-x</url>
+</bibl>
+
+<bibl id="B33">
+  <title><p>Stress granule formation helps to mitigate
+  neurodegeneration</p></title>
+  <aug>
+    <au><snm>Glineburg</snm><fnm>M</fnm></au>
+    <au><snm>Yildirim</snm><fnm>E</fnm></au>
+    <au><snm>Gomez</snm><fnm>N</fnm></au>
+    <au><snm>Rodriguez</snm><fnm>G</fnm></au>
+    <au><snm>Pak</snm><fnm>J</fnm></au>
+    <au><snm>Li</snm><fnm>X</fnm></au>
+    <au><snm>Altheim</snm><fnm>C</fnm></au>
+    <au><snm>Waksmacki</snm><fnm>J</fnm></au>
+    <au><snm>McInerney</snm><fnm>G</fnm></au>
+    <au><snm>Barmada</snm><fnm>S</fnm></au>
+    <au><snm>Todd</snm><fnm>P</fnm></au>
+  </aug>
+  <source>Nucleic Acids Research</source>
+  <pubdate>2024</pubdate>
+  <volume>52</volume>
+  <issue>16</issue>
+  <fpage>9745</fpage>
+  <lpage>9759</lpage>
+  <url>https://doi.org/10.1093/nar/gkae655</url>
+</bibl>
+
+<bibl id="B34">
+  <title><p>Stress Granules and Neurodegenerative Disorders: A Scoping
+  Review</p></title>
+  <aug>
+    <au><snm>Asadi</snm><fnm>MR</fnm></au>
+    <au><snm>Sadat Moslehian</snm><fnm>M</fnm></au>
+    <au><snm>Sabaie</snm><fnm>H</fnm></au>
+    <au><snm>Jalaiei</snm><fnm>A</fnm></au>
+    <au><snm>Ghafouri Fard</snm><fnm>S</fnm></au>
+    <au><snm>Taheri</snm><fnm>M</fnm></au>
+    <au><snm>Rezazadeh</snm><fnm>M</fnm></au>
+  </aug>
+  <source>Frontiers in aging neuroscience</source>
+  <pubdate>2021</pubdate>
+  <volume>13</volume>
+  <fpage>650740</fpage>
+  <url>https://europepmc.org/articles/PMC8261063</url>
+</bibl>
+
+<bibl id="B35">
+  <title><p>Ubiquitin signalling in neurodegeneration: mechanisms and
+  therapeutic opportunities</p></title>
+  <aug>
+    <au><snm>Schmidt</snm><fnm>M. F.</fnm></au>
+    <au><snm>Gan</snm><fnm>Z. Y.</fnm></au>
+    <au><snm>Komander</snm><fnm>D.</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Cell Death & Differentiation</source>
+  <pubdate>2021</pubdate>
+  <volume>28</volume>
+  <fpage>570</fpage>
+  <lpage>-590</lpage>
+  <url>https://doi.org/10.1038/s41418-020-00706-7</url>
+</bibl>
+
+<bibl id="B36">
+  <title><p>Lysine 63-linked ubiquitination promotes the formation and
+  autophagic clearance of protein inclusions associated with neurodegenerative
+  diseases</p></title>
+  <aug>
+    <au><snm>Tan</snm><fnm>JM</fnm></au>
+    <au><snm>Wong</snm><fnm>ES</fnm></au>
+    <au><snm>Kirkpatrick</snm><fnm>DS</fnm></au>
+    <au><snm>Pletnikova</snm><fnm>O</fnm></au>
+    <au><snm>Ko</snm><fnm>HS</fnm></au>
+    <au><snm>Tay</snm><fnm>SP</fnm></au>
+    <au><snm>Ho</snm><fnm>MW</fnm></au>
+    <au><snm>Troncoso</snm><fnm>J</fnm></au>
+    <au><snm>Gygi</snm><fnm>SP</fnm></au>
+    <au><snm>Lee</snm><fnm>MK</fnm></au>
+    <au><snm>Dawson</snm><fnm>VL</fnm></au>
+    <au><snm>Dawson</snm><fnm>TM</fnm></au>
+    <au><snm>Lim</snm><fnm>KL</fnm></au>
+  </aug>
+  <source>Human Molecular Genetics</source>
+  <pubdate>2007</pubdate>
+  <volume>17</volume>
+  <issue>3</issue>
+  <fpage>431</fpage>
+  <lpage>439</lpage>
+  <url>https://doi.org/10.1093/hmg/ddm320</url>
+</bibl>
+
+<bibl id="B37">
+  <title><p>Role of mitophagy in the neurodegenerative diseases and its
+  pharmacological advances: A review</p></title>
+  <aug>
+    <au><snm>Zhang</snm><fnm>Y.</fnm></au>
+    <au><snm>Wang</snm><fnm>X.</fnm></au>
+  </aug>
+  <source>Frontiers in Molecular Neuroscience</source>
+  <pubdate>2022</pubdate>
+  <volume>15</volume>
+  <fpage>1014251</fpage>
+  <url>https://doi.org/10.3389/fnmol.2022.1014251</url>
 </bibl>
 
 </refgrp>

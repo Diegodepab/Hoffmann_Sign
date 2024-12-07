@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.12)  7 DEC 2024 17:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.12)  7 DEC 2024 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -476,7 +476,7 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 
 \address@aff1=\toks39
 (tex_files/introduction.tex
-<figures/Kabir_Hoffmann__Sign.jpg, id=124, 370.38374pt x 462.97969pt>
+<figures/Kabir_Hoffmann__Sign.jpg, id=152, 370.38374pt x 462.97969pt>
 File: figures/Kabir_Hoffmann__Sign.jpg Graphic file (type jpg)
 <use figures/Kabir_Hoffmann__Sign.jpg>
 Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 5
@@ -516,7 +516,7 @@ e-trieval of In-ter-act-ing Genes/Proteins\OT1/cmr/m/n/10 )
 
 
 [3]
-<figures/workflow.png, id=207, 1445.4pt x 813.0375pt>
+<figures/workflow.png, id=235, 1445.4pt x 813.0375pt>
 File: figures/workflow.png Graphic file (type png)
 <use figures/workflow.png>
 Package pdftex.def Info: figures/workflow.png  used on input line 65.
@@ -553,7 +553,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
 
 [6]
-<figures/network_clusters_colored.png, id=251, 803.0pt x 803.0pt>
+<figures/network_clusters_colored.png, id=279, 803.0pt x 803.0pt>
 File: figures/network_clusters_colored.png Graphic file (type png)
 <use figures/network_clusters_colored.png>
 Package pdftex.def Info: figures/network_clusters_colored.png  used on input li
@@ -732,21 +732,100 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--209
 
 ) (tex_files/discusion.tex
 
-[9]) (tex_files/conclusiones.tex) (report.bbl
+[9]
+
+[10]) (tex_files/conclusiones.tex) (report.bbl
+
+[11]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 247.
-
-(C:\Users\jismbs\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+ (C:\Users\jismbs\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-
-[10]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 381.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[12]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.584 doi:\doiurl{10.1007/978-1-0716-2639-9_36}
+                                               .
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.584 doi:\doiurl{10.1007/978-1-0716-2639-9_36}
+                                               .
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.585 ...s://doi.org/10.1007/978-1-0716-2639-9_36}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.585 ...s://doi.org/10.1007/978-1-0716-2639-9_36}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.586 \end{bbook}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.586 \end{bbook}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Misplaced alignment tab character &.
+<argument> Cell Death &
+                        Differentiation
+l.673 \bjtitle{Cell Death & Differentiation}
+                                            
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 )
 
-[11] 
+[13] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (report.aux)
  ***********
@@ -758,40 +837,36 @@ L3 programming layer <2024-11-02>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 92A70EC9E93941FC12FB1681F6AB5435;5344
-(rerunfilecheck)             After:  F5F6951D531210B1A186DDA24091B175;5713.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: C6012758D1F8F3011D7995EAB398DE1D;7965.
  ) 
 Here is how much of TeX's memory you used:
- 12180 strings out of 473681
- 195346 string characters out of 5718718
- 613225 words of memory out of 5000000
- 34999 multiletter control sequences out of 15000+600000
+ 12213 strings out of 473681
+ 195941 string characters out of 5718718
+ 613484 words of memory out of 5000000
+ 35017 multiletter control sequences out of 15000+600000
  568232 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,17n,79p,1047b,724s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,17n,79p,1047b,726s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jismbs\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcs
 s0700.pk> <C:\Users\jismbs\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\tcrm0700.pk> <C:\Users\jismbs\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
 /ec/dpi600\tcrm1000.pk><C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmbx10.pfb><C:/Users/jismbs/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jismbs/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/jismbs/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/jismbs/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/User
-s/jismbs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.
-pfb><C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmssi8.pfb><C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmti10.pfb><C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (11 pages, 457661 bytes).
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jismbs/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jismbs/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/j
+ismbs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><
+C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ss8.pfb><C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmssbx10.pfb><C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmssi8.pfb><C:/Users/jismbs/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/jismbs/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on report.pdf (13 pages, 494009 bytes).
 PDF statistics:
- 400 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
- 248 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 476 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 
