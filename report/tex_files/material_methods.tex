@@ -1,11 +1,11 @@
 \section{Objetivos}
 \subsection{Objetivo General}
 
-Explorar las interacciones entre genes y proteínas asociadas al Signo de Hoffman, utilizando bases de datos bioinformáticas y herramientas de análisis de redes para identificar posibles grupos funcionales y patrones de interacción relevantes.
+Explorar las interacciones entre genes y proteínas asociadas al Signo de Hoffmann, utilizando bases de datos bioinformáticas y herramientas de análisis de redes para identificar posibles grupos funcionales y patrones de interacción relevantes.
 
 \subsection{Objetivos Específicos}
 \begin{enumerate}
-	\item Identificar genes asociados al signo de Hoffman mediante la utilización de la Human Phenotype Ontology (HPO) y otras bases de datos relevantes.
+	\item Identificar genes asociados al signo de Hoffmann mediante la utilización de la Human Phenotype Ontology (HPO) y otras bases de datos relevantes.
 	\item Construir una red de interacciones proteína-proteína (PPI) basada en los genes obtenidos, utilizando StringDB para analizar las interacciones de las proteínas codificadas por estos genes.
 	\item Aplicar algoritmos de análisis de redes para calcular métricas topológicas y determinar características clave de la red.
 	\item Aplicar clustering en la red de interacción para identificar grupos de genes o proteínas que presenten una alta conectividad.
@@ -67,9 +67,9 @@ El lenguaje de programación \textit{Python} es versátil y de alto nivel, usado
 	\label{fig:workflow}
 \end{figure}
 
-\subsection{Obtención de genes relacionados con signo de Hoffman}
+\subsection{Obtención de genes relacionados con signo de Hoffmann}
 
-Para obtener los genes relacionados con el signo de Hoffman (HP:0031993), se utilizó la API de la Ontología de Fenotipos Humanos (HPO). El recurso consultado contiene nuestro termino HPO y el endpoint de genes (https://ontology.jax.org/api/
+Para obtener los genes relacionados con el signo de Hoffmann (HP:0031993), se utilizó la API de la Ontología de Fenotipos Humanos (HPO). El recurso consultado contiene nuestro termino HPO y el endpoint de genes (https://ontology.jax.org/api/
 network/annotation/HP:0031993/download/gene). Mediante una solicitud HTTP, se extrajo y almacenó esta información en archivos con formato .tsv, facilitando así su posterior análisis. 
 
 
@@ -82,7 +82,7 @@ Para el análisis de interacciones génicas, se utilizó una red de interaccione
 \subsection{Propagación de red}
 
 
-Para identificar genes adicionales asociados al conjunto de genes iniciales relacionados con el Signo de Hoffman, se aplicó el algoritmo de propagación de red DIAMOnD \cite{Ghiassian2015}. Se utilizó la red de interacciones génicas como base, y el algoritmo añadió nodos que optimizaban la cercanía topológica al clúster de genes, priorizando aquellos con menor p-valor. En caso de empate, se empleó la suma ponderada de los pesos de las conexiones con los genes del grafo para desempatar, dando preferencia a los nodos con conexiones más relevantes y fuertemente conectados.
+Para identificar genes adicionales asociados al conjunto de genes iniciales relacionados con el Signo de Hoffmann, se aplicó el algoritmo de propagación de red DIAMOnD \cite{Ghiassian2015}. Se utilizó la red de interacciones génicas como base, y el algoritmo añadió nodos que optimizaban la cercanía topológica al clúster de genes, priorizando aquellos con menor p-valor. En caso de empate, se empleó la suma ponderada de los pesos de las conexiones con los genes del grafo para desempatar, dando preferencia a los nodos con conexiones más relevantes y fuertemente conectados.
 
 
 \subsection{Análisis de red}
