@@ -581,7 +581,6 @@ pp. \bfpage{595}--\blpage{618}.
 \bpublisher{Springer},
 \blocation{New York, NY}
 (\byear{2023}).
-\doiurl{https://doi.org/10.1007/978-1-0716-2639-9_36}
 \url{https://doi.org/10.1007/978-1-0716-2639-9_36}
 
 \end{bbook}
@@ -663,21 +662,21 @@ doi:\doiurl{10.3389/fnagi.2021.650740}
 \end{barticle}
 \endbibitem
 
-%%% 35
 \bibitem{Schmidt2021}
 \begin{barticle}
 \bauthor{\bsnm{Schmidt}, \binits{M.F.}},
 \bauthor{\bsnm{Gan}, \binits{Z.Y.}},
 \bauthor{\bsnm{Komander}, \binits{D.}}, \betal:
 \batitle{Ubiquitin signalling in neurodegeneration: mechanisms and therapeutic
-  opportunities}.
-\bjtitle{Cell Death & Differentiation}
+opportunities}.
+\bjtitle{Cell Death \& Differentiation}
 \bvolume{28},
 \bfpage{570}--\blpage{590}
 (\byear{2021}).
 doi:\doiurl{10.1038/s41418-020-00706-7}
 \end{barticle}
 \endbibitem
+
 
 %%% 36
 \bibitem{10.1093/hmg/ddm320}
