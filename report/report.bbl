@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{37}
+\begin{thebibliography}{41}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -549,6 +549,71 @@ doi:\doiurl{10.1093/nar/gkad393}
 \endbibitem
 
 %%% 29
+\bibitem{cells11182773}
+\begin{botherref}
+\oauthor{\bsnm{Masson}, \binits{J.}},
+\oauthor{\bsnm{El~Ghouzzi}, \binits{V.}}:
+Golgi dysfunctions in ciliopathies.
+Cells
+\textbf{11}(18)
+(2022).
+doi:\doiurl{10.3390/cells11182773}
+\end{botherref}
+\endbibitem
+
+%%% 30
+\bibitem{RozesSalvador2020}
+\begin{barticle}
+\bauthor{\bsnm{Rozés-Salvador}, \binits{V.}},
+\bauthor{\bsnm{González-Billault}, \binits{C.}},
+\bauthor{\bsnm{Conde}, \binits{C.}}:
+\batitle{The recycling endosome in nerve cell development: One rab to rule them
+  all?}
+\bjtitle{Frontiers in Cell and Developmental Biology}
+\bvolume{8},
+\bfpage{603794}
+(\byear{2020}).
+doi:\doiurl{10.3389/fcell.2020.603794}
+\end{barticle}
+\endbibitem
+
+%%% 31
+\bibitem{GUO2020133}
+\begin{barticle}
+\bauthor{\bsnm{Guo}, \binits{W.}},
+\bauthor{\bsnm{{Stoklund Dittlau}}, \binits{K.}},
+\bauthor{\bsnm{{Van Den Bosch}}, \binits{L.}}:
+\batitle{Axonal transport defects and neurodegeneration: Molecular mechanisms
+  and therapeutic implications}.
+\bjtitle{Seminars in Cell \& Developmental Biology}
+\bvolume{99},
+\bfpage{133}--\blpage{150}
+(\byear{2020}).
+doi:\doiurl{10.1016/j.semcdb.2019.07.010}.
+\bcomment{SI: Protein-protein interactions in health and disease}
+\end{barticle}
+\endbibitem
+
+%%% 32
+\bibitem{Chanaday8209}
+\begin{barticle}
+\bauthor{\bsnm{Chanaday}, \binits{N.L.}},
+\bauthor{\bsnm{Cousin}, \binits{M.A.}},
+\bauthor{\bsnm{Milosevic}, \binits{I.}},
+\bauthor{\bsnm{Watanabe}, \binits{S.}},
+\bauthor{\bsnm{Morgan}, \binits{J.R.}}:
+\batitle{The synaptic vesicle cycle revisited: New insights into the modes and
+  mechanisms}.
+\bjtitle{Journal of Neuroscience}
+\bvolume{39}(\bissue{42}),
+\bfpage{8209}--\blpage{8216}
+(\byear{2019}).
+doi:\doiurl{10.1523/JNEUROSCI.1158-19.2019}.
+\arxivurl{https://www.jneurosci.org/content/39/42/8209.full.pdf}
+\end{barticle}
+\endbibitem
+
+%%% 33
 \bibitem{Bonvento2017}
 \begin{barticle}
 \bauthor{\bsnm{Bonvento}, \binits{G.}},
@@ -566,7 +631,7 @@ doi:\doiurl{10.1177/0271678X17697989}
 \end{barticle}
 \endbibitem
 
-%%% 30
+%%% 34
 \bibitem{Mulligan2023}
 \begin{bbook}
 \bauthor{\bsnm{Mulligan}, \binits{R.J.}},
@@ -580,13 +645,11 @@ In: \beditor{\bsnm{Wang}, \binits{Y.}},
 pp. \bfpage{595}--\blpage{618}.
 \bpublisher{Springer},
 \blocation{New York, NY}
-(\byear{2023}).
-\url{https://doi.org/10.1007/978-1-0716-2639-9_36}
-
+(\byear{2023})
 \end{bbook}
 \endbibitem
 
-%%% 31
+%%% 35
 \bibitem{Batool2019}
 \begin{barticle}
 \bauthor{\bsnm{Batool}, \binits{S.}},
@@ -605,7 +668,7 @@ doi:\doiurl{10.1152/jn.00833.2018}
 \end{barticle}
 \endbibitem
 
-%%% 32
+%%% 36
 \bibitem{Kathiresan2024}
 \begin{barticle}
 \bauthor{\bsnm{Kathiresan}, \binits{D.S.}},
@@ -619,7 +682,7 @@ doi:\doiurl{10.1007/s12035-024-04469-x}
 \end{barticle}
 \endbibitem
 
-%%% 33
+%%% 37
 \bibitem{10.1093/nar/gkae655}
 \begin{barticle}
 \bauthor{\bsnm{Glineburg}, \binits{M.}},
@@ -643,7 +706,7 @@ doi:\doiurl{10.1093/nar/gkae655}.
 \end{barticle}
 \endbibitem
 
-%%% 34
+%%% 38
 \bibitem{PMID:34248597}
 \begin{barticle}
 \bauthor{\bsnm{Asadi}, \binits{M.R.}},
@@ -662,14 +725,15 @@ doi:\doiurl{10.3389/fnagi.2021.650740}
 \end{barticle}
 \endbibitem
 
+%%% 39
 \bibitem{Schmidt2021}
 \begin{barticle}
 \bauthor{\bsnm{Schmidt}, \binits{M.F.}},
 \bauthor{\bsnm{Gan}, \binits{Z.Y.}},
 \bauthor{\bsnm{Komander}, \binits{D.}}, \betal:
 \batitle{Ubiquitin signalling in neurodegeneration: mechanisms and therapeutic
-opportunities}.
-\bjtitle{Cell Death \& Differentiation}
+  opportunities}.
+\bjtitle{Cell Death and Differentiation}
 \bvolume{28},
 \bfpage{570}--\blpage{590}
 (\byear{2021}).
@@ -677,8 +741,7 @@ doi:\doiurl{10.1038/s41418-020-00706-7}
 \end{barticle}
 \endbibitem
 
-
-%%% 36
+%%% 40
 \bibitem{10.1093/hmg/ddm320}
 \begin{barticle}
 \bauthor{\bsnm{Tan}, \binits{J.M.M.}},
@@ -704,7 +767,7 @@ doi:\doiurl{10.1093/hmg/ddm320}
 \end{barticle}
 \endbibitem
 
-%%% 37
+%%% 41
 \bibitem{Zhang2022}
 \begin{barticle}
 \bauthor{\bsnm{Zhang}, \binits{Y.}},
@@ -1252,6 +1315,72 @@ doi:\doiurl{10.3389/fnmol.2022.1014251}
 </bibl>
 
 <bibl id="B29">
+  <title><p>Golgi Dysfunctions in Ciliopathies</p></title>
+  <aug>
+    <au><snm>Masson</snm><fnm>J</fnm></au>
+    <au><snm>El Ghouzzi</snm><fnm>V</fnm></au>
+  </aug>
+  <source>Cells</source>
+  <pubdate>2022</pubdate>
+  <volume>11</volume>
+  <issue>18</issue>
+  <url>https://www.mdpi.com/2073-4409/11/18/2773</url>
+</bibl>
+
+<bibl id="B30">
+  <title><p>The Recycling Endosome in Nerve Cell Development: One Rab to Rule
+  Them All?</p></title>
+  <aug>
+    <au><snm>Rozés Salvador</snm><fnm>V</fnm></au>
+    <au><snm>González Billault</snm><fnm>C</fnm></au>
+    <au><snm>Conde</snm><fnm>C</fnm></au>
+  </aug>
+  <source>Frontiers in Cell and Developmental Biology</source>
+  <publisher>Frontiers Media</publisher>
+  <pubdate>2020</pubdate>
+  <volume>8</volume>
+  <fpage>603794</fpage>
+  <url>https://doi.org/10.3389/fcell.2020.603794</url>
+</bibl>
+
+<bibl id="B31">
+  <title><p>Axonal transport defects and neurodegeneration: Molecular
+  mechanisms and therapeutic implications</p></title>
+  <aug>
+    <au><snm>Guo</snm><fnm>W</fnm></au>
+    <au><snm>{Stoklund Dittlau}</snm><fnm>K</fnm></au>
+    <au><snm>{Van Den Bosch}</snm><fnm>L</fnm></au>
+  </aug>
+  <source>Seminars in Cell \& Developmental Biology</source>
+  <pubdate>2020</pubdate>
+  <volume>99</volume>
+  <fpage>133</fpage>
+  <lpage>150</lpage>
+  <url>https://www.sciencedirect.com/science/article/pii/S1084952118302192</url>
+  <note>SI: Protein-protein interactions in health and disease</note>
+</bibl>
+
+<bibl id="B32">
+  <title><p>The Synaptic Vesicle Cycle Revisited: New Insights into the Modes
+  and Mechanisms</p></title>
+  <aug>
+    <au><snm>Chanaday</snm><fnm>NL</fnm></au>
+    <au><snm>Cousin</snm><fnm>MA</fnm></au>
+    <au><snm>Milosevic</snm><fnm>I</fnm></au>
+    <au><snm>Watanabe</snm><fnm>S</fnm></au>
+    <au><snm>Morgan</snm><fnm>JR</fnm></au>
+  </aug>
+  <source>Journal of Neuroscience</source>
+  <publisher>Society for Neuroscience</publisher>
+  <pubdate>2019</pubdate>
+  <volume>39</volume>
+  <issue>42</issue>
+  <fpage>8209</fpage>
+  <lpage>-8216</lpage>
+  <url>https://www.jneurosci.org/content/39/42/8209</url>
+</bibl>
+
+<bibl id="B33">
   <title><p>Imaging and spectroscopic approaches to probe brain energy
   metabolism dysregulation in neurodegenerative diseases</p></title>
   <aug>
@@ -1270,7 +1399,7 @@ doi:\doiurl{10.3389/fnmol.2022.1014251}
   <url>https://doi.org/10.1177/0271678X17697989</url>
 </bibl>
 
-<bibl id="B30">
+<bibl id="B34">
   <title><p>Endosomal Transport to Lysosomes and the Trans-Golgi Network in
   Neurons and Other Cells: Visualizing Maturational Flux</p></title>
   <aug>
@@ -1285,10 +1414,9 @@ doi:\doiurl{10.3389/fnmol.2022.1014251}
   <pubdate>2023</pubdate>
   <fpage>595</fpage>
   <lpage>-618</lpage>
-  <url>https://doi.org/10.1007/978-1-0716-2639-9_36</url>
 </bibl>
 
-<bibl id="B31">
+<bibl id="B35">
   <title><p>Synapse formation: from cellular and molecular mechanisms to
   neurodevelopmental and neurodegenerative disorders</p></title>
   <aug>
@@ -1308,7 +1436,7 @@ doi:\doiurl{10.3389/fnmol.2022.1014251}
   <url>https://doi.org/10.1152/jn.00833.2018</url>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B36">
   <title><p>Role of Mitochondrial Dysfunctions in Neurodegenerative Disorders:
   Advances in Mitochondrial Biology</p></title>
   <aug>
@@ -1322,7 +1450,7 @@ doi:\doiurl{10.3389/fnmol.2022.1014251}
   <url>https://doi.org/10.1007/s12035-024-04469-x</url>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B37">
   <title><p>Stress granule formation helps to mitigate
   neurodegeneration</p></title>
   <aug>
@@ -1347,7 +1475,7 @@ doi:\doiurl{10.3389/fnmol.2022.1014251}
   <url>https://doi.org/10.1093/nar/gkae655</url>
 </bibl>
 
-<bibl id="B34">
+<bibl id="B38">
   <title><p>Stress Granules and Neurodegenerative Disorders: A Scoping
   Review</p></title>
   <aug>
@@ -1366,7 +1494,7 @@ doi:\doiurl{10.3389/fnmol.2022.1014251}
   <url>https://europepmc.org/articles/PMC8261063</url>
 </bibl>
 
-<bibl id="B35">
+<bibl id="B39">
   <title><p>Ubiquitin signalling in neurodegeneration: mechanisms and
   therapeutic opportunities</p></title>
   <aug>
@@ -1375,7 +1503,7 @@ doi:\doiurl{10.3389/fnmol.2022.1014251}
     <au><snm>Komander</snm><fnm>D.</fnm></au>
     <au><cnm>others</cnm></au>
   </aug>
-  <source>Cell Death & Differentiation</source>
+  <source>Cell Death and Differentiation</source>
   <pubdate>2021</pubdate>
   <volume>28</volume>
   <fpage>570</fpage>
@@ -1383,7 +1511,7 @@ doi:\doiurl{10.3389/fnmol.2022.1014251}
   <url>https://doi.org/10.1038/s41418-020-00706-7</url>
 </bibl>
 
-<bibl id="B36">
+<bibl id="B40">
   <title><p>Lysine 63-linked ubiquitination promotes the formation and
   autophagic clearance of protein inclusions associated with neurodegenerative
   diseases</p></title>
@@ -1411,7 +1539,7 @@ doi:\doiurl{10.3389/fnmol.2022.1014251}
   <url>https://doi.org/10.1093/hmg/ddm320</url>
 </bibl>
 
-<bibl id="B37">
+<bibl id="B41">
   <title><p>Role of mitophagy in the neurodegenerative diseases and its
   pharmacological advances: A review</p></title>
   <aug>

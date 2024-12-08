@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  8 DEC 2024 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  8 DEC 2024 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -692,292 +692,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--209
 []|\OT1/cmss/m/n/8 Amyotrophic lat-eral scle-ro-sis
  []
 
-) (./tex_files/discusion.tex
-
-LaTeX Warning: Citation `cells11182773' on page 9 undefined on input line 6.
-
-
-LaTeX Warning: Citation `RozesSalvador2020' on page 9 undefined on input line 1
-0.
-
-
-LaTeX Warning: Citation `GUO2020133' on page 9 undefined on input line 14.
-
-
-LaTeX Warning: Citation `Chanaday8209' on page 9 undefined on input line 18.
-
-[9] [10] [11]) (./tex_files/conclusiones.tex) (./report.bbl
+) (./tex_files/discusion.tex [9] [10] [11]) (./tex_files/conclusiones.tex)
+(./report.bbl
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 247.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [12]
+)
+[12]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 381.
 
- [13])
-(./report.bbl
-pdfTeX warning (ext4): destination with the same identifier (name{cite.BENDHEIM
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.46 \bibitem{BENDHEIM}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{cite.glaser20
-01cervical}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.59 \bibitem{glaser2001cervical}
-                                 
-pdfTeX warning (ext4): destination with the same identifier (name{cite.whitney}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.74 \bibitem{whitney}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{cite.echols19
-36hoffmann}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.85 \bibitem{echols1936hoffmann}
-                                 
-pdfTeX warning (ext4): destination with the same identifier (name{cite.fay1933c
-linical}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.97 \bibitem{fay1933clinical}
-                              
-pdfTeX warning (ext4): destination with the same identifier (name{cite.denno199
-1early}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.110 \bibitem{denno1991early}
-                              
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Esteves2
-014}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.124 \bibitem{Esteves2014}
-                           
-pdfTeX warning (ext4): destination with the same identifier (name{cite.10.1093/
-brain/awv143/1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.161 \bibitem{10.1093/brain/awv143/1}
-                                      
-pdfTeX warning (ext4): destination with the same identifier (name{cite.RIANCHO2
-01927}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.208 \bibitem{RIANCHO201927}
-                             
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Pedroso2
-022}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.225 \bibitem{Pedroso2022}
-                           
-pdfTeX warning (ext4): destination with the same identifier (name{cite.omim}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.245 \bibitem{omim}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{cite.orphanet
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.256 \bibitem{orphanet}
-                        
-pdfTeX warning (ext4): destination with the same identifier (name{cite.zhao2022
-g41d}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.266 \bibitem{zhao2022g41d}
-                            
-pdfTeX warning (ext4): destination with the same identifier (name{cite.sanchez2
-022atypical}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.287 \bibitem{sanchez2022atypical}
-                                   
-pdfTeX warning (ext4): destination with the same identifier (name{cite.teyssou:
-hal-03001781}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.311 \bibitem{teyssou:hal-03001781}
-                                    
-pdfTeX warning (ext4): destination with the same identifier (name{cite.mann2023
-NEK1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.348 \bibitem{mann2023NEK1}
-                            
-pdfTeX warning (ext4): destination with the same identifier (name{cite.gargano2
-024}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.377 \bibitem{gargano2024}
-                           
-pdfTeX warning (ext4): destination with the same identifier (name{cite.szklarcz
-yk2019}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.392 \bibitem{szklarczyk2019}
-                              
-pdfTeX warning (ext4): destination with the same identifier (name{cite.chan2018
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.409 \bibitem{chan2018}
-                        
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Wickham2
-019}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.422 \bibitem{Wickham2019}
-                           
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Huber201
-5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.436 \bibitem{Huber2015}
-                         
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Csardi20
-06}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.450 \bibitem{Csardi2006}
-                          
-pdfTeX warning (ext4): destination with the same identifier (name{cite.hagberg2
-008}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.463 \bibitem{hagberg2008}
-                           
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Requests
-2020}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.476 \bibitem{Requests2020}
-                            
-pdfTeX warning (ext4): destination with the same identifier (name{cite.McKinney
-2010}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.488 \bibitem{McKinney2010}
-                            
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Ghiassia
-n2015}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.500 \bibitem{Ghiassian2015}
-                             
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Blondel2
-008}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.518 \bibitem{Blondel2008}
-                            [14]
-pdfTeX warning (ext4): destination with the same identifier (name{cite.10.1093/
-nar/gkad393/1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.534 \bibitem{10.1093/nar/gkad393/1}
-                                     
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Bonvento
-2017}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.552 \bibitem{Bonvento2017}
-                            
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Mulligan
-2023}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.570 \bibitem{Mulligan2023}
-                            
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Batool20
-19}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.590 \bibitem{Batool2019}
-                          
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Kathires
-an2024}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.609 \bibitem{Kathiresan2024}
-                              
-pdfTeX warning (ext4): destination with the same identifier (name{cite.10.1093/
-nar/gkae655}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.623 \bibitem{10.1093/nar/gkae655}
-                                   
-pdfTeX warning (ext4): destination with the same identifier (name{cite.PMID:342
-48597}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.647 \bibitem{PMID:34248597}
-                             
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Schmidt2
-021}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.665 \bibitem{Schmidt2021}
-                           
-pdfTeX warning (ext4): destination with the same identifier (name{cite.10.1093/
-hmg/ddm320}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.682 \bibitem{10.1093/hmg/ddm320}
-                                  
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Zhang202
-2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.708 \bibitem{Zhang2022}
-                         
-
-! LaTeX Error: Command \BMCxmlcomment already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.724 \newcommand{\BMCxmlcomment}[1]{}
-                                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) 
+ [13]) 
 AED: lastpage setting LastPage
-[15] (./report.aux)
+[14] (./report.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: CCECBB83F883B123DF049D99C50260C7;8744.
  ) 
 Here is how much of TeX's memory you used:
- 11813 strings out of 476091
- 188687 string characters out of 5794081
+ 11817 strings out of 476091
+ 188779 string characters out of 5794081
  1871330 words of memory out of 5000000
- 31902 multiletter control sequences out of 15000+600000
+ 31906 multiletter control sequences out of 15000+600000
  522450 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,76p,1045b,722s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,76p,1045b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
@@ -990,10 +733,10 @@ cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/t
 exmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfss0700.pfb>
-Output written on report.pdf (15 pages, 456780 bytes).
+Output written on report.pdf (14 pages, 447303 bytes).
 PDF statistics:
- 533 PDF objects out of 1000 (max. 8388607)
- 481 compressed objects within 5 object streams
- 129 named destinations out of 1000 (max. 500000)
+ 512 PDF objects out of 1000 (max. 8388607)
+ 461 compressed objects within 5 object streams
+ 131 named destinations out of 1000 (max. 500000)
  344 words of extra memory for PDF output out of 10000 (max. 10000000)
 
