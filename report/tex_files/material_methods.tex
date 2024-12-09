@@ -53,17 +53,13 @@ El lenguaje de programación \textit{Python} es versátil y de alto nivel, usado
 	\item \textbf{Pandas}: Herramienta de manipulación de datos, utilizada para estructurar y limpiar datos previos a su análisis en redes.\cite{McKinney2010}.
 \end{itemize}
 
-
-
-
-
 \section{Métodos}
 
-\subsection{Flujo de trabajo}
+El flujo de trabajo seguido en este estudio, representado en la figura \ref{fig:workflow}, incluye las etapas clave de obtención de datos, propagación de genes, análisis de redes y análisis de enriquecimiento funcional.
 
 \begin{figure}[h!]
 	\includegraphics[width=.95\textwidth]{figures/workflow.png}
-	\caption{Flujo de trabajo para obtener analisis de enriquecimiento mejorado del fenotipo signo de Hoffmann}
+	\caption{Flujo de trabajo para obtener análisis de enriquecimiento mejorado del fenotipo signo de Hoffmann}
 	\label{fig:workflow}
 \end{figure}
 
@@ -77,12 +73,10 @@ network/annotation/HP:0031993/download/gene). Mediante una solicitud HTTP, se ex
 
 Para el análisis de interacciones génicas, se utilizó una red de interacciones obtenida de la base de datos STRING. Las interacciones de proteínas humanas (\textit{Homo sapiens}, ID taxonómico: 9606) fueron descargadas de el endpoint de descargas de STRING (https://stringdb-downloads.org/download/prot ein.links.v12.0/9606.protein.links.v12.0.txt.gz). Solo se consideraron interacciones con una puntuación combinada (\textit{combined score}) mayor o igual a 400.
 
-\newpage
-
 \subsection{Propagación de red}
 
 
-Para identificar genes adicionales asociados al conjunto de genes iniciales relacionados con el Signo de Hoffmann, se aplicó el algoritmo de propagación de red DIAMOnD \cite{Ghiassian2015}. Se utilizó la red de interacciones génicas como base, y el algoritmo añadió nodos que optimizaban la cercanía topológica al clúster de genes, priorizando aquellos con menor p-valor. En caso de empate, se empleó la suma ponderada de los pesos de las conexiones con los genes del grafo para desempatar, dando preferencia a los nodos con conexiones más relevantes y fuertemente conectados.
+Para identificar genes adicionales asociados al conjunto de genes iniciales relacionados con el Signo de Hoffmann, se aplicó el algoritmo de propagación de red DIAMOnD \cite{Ghiassian2015}. Se utilizó la red de interacciones génicas como base, y el algoritmo añadió nodos que optimizaban el índice hipergeométrico, una medida estadística que evalúa la probabilidad de que dos conjuntos tengan una superposición de elementos al menos tan grande como la observada, en comparación con lo que se esperaría por azar. En caso de empate, se empleó la suma ponderada de los pesos de las conexiones con los genes del grafo para desempatar, dando preferencia a los nodos con conexiones más relevantes y fuertemente conectados.
 
 
 \subsection{Análisis de red}

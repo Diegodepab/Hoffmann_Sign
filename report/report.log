@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  8 DEC 2024 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  9 DEC 2024 01:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -517,12 +517,12 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 
 \address@aff1=\toks39
 (tex_files/introduction.tex
-<figures/Kabir_Hoffmann__Sign.jpg, id=184, 370.38374pt x 462.97969pt>
+<figures/Kabir_Hoffmann__Sign.jpg, id=180, 370.38374pt x 462.97969pt>
 File: figures/Kabir_Hoffmann__Sign.jpg Graphic file (type jpg)
 <use figures/Kabir_Hoffmann__Sign.jpg>
 Package pdftex.def Info: figures/Kabir_Hoffmann__Sign.jpg  used on input line 5
 .
-(pdftex.def)             Requested size: 126.3522pt x 157.93378pt.
+(pdftex.def)             Requested size: 144.3978pt x 180.49776pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -530,12 +530,15 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 15.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 16.
 [1{C:/Users/Diego De Pablo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
- <./figures/Kabir_Hoffmann__Sign.jpg>]
+]
 Underfull \hbox (badness 995) in paragraph at lines 16--17
 []\OT1/cmr/m/n/10 Enfermedades neu-rode-gen-er-a-ti-vas m^^Sas cono-ci-das, com
 o la es-cle-ro-sis lat-eral
@@ -548,7 +551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
 
 
-[2]) (tex_files/material_methods.tex
+[2 <./figures/Kabir_Hoffmann__Sign.jpg>]) (tex_files/material_methods.tex
 Overfull \hbox (14.11809pt too wide) in paragraph at lines 22--23
 \OT1/cmr/m/n/10 La base de datos STRING (\OT1/cmr/m/it/10 Search Tool for the R
 e-trieval of In-ter-act-ing Genes/Proteins\OT1/cmr/m/n/10 )
@@ -557,22 +560,22 @@ e-trieval of In-ter-act-ing Genes/Proteins\OT1/cmr/m/n/10 )
 
 
 [3]
-<figures/workflow.png, id=267, 1445.4pt x 813.0375pt>
+<figures/workflow.png, id=263, 1445.4pt x 813.0375pt>
 File: figures/workflow.png Graphic file (type png)
 <use figures/workflow.png>
-Package pdftex.def Info: figures/workflow.png  used on input line 65.
+Package pdftex.def Info: figures/workflow.png  used on input line 61.
 (pdftex.def)             Requested size: 342.9489pt x 192.89992pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 66.
+(caption)                particular \caption on input line 62.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 977) in paragraph at lines 78--79
+Underfull \hbox (badness 977) in paragraph at lines 74--75
 \OT1/cmr/m/n/10 obtenida de la base de datos STRING. Las in-ter-ac-ciones de pr
 ote^^S^^Pnas hu-
  []
@@ -583,187 +586,196 @@ ote^^S^^Pnas hu-
 
 [5 <./figures/workflow.png (PNG copy)>]
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
 [6]
-<figures/network_clusters_colored.png, id=312, 803.0pt x 803.0pt>
+<figures/network_clusters_colored.png, id=308, 803.0pt x 803.0pt>
 File: figures/network_clusters_colored.png Graphic file (type png)
 <use figures/network_clusters_colored.png>
 Package pdftex.def Info: figures/network_clusters_colored.png  used on input li
-ne 97.
+ne 96.
 (pdftex.def)             Requested size: 288.8011pt x 288.81021pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 98.
+(caption)                particular \caption on input line 97.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 []|\OT1/cmss/m/n/8 Golgi to plasma mem-brane
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 []|\OT1/cmss/m/n/8 RAB10, EXOC8, EXOC6B,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 \OT1/cmss/m/n/8 EXOC4, EXOC6, EXOC5,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 []|\OT1/cmss/m/n/8 cilium or-ga-ni-za-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 []|\OT1/cmss/m/n/8 ARF4, EXOC8, EXOC7,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \OT1/cmss/m/n/8 RAB3IP, ASAP1, RAB11A,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \OT1/cmss/m/n/8 EXOC4, EXOC3, EXOC6,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
 []|\OT1/cmss/m/n/8 plasma mem-brane bounded
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
 \OT1/cmss/m/n/8 cell pro-jec-tion as-sem-bly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
 []|\OT1/cmss/m/n/8 ARF4, EXOC8, EXOC7,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
 \OT1/cmss/m/n/8 RAB3IP, ASAP1, RAB11A,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
 \OT1/cmss/m/n/8 EXOC4, EXOC3, EXOC6,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
-[]|\OT1/cmss/m/n/8 recycling en-do-some
- []
-
-
-Underfull \hbox (badness 887) in paragraph at lines 129--129
-[]|\OT1/cmss/m/n/8 recycling en-do-some mem-brane
  []
 
 
 
 [7 <./figures/network_clusters_colored.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]|\OT1/cmss/m/n/8 recycling en-do-some
+ []
+
+
+Underfull \hbox (badness 887) in paragraph at lines 128--128
+[]|\OT1/cmss/m/n/8 recycling en-do-some mem-brane
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 []|\OT1/cmss/m/n/8 RAB10, RALA, RAB11A,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 []|\OT1/cmss/m/n/8 small GT-Pase bind-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 []|\OT1/cmss/m/n/8 EXOC8, EXOC4, MYO5A,
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 153--153
+Underfull \hbox (badness 2042) in paragraph at lines 152--152
 []|\OT1/cmss/m/n/8 RAB10, ASAP1, RAB11FIP3,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
 []|\OT1/cmss/m/n/8 Positive reg-u-la-tion of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
 \OT1/cmss/m/n/8 ATP biosyn-thetic pro-cess
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 168--168
+Underfull \hbox (badness 3492) in paragraph at lines 167--167
 []|\OT1/cmss/m/n/8 Positive reg-u-la-tion of purine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 []|\OT1/cmss/m/n/8 Intracellular non-membrane-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 \OT1/cmss/m/n/8 bounded or-ganelle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 []|\OT1/cmss/m/n/8 FIG4, GLE1, VCP, TAF15,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []|\OT1/cmss/m/n/8 Mitochondrial in-ter-mem-brane
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 []|\OT1/cmss/m/n/8 Organelle en-ve-lope lu-men
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
 []|\OT1/cmss/m/n/8 Polyubiquitin modification-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
 \OT1/cmss/m/n/8 dependent pro-tein bind-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
 []|\OT1/cmss/m/n/8 VCP, SQSTM1, OPTN,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
 []|\OT1/cmss/m/n/8 Regulatory RNA bind-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 206--206
 []|\OT1/cmss/m/n/8 Amyotrophic lat-eral scle-ro-sis
  []
 
-
-
-[8]) (tex_files/discusion.tex
+) (tex_files/discusion.tex
 
 [9]
 
-[10]) (tex_files/conclusiones.tex
+[10]
 
-[11]
+[11]) (tex_files/conclusiones.tex
 
 [12]) (report.bbl
+
+[13]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 247.
 
@@ -771,14 +783,14 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line
 d
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-
-[13]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 381.
 
-)
 
-[14] 
+
+[14])
+
+[15] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (report.aux)
  ***********
@@ -791,13 +803,13 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 18C569462B006A8371E318CD2D4C5591;9301.
+(rerunfilecheck)             Checksum: 5AB88A8BF2E93DF53CECA24394BFBAB4;9157.
  ) 
 Here is how much of TeX's memory you used:
- 12241 strings out of 473899
- 198644 string characters out of 5722216
- 616227 words of memory out of 5000000
- 34815 multiletter control sequences out of 15000+600000
+ 12240 strings out of 473899
+ 198621 string characters out of 5722216
+ 611301 words of memory out of 5000000
+ 34814 multiletter control sequences out of 15000+600000
  568232 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,17n,79p,1047b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -816,9 +828,9 @@ o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:
 /cm/cmssi8.pfb><C:/Users/Diego De Pablo/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb><C:/Users/Diego De Pablo/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (14 pages, 488354 bytes).
+Output written on report.pdf (15 pages, 490074 bytes).
 PDF statistics:
- 524 PDF objects out of 1000 (max. 8388607)
+ 526 PDF objects out of 1000 (max. 8388607)
  139 named destinations out of 1000 (max. 500000)
- 368 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 360 words of extra memory for PDF output out of 10000 (max. 10000000)
 
