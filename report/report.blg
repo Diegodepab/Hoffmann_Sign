@@ -1,46 +1,47 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: report.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
 The style file: bmc-mathphys.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: bibliography.bib
-Repeated entry---line 356 of file bibliography.bib
+Repeated entry---line 685 of file bibliography.bib
  : @article{gargano2024
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 366 of file bibliography.bib
+Repeated entry---line 705 of file bibliography.bib
  : @article{szklarczyk2019
  :                        ,
 I'm skipping whatever remains of this entry
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Name 1 in "Aric A. Hagberg, Daniel A. Schult, and Pieter J. Swart" has a comma at the end for entry hagberg2008
 while executing---line 2585 of file bmc-mathphys.bst
 Name 1 in "Aric A. Hagberg, Daniel A. Schult, and Pieter J. Swart" has a comma at the end for entry hagberg2008
 while executing---line 2585 of file bmc-mathphys.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Name 1 in "Aric A. Hagberg, Daniel A. Schult, and Pieter J. Swart" has a comma at the end for entry hagberg2008
 while executing---line 2686 of file bmc-mathphys.bst
 Name 1 in "Aric A. Hagberg, Daniel A. Schult, and Pieter J. Swart" has a comma at the end for entry hagberg2008
 while executing---line 2686 of file bmc-mathphys.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Name 1 in "Aric A. Hagberg, Daniel A. Schult, and Pieter J. Swart" has a comma at the end for entry hagberg2008
 while executing---line 3019 of file bmc-mathphys.bst
 Name 1 in "Aric A. Hagberg, Daniel A. Schult, and Pieter J. Swart" has a comma at the end for entry hagberg2008
@@ -49,43 +50,43 @@ Name 1 in "Aric A. Hagberg, Daniel A. Schult, and Pieter J. Swart" has a comma a
 while executing---line 3019 of file bmc-mathphys.bst
 You've used 41 entries,
             7128 wiz_defined-function locations,
-            1459 strings with 21693 characters,
-and the built_in function-call counts, 314038 in all, are:
-= -- 38681
-> -- 1900
-< -- 1009
-+ -- 9108
-- -- 603
-* -- 25449
-:= -- 62406
-add.period$ -- 85
+            1458 strings with 18720 characters,
+and the built_in function-call counts, 238592 in all, are:
+= -- 31073
+> -- 1436
+< -- 949
++ -- 9020
+- -- 369
+* -- 16401
+:= -- 47206
+add.period$ -- 83
 call.type$ -- 41
-change.case$ -- 466
-chr.to.int$ -- 2012
+change.case$ -- 346
+chr.to.int$ -- 2150
 cite$ -- 41
-duplicate$ -- 4929
-empty$ -- 18812
-format.name$ -- 2308
-if$ -- 68946
+duplicate$ -- 3892
+empty$ -- 12213
+format.name$ -- 1127
+if$ -- 54699
 int.to.chr$ -- 1
-int.to.str$ -- 100
-missing$ -- 1626
-newline$ -- 1494
+int.to.str$ -- 117
+missing$ -- 1353
+newline$ -- 1233
 num.names$ -- 208
-pop$ -- 2049
+pop$ -- 1499
 preamble$ -- 1
-purify$ -- 179
+purify$ -- 196
 quote$ -- 82
-skip$ -- 17829
+skip$ -- 15642
 stack$ -- 0
-substring$ -- 45636
-swap$ -- 1670
-text.length$ -- 640
+substring$ -- 30316
+swap$ -- 1470
+text.length$ -- 688
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1715
+type$ -- 1746
 warning$ -- 0
-while$ -- 1763
+while$ -- 1417
 width$ -- 0
-write$ -- 2249
+write$ -- 1577
 (There were 9 error messages)
